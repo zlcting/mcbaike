@@ -1,0 +1,3153 @@
+[ 2017-12-31T15:44:10+08:00 ] 127.0.0.1 /baike/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2017-12-31T15:44:31+08:00 ] 127.0.0.1 /baike/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T15:45:08+08:00 ] 127.0.0.1 /baike/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-12-31T15:45:09+08:00 ] 127.0.0.1 /baike/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-12-31T15:45:09+08:00 ] 127.0.0.1 /baike/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-12-31T15:45:49+08:00 ] 127.0.0.1 /baike/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2017-12-31T16:02:27+08:00 ] 127.0.0.1 /index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-12-31T16:03:40+08:00 ] 127.0.0.1 /baike/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-12-31T16:19:41+08:00 ] 127.0.0.1 /baike/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2017-12-31T16:21:12+08:00 ] 127.0.0.1 /baike/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2017-12-31T16:21:22+08:00 ] 127.0.0.1 /index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2017-12-31T16:21:27+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:25:23+08:00 ] 127.0.0.1 /baike/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2017-12-31T16:25:29+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:41:01+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003495s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/js/jquery-1.4.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+ERR: 非法操作:js
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/css/all.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+ERR: 非法操作:css
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner2_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner3_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner4_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner5_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner6_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner7_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner2_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner4_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner3_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner7_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner5_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2017-12-31T16:42:17+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner6_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-12-31T16:42:44+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/public/css/all.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+ERR: 非法操作:public
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/js/jquery-1.4.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+ERR: 非法操作:js
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner2_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner3_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner4_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner5_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner6_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner7_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/public/css/all.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+ERR: 非法操作:public
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/js/jquery-1.4.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+ERR: 非法操作:js
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner2_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner4_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner3_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner5_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner7_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner6_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-12-31T16:42:45+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-12-31T16:42:52+08:00 ] 127.0.0.1 /baike/Home/Index/public/css/all.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+ERR: 非法操作:public
+
+[ 2017-12-31T16:43:03+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2017-12-31T16:44:04+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/js/jquery-1.4.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+ERR: 非法操作:js
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner2_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner3_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner4_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner5_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner6_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner7_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000562s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+
+[ 2017-12-31T16:44:24+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/js/jquery-1.4.4.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+ERR: 非法操作:js
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner2_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner3_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner4_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner5_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner6_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner7_l.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/search.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:50:14+08:00 ] 127.0.0.1 /baike/Home/Index/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-12-31T16:50:18+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-12-31T16:51:37+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-12-31T16:51:37+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T16:51:37+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-12-31T16:51:38+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-12-31T16:51:38+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-12-31T16:51:38+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-12-31T16:51:38+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:51:38+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-12-31T16:51:38+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T16:51:38+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-zcbk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/sy-bk4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:51:41+08:00 ] 127.0.0.1 /baike/Home/Index/images/2wm_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T16:52:15+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-12-31T16:52:24+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T16:53:27+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-12-31T16:53:41+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-12-31T16:53:41+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-12-31T21:08:03+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2017-12-31T21:10:07+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2017-12-31T21:10:08+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-12-31T21:13:52+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-12-31T21:14:23+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2017-12-31T21:14:41+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-12-31T21:15:03+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-12-31T21:27:25+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+NOTIC: [2] include(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-12-31T21:27:40+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+NOTIC: [2] include(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2017-12-31T21:29:10+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2017-12-31T21:30:09+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2017-12-31T21:30:09+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T21:30:24+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:30:24+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:30:25+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:30:25+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:30:25+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:31:34+08:00 ] 127.0.0.1 /baike/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 8 行.
+
+[ 2017-12-31T21:38:56+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined index: username /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined index: password /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined index: email /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 21 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:39:10+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:39:11+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:39:11+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:39:11+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant UC_API_FUNC - assumed 'UC_API_FUNC' /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'UC_API_FUNC' not found or invalid function name /var/www/mcbaike/baike/Application/Home/Common/function.php 第 14 行.
+
+[ 2017-12-31T21:39:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Common/function.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:39:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:39:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:39:45+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:39:45+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:40:47+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:40:48+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:40:48+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:40:48+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:40:57+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 22 行.
+
+[ 2017-12-31T21:40:57+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 22 行.
+
+[ 2017-12-31T21:40:57+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 22 行.
+
+[ 2017-12-31T21:41:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000148s ]
+
+[ 2017-12-31T21:41:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-12-31T21:41:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-12-31T21:41:09+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2017-12-31T21:41:10+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-12-31T21:41:10+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-12-31T21:41:25+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:41:47+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant __DIR__S - assumed '__DIR__S' /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-12-31T21:41:53+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] include_once(./Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-12-31T21:42:06+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2017-12-31T21:42:06+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-12-31T21:42:06+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000160s ]
+
+[ 2017-12-31T21:42:06+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [2] include_once(../Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T21:42:30+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000145s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-12-31T21:42:31+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2017-12-31T21:42:31+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T21:42:31+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-12-31T21:42:32+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-12-31T21:42:33+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-12-31T21:42:33+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2017-12-31T21:42:33+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+NOTIC: [2] include_once(../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening '../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-12-31T21:42:43+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-12-31T21:42:43+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-12-31T21:42:43+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-12-31T21:42:43+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-12-31T21:42:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-12-31T21:42:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-12-31T21:42:56+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000198s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:45:07+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:45:08+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:45:08+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:45:08+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:45:08+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:45:20+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 23 行.
+
+[ 2017-12-31T21:48:40+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 22 行.
+
+[ 2017-12-31T21:48:41+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 22 行.
+
+[ 2017-12-31T21:48:41+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 22 行.
+
+[ 2017-12-31T21:48:41+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: uid /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 22 行.
+
+[ 2017-12-31T21:48:48+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] include_once(./../Common/Ucclient/client.php): failed to open stream: No such file or directory /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+NOTIC: [2] include_once(): Failed opening './../Common/Ucclient/client.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear:') /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 20 行.
+
+[ 2017-12-31T21:58:25+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:27+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:27+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:27+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:27+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:27+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:58:49+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:48+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:48+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:49+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:49+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:49+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:49+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:50+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:50+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:50+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:50+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T21:59:50+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Common/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:18+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:19+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:19+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:19+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:19+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:19+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:19+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:20+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:20+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:20+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:01:32+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+NOTIC: [8] Undefined variable: uc_api /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 29 行.
+
+[ 2017-12-31T22:01:33+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+NOTIC: [8] Undefined variable: uc_api /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 29 行.
+
+[ 2017-12-31T22:01:33+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Ucclient/client.class.php 第 10 行.
+NOTIC: [8] Undefined variable: uc_api /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 29 行.
+
+[ 2017-12-31T22:04:12+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-12-31T22:04:14+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+
+[ 2017-12-31T22:04:14+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-12-31T22:04:14+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-12-31T22:07:01+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:07:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:07:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:07:04+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:02+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:03+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:38+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Use of undefined constant AUTOLOAD_NAMESPACE - assumed 'AUTOLOAD_NAMESPACE' /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:12:46+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Use of undefined constant AUTOLOAD_NAMESPACE - assumed 'AUTOLOAD_NAMESPACE' /var/www/mcbaike/baike/Application/Home/Controller/IndexController.class.php 第 27 行.
+
+[ 2017-12-31T22:13:17+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-12-31T22:13:48+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-12-31T22:13:56+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:13:57+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:13:57+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:14:13+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:14:13+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:14:13+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:14:14+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Home/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:15:02+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2017-12-31T22:15:02+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-12-31T22:15:02+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-12-31T22:15:08+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-12-31T22:15:08+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-12-31T22:15:09+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+
+[ 2017-12-31T22:15:17+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:15:17+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:15:17+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:15:22+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:15:23+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:15:23+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:15:23+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:12+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:13+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:13+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:13+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:13+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:28+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:29+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:29+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:29+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:16:33+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+

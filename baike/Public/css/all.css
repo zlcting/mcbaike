@@ -1,0 +1,65 @@
+/*common*/
+body{
+	margin:0;
+	color:#000000;
+	font-size:12px;	
+	font-family:"宋体", Arial, Helvetica, sans-serif;
+}
+p,h1,h2,h3,ul,li,form{
+	padding:0;
+	margin:0;
+	list-style:none outside;
+}
+a{
+	text-decoration:none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.nav10{ clear:both; height:10px;}
+.nav20{ clear:both; height:20px;}
+.nav40{ clear:both; height:40px;}
+a img{
+	border:0;
+}
+.w1136{ width:1136px; margin:0 auto; }
+.wrap, .header, .bodyer, .footer{	
+	width:100%;
+}
+.header{height:68px; }
+.logo{width:1136px;height:30px; margin:18px auto;}
+.bk-zc{ color:#e5e6e6;}
+.bk-zc a{margin-right:13px;margin-left:6px; font-size:14px; color:#636363;}
+.wrap{height:1257px; background:url(../images/bg_07.jpg) repeat-x ;}
+/*banner*/
+.v_out{position:relative;width:1136px;overflow:hidden; margin:0px auto; background:#2e2e2e}
+.v_show{width:1136px;overflow:hidden;position:relative;height:460px;float:left}
+.v_cont{ width:16650px;position:absolute;left:0px;top:0px;}
+.v_cont ul{float:left;text-align:center;line-height:50px;}
+.v_cont ul li{position:relative;width:1136px;height:460px;background:#f8f8f8;float:left;}
+.v_cont .bj-tit{ position:absolute; bottom:0;width:1126px; height:30px; line-height:30px; background:url(../images/ban-bg.png) no-repeat; font-size:24px; text-align:left;padding-left:10px; color:#fff;}
+/*---圆圈---*/
+.circle{width:1136px; height:126px;}
+.circle li{width:153px;height:122px; border:2px solid #fff;float:left;margin-right:6px;background:#ccc}
+.circle .circle-cur{ border:2px solid #22a3dd;}
+
+
+/*banner*/
+.zcbk{}
+.zc_zs li{ float:left; width:272px; margin-right:14px; background:#fff; height:358px; text-align:center;}
+.zc_zs li a{ font-family:"黑体"; color:#333; font-size:22px; margin-top:10px;}
+.zc_zs li a:hover{color:#22a3dd}
+
+/*footer*/
+.footer{ clear:both;height:316px; background:url(../images/f-bg_03.jpg) repeat-x;}
+.f-dh{ padding-top:40px; font-family:"黑体";}
+.fdh1{ float:left; margin-left:60px; width:280px; color:#333; font-size:16px; color:#010101;}
+.fdh2{ width:120px; float:left; text-align:center; font-family:"黑体"; font-size:15px;}
+.fdh2 a{ font-size:12px; display:block; width:120px; margin-top:18px; color:#666;}
+.fdh3{ float:right; width:360px;}
+.fdh3 li{ float:left; width:180px; text-align:center;}
+.fdh3 a{ display:block; height:30px; color:#666; margin-top:10px;}
+.footer p{ text-align:center; line-height:30px; color:#777775}
