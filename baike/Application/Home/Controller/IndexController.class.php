@@ -25,9 +25,9 @@ class IndexController extends Controller {
 
     public function res(){
         //p(APP_PATH);exit;
-        import("Lib.Ucclient.client");
-        include APP_PATH."Lib/Ucclient/client.class.php";
-        $uc_api = new client();
+        //import("Lib.Ucclient.client");
+        //include APP_PATH."Lib/Ucclient/client.class.php";
+        $uc_api = new \Lib\Ucclient\client();
         $uid = $uc_api->uc_user_register(123123, 123123, 321231);
         p($uid);exit;
         

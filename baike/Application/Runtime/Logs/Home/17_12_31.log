@@ -3151,3 +3151,229 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
 NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
 NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
 
+[ 2017-12-31T22:44:35+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:44:36+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:44:36+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+
+[ 2017-12-31T22:44:43+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+
+[ 2017-12-31T22:44:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-12-31T22:44:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-12-31T22:44:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+
+[ 2017-12-31T22:44:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+
+[ 2017-12-31T22:44:44+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-12-31T22:44:45+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-12-31T22:44:45+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-12-31T22:44:59+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 16 行.
+
+[ 2017-12-31T22:45:00+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 16 行.
+
+[ 2017-12-31T22:45:00+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 16 行.
+
+[ 2017-12-31T22:45:00+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 16 行.
+
+[ 2017-12-31T22:45:18+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+
+[ 2017-12-31T22:45:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+
+[ 2017-12-31T22:45:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+
+[ 2017-12-31T22:45:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+
+[ 2017-12-31T22:45:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+
+[ 2017-12-31T22:45:26+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+
+[ 2017-12-31T22:45:27+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+
+[ 2017-12-31T22:45:27+08:00 ] 127.0.0.1 /baike/Home/Index/res
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+NOTIC: [8] Use of undefined constant UC_API - assumed 'UC_API' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 9 行.
+NOTIC: [8] Use of undefined constant UC_CONNECT - assumed 'UC_CONNECT' /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 10 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, function 'uc_api_post' not found or invalid function name /var/www/mcbaike/baike/Application/Lib/Ucclient/client.class.php 第 17 行.
+

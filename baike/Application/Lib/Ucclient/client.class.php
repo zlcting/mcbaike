@@ -13,6 +13,7 @@ $GLOBALS['uc_controls'] = array();
 class client {
 
     static public function uc_user_register($username, $password, $email, $questionid = '', $answer = '', $regip = '') {
+        echo 123123;
         return call_user_func(UC_API_FUNC, 'user', 'register', array('username'=>$username, 'password'=>$password, 'email'=>$email, 'questionid'=>$questionid, 'answer'=>$answer, 'regip' => $regip));
     }
 
