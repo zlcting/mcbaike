@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
-    <title>H+ 后台主题UI框架 - 登录</title>
-    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+    <title>萌宠百科 - 登录</title>
+    <meta name="keywords" content="萌宠百科">
+    <meta name="description" content="萌宠百科">
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
     <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
@@ -31,15 +28,37 @@
             </div>
             <h3>欢迎使用</h3>
 
-            <form class="m-t" role="form" action="index.html">
+            <form class="m-t" action="{:U('user/check_login')}" method="post" target = "_self">
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="用户名/email" required="">
+                    <input type="input" name = 'name' class="form-control" placeholder="用户名/email" required="">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="密码" required="">
+                    <input type="password" name = 'pass' class="form-control" placeholder="密码" required="">
                 </div>
-                <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
 
+                <div class="form-group text-left">
+                    <div class="checkbox i-checks">
+
+                        <label class="no-padding">
+                             <img id="verify_img" alt="点击更换" title="点击更换" src="{:U('public/verify',array())}" class="m" onclick="this.src='{:U('public/verify',array())}?'+Math.random()">
+                        </label>
+
+                    </div>
+                     <div class="checkbox i-checks">
+
+                        <label class="no-padding">
+                            验证码：
+                        </label>
+
+                        <label class="no-padding">
+                        <input id="j_verify"
+                             name="code" type="text" class="form-control x164 in">
+                         </label>
+                    </div>
+                </div>
+
+                <!-- <button type="submit" class="btn btn-primary block full-width m-b"></button> -->
+                <input type="submit" class="btn btn-primary block full-width " value="登 录">
 
                 <p class="text-muted text-center"> <a href="login.html#"><small>忘记密码了？</small></a> | <a href="register.html">注册一个新账号</a>
                 </p>
@@ -47,8 +66,8 @@
             </form>
         </div>
     </div>
-    <script src="js/jquery.min.js?v=2.1.4"></script>
-    <script src="js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="__PUBLIC__/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/hplus/js/bootstrap.min.js?v=3.3.5"></script>
 <!--     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script> -->
 </body>
 
