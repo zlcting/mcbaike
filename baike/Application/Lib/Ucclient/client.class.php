@@ -22,11 +22,23 @@ $GLOBALS['uc_controls'] = array();
 
 class client {
 
+	//注册验证
     static public function uc_user_register($username, $password, $email, $questionid = '', $answer = '', $regip = '') {
     	$function = UC_API_FUNC;
     	$re = self::$function('user', 'register', array('username'=>$username, 'password'=>$password, 'email'=>$email, 'questionid'=>$questionid, 'answer'=>$answer, 'regip' => $regip));
          return $re;
     }
+
+    //登录验证
+    static public function uc_user_login($username, $password, $isuid = 0, $checkques = 0, $questionid = '', $answer = '') {
+    	$isuid = intval($isuid);
+    	$function = UC_API_FUNC;
+    	$re = self::$function('user', 'login', array('username'=>$username, 'password'=>$password, 'email'=>$email, 'questionid'=>$questionid, 'answer'=>$answer, 'regip' => $regip));
+         return $re;
+    }
+    
+
+
 
     static public function uc_addslashes($string, $force = 0, $strip = FALSE) {
 		!defined('MAGIC_QUOTES_GPC') && define('MAGIC_QUOTES_GPC', get_magic_quotes_gpc());
