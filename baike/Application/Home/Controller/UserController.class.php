@@ -1,12 +1,15 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+
 class UserController extends Controller {
     public function index(){
         $name = 'ThinkPHP';
         $this->assign('name',$name);
         $this->display();
     }
+
+    //登录页面
 
     public function login(){
 
@@ -15,10 +18,58 @@ class UserController extends Controller {
 
     }
 
+    //验证登录
+    public function check_login(){
+
+       $name =  I('post.name');
+       $pass =  I('post.pass');
+       $code =  I('post.code');
+
+       $re = check_verify($code); 
+       $re =1;
+        if($re){
+            $email_check= filter_var($name, FILTER_VALIDATE_EMAIL);
+            if($email_check){
+                $isuid = 2;//邮箱登录
+            }else{
+                 $isuid = 0;//用户名登录
+            }
+            $uc_api = new \Lib\Ucclient\client();
+
+            list($uid, $username, $password, $email) = $uc_api -> uc_user_login($name, $pass, $isuid);
+
+                if($uid > 0) {
+                    $succ =  '登录成功';
+                } elseif($uid == -1) {
+                    $error =   '用户不存在，或者被删除';
+                } elseif($uid == -2) {
+                    $error = '密码错误';
+                } else {
+                    $error =  '未定义错误';
+                }
+
+
+       } else {
+
+            $error = '验证码错误';
+       }
+
+       if(!empty($error)) {
+
+            $this->error($error, U('User/login'));
+
+       } else {
+
+            $this->success($succ, U('Index/index'));
+       }
+
+    }
+
     public function register(){
 
         $this->display();
     }
+
 
     public function updateRegister(){
         $uc_api = new \Lib\Ucclient\client();
