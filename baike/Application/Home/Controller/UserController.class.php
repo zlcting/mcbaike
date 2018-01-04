@@ -99,4 +99,14 @@ class UserController extends Controller {
         p($uid);exit;
     }
 
+    public function ajaxCheck(){
+        $code =  I('post.code');
+        $re = check_verify($code); 
+        if($re){
+            echo 1;
+        }else{
+            echo 2;
+        }
+    }
+
 }
