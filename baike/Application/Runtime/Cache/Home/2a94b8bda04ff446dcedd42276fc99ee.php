@@ -13,7 +13,7 @@
 <body>
 <div class="header">
   <div class="logo">
-    <div class="bk-zc fr"><img src="/baike/Public/images/icon.png" class="fl"><a href="#">论坛进入</a><span><a href="#">注册</a>| <a href="#">登录</a></span><img src="/baike/Public/images/search.png"></div>
+    <div class="bk-zc fr"><img src="/baike/Public/images/icon.png" class="fl"><a href="#">论坛进入</a><span><a href="#">注册</a>| <a href="<?php echo U('user/login');?>">登录</a></span><img src="/baike/Public/images/search.png"></div>
     <img src="/baike/Public/images/logo.png"> </div>
   <div class="wrap"> 
     <!--banner s-->
