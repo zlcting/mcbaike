@@ -27,8 +27,8 @@
                         <h5>注册</h5>
                     </div>
                     <div class="ibox-content">
-                        <form class="form-horizontal m-t" id="signupForm">
-                            <div class="form-group has-error">
+                        <form class="form-horizontal m-t" id="signupForm" action="{:U('user/check_login')}" method="post" target = "_self">
+<!--                             <div class="form-group has-error">
                                 <label class="col-sm-3 control-label">姓氏：</label>
                                 <div class="col-sm-8">
                                     <input id="firstname" name="firstname" class="form-control" type="text">
@@ -36,12 +36,12 @@
                                     <span id="lastname-error" class="help-block m-b-none"><i class="fa fa-times-circle"></i> 请输入您的名字</span>
                                 </div>
                             </div>
-                            <div class="form-group has-error">
+                            <div class="form-group has-success">
                                 <label class="col-sm-3 control-label">名字：</label>
                                 <div class="col-sm-8">
                                     <input id="lastname" name="lastname" class="form-control" type="text" aria-required="true" aria-invalid="false" class="valid">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label class="col-sm-3 control-label">用户名：</label>
                                 <div class="col-sm-8">
@@ -74,7 +74,7 @@
                                          <img id="verify_img" alt="点击更换" title="点击更换" src="{:U('public/verify',array())}" class="m" onclick="this.src='{:U('public/verify',array())}?'+Math.random()">
                                     </label>
                                     </div>
-                                    <div class="checkbox i-checks">
+                                    <div class="checkbox i-checks ">
 
                                         <label class="no-padding">
                                             验证码：
@@ -84,12 +84,13 @@
                                         <input id="j_verify"
                                              name="code" type="text" class="form-control x164 in">
                                          </label>
+                                         <span id="lastname-error" class="help-block m-b-none"><i class="fa fa-times-circle has-error"></i> 验证码错误</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">提交</button>
+                                    <button class="btn btn-primary" type="button" onclick="form_submit()">提交</button>
                                 </div>
                             </div>
                         </form>
@@ -106,4 +107,14 @@
     <script src="__PUBLIC__/hplus/js/demo/form-validate-demo.min.js"></script>
 </body>
 
+<script type="text/javascript">
+
+    function form_submit() {
+        //ajax 校验 验证码
+        alert(12312);
+        //提交表单
+       $("#signupForm").submit();
+    }
+
+</script>
 </html>
