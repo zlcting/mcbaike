@@ -70,9 +70,20 @@
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
                                     <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" class="checkbox" id="agree" name="agree"> 我已经认真阅读并同意《H+使用协议》
+                                    <label class="no-padding">
+                                         <img id="verify_img" alt="点击更换" title="点击更换" src="{:U('public/verify',array())}" class="m" onclick="this.src='{:U('public/verify',array())}?'+Math.random()">
+                                    </label>
+                                    </div>
+                                    <div class="checkbox i-checks">
+
+                                        <label class="no-padding">
+                                            验证码：
                                         </label>
+
+                                        <label class="no-padding">
+                                        <input id="j_verify"
+                                             name="code" type="text" class="form-control x164 in">
+                                         </label>
                                     </div>
                                 </div>
                             </div>
