@@ -64,12 +64,15 @@ class UserController extends Controller {
        }
 
     }
-
+    
     public function register(){
 
         $this->display();
     }
+    public function registerbak(){
 
+        $this->display();
+    }
 
     public function updateRegister(){
         $uc_api = new \Lib\Ucclient\client();
