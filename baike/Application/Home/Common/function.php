@@ -10,9 +10,11 @@ function p($var) {
 
 
 /* 验证码校验 */
-function check_verify($code, $id = ''){
-	$verify = new \Think\Verify();
+function check_verify($code, $id = '', $reset = true){
+
+	$verify = new \Think\Verify(array('reset'=>$reset));
 	$res = $verify->check($code, $id);
 	return $res;
+
 }
 
