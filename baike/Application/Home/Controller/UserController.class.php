@@ -4,9 +4,7 @@ use Think\Controller;
 
 class UserController extends Controller {
     public function index(){
-        $name = 'ThinkPHP';
-        $this->assign('name',$name);
-        $this->display();
+        
     }
 
     //登录页面

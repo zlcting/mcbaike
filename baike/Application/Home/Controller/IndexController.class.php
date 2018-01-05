@@ -3,8 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        //  p(array(1,1,1,1,2));
-
         
         $name = 'ThinkPHP';
         $this->assign('name',$name);
