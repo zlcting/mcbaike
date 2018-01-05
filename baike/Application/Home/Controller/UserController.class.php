@@ -26,7 +26,7 @@ class UserController extends Controller {
        $code =  I('post.code');
 
        $re = check_verify($code); 
-       $re =1;
+       //$re =1;
         if($re){
             $email_check= filter_var($name, FILTER_VALIDATE_EMAIL);
             if($email_check){
@@ -65,40 +65,67 @@ class UserController extends Controller {
 
     }
     
+    //注册
+
     public function register(){
 
         $this->display();
     }
-    public function registerbak(){
 
-        $this->display();
-    }
 
-    public function updateRegister(){
-        $uc_api = new \Lib\Ucclient\client();
-        $uid = $uc_api->uc_user_register('test_user', '123', 'test@163.com');
-        if($uid <= 0) {
-            if($uid == -1) {
-                echo '用户名不合法';
-            } elseif($uid == -2) {
-                echo '包含要允许注册的词语';
-            } elseif($uid == -3) {
-                echo '用户名已经存在';
-            } elseif($uid == -4) {
-                echo 'Email 格式有误';
-            } elseif($uid == -5) {
-                echo 'Email 不允许注册';
-            } elseif($uid == -6) {
-                echo '该 Email 已经被注册';
-            } else {
-                echo '未定义';
-            }
-        } else {
-            echo '注册成功';
+    public function check_register(){
+
+       $name =  I('post.username');
+       $pass =  I('post.pass');
+       $email =  I('post.email');
+       $code =  I('post.code');
+
+       $re = check_verify($code); 
+
+        if(!$re){
+             $error =  '验证码错误';
         }
-        p($uid);exit;
+
+        if(empty($name) || empty($pass) || empty($email)){
+            $error =  '请正确填写注册信息';
+        }
+
+        if(empty($error)){
+            $uc_api = new \Lib\Ucclient\client();
+            $uid = $uc_api->uc_user_register('test_user', '123', 'test@163.com');
+
+            if($uid <= 0) {
+                if($uid == -1) {
+                    $error =  '用户名不合法';
+                } elseif($uid == -2) {
+                    $error =  '包含要允许注册的词语';
+                } elseif($uid == -3) {
+                    $error =  '用户名已经存在';
+                } elseif($uid == -4) {
+                    $error =  'Email 格式有误';
+                } elseif($uid == -5) {
+                    $error =  'Email 不允许注册';
+                } elseif($uid == -6) {
+                    $error = '该 Email 已经被注册';
+                } else {
+                    $error =  '未定义';
+                }
+            } else {
+                $succ =  '注册成功';
+            }
+        }
+
+            if(!empty($error)) {
+
+                $this->error($error, U('User/login'));
+
+           } else {
+
+                $this->success($succ, U('Index/index'));
+           }
     }
 
+    //异步校验验证码
     public function ajaxCheck(){
         $code =  I('post.code');
         $re = check_verify($code,'',false); 
