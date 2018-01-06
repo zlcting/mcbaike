@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Tree - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/easyui/demo.css">
+	<script type="text/javascript" src="__PUBLIC__/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/easyui/jquery.easyui.min.js"></script>
+
+	<link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+
+    <link href="__PUBLIC__/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+</head>
+<body>
+	<h2>Basic Tree</h2>
+	<p>Click the arrow on the left to expand or collapse nodes.</p>
+	<div style="margin:20px 0;"></div>
+	<div class="easyui-panel" style="padding:5px">
+		<ul class="easyui-tree">
+			<li>
+				<span><input type="checkbox" checked="checked">My Documents</span>
+				<ul>
+					<li >
+						<span>Photos &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  <a class="btn btn-success btn-rounded" href="buttons.html#">编辑</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-danger btn-rounded" href="buttons.html#">危险</a> <a href='/admin/auth/authAdd?id={{$item.id}}' target="_blank"> <span style="color: blue">添加</span></a>
+					    </span>
+						<ul>
+							<li>
+								<span>Friend</span>
+							</li>
+							<li>
+								<span>Wife</span>
+							</li>
+							<li>
+								<span>Company</span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span>Program Files</span>
+						<ul>
+							<li>Intel</li>
+							<li>Java</li>
+							<li>Microsoft Office</li>
+							<li>Games</li>
+						</ul>
+					</li>
+					<li>index.html</li>
+					<li>about.html</li>
+					<li>welcome.html</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
