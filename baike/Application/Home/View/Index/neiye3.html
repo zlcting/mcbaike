@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>宅宠百科_内容页2</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link type="text/css" rel="stylesheet" href="css/all.css" />
+
+<!--fullSlide s-->
+<script src="js/jquery.js"></script>
+<script src="js/superslide.2.1.js"></script>
+<!--fullSlide e-->
+<script src="js/tab.js"></script>
+<script src="js/menu.js"></script>
+</head>
+
+<body>
+<div class="header">
+  <div class="logo">
+    <div class="bk-zc fr"><img src="images/icon.png" class="fl"><a href="#">论坛进入</a><span><a href="#">注册</a>| <a href="#">登录</a></span><img src="images/search.png"></div>
+    <img src="images/logo.png"> </div>
+</div>
+<div class="wrap"> 
+  <!--fullSlide s-->
+  <div class="fullSlide">
+    <div class="bd">
+      <ul>
+        <li _src="url(images/ny-banner1.jpg)" style="background:#54a0a8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/ny-banner1.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/ny-banner1.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
+      </ul>
+    </div>
+    <span class="prev"></span> <span class="next"></span> </div>
+  <script type="text/javascript">
+$(".fullSlide").hover(function(){
+    $(this).find(".prev,.next").stop(true, true)
+});
+$(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script> 
+  <!--fullSlide end-->
+  <div class="dh w1136"> <a href="">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a> </div>
+  <div class="dh1 w1136"> <a href="">灯科鱼</a><a href="">鳉鱼</a><a href="">丽丽鱼</a><a href="">鼠鱼</a><a href="">龙鱼</a><a href="#">罗汉鱼</a> </div>
+  <ul class="dh2 w1136">
+    <li id="dh2-h"><span class="dh2-tit dh2-tit-h" >温度</span>
+      <p class="fl">
+      <div class="dh2-tit-h">
+        <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_1">
+          <span></span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_2">
+          <span></span> 16-20度</label>
+        <label>
+          <input type="radio" name="wendu" value="21-25度" id="wendu_3">
+          <span></span> 21-25度</label>
+                  <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_4">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_5">
+          <span></span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_6">
+          <span></span> 16-20度</label>
+        <label>
+          <input type="radio" name="wendu" value="21-25度" id="wendu_7">
+          <span></span> 21-25度</label>
+
+        <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_8">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_9">
+          <span></span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_10">
+          <span></span> 16-20度</label>
+        <label>
+          <input type="radio" name="wendu" value="21-25度" id="wendu_11">
+          <span></span> 21-25度</label>
+                  <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_12">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_13">
+          <span></span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_14">
+          <span></span> 16-20度</label>
+        <label>
+          <input type="radio" name="wendu" value="21-25度" id="wendu_15">
+          <span></span> 21-25度</label>
+          </div>
+      </p>
+      
+    </li>
+    <li><span class="dh2-tit">长度</span>
+      <p class="fl">
+        <label>
+          <input type="radio" name="zdu" value="1CM以下" id="zdu">
+          <span></span> 1CM以下</label>
+        <label>
+          <input type="radio" name="zdu" value="1-2CM" id="zdu_1">
+          <span></span> 1-2CM</label>
+        <label>
+          <input type="radio" name="zdu" value="2-3CM" id="zdu_2">
+          <span></span> 2-3CM</label>
+      </p>
+    </li>
+    <li><span class="dh2-tit">PH值</span>
+      <p class="fl">
+        <label>
+          <input type="radio" name="PH" value="6.5-7" id="PH">
+          <span></span> 6.5-7</label>
+        <label>
+          <input type="radio" name="PH" value="7-7.5" id="PH_1">
+          <span></span> 7-7.5</label>
+        <label>
+          <input type="radio" name="PH" value="7.5-8" id="PH_2">
+          <span></span> 7.5-8</label>
+      </p>
+    </li>
+    <li><span class="dh2-tit">食物类容</span></li>
+  </ul>
+  <div class="nr w1136">
+    <div class="nr-tit"><span class="fr" style="color:#cacaca; font-size:10px;"><img src="images/wujiao.png" width="16px"> 收藏</span>果核泥龟</div>
+    <div class="nr-xq">
+      <div class="fl">
+        <p><span class="fr"><i>易患病：</i> 腐皮</span><i>英文名：</i> Stripedmud turtle </p>
+        <p><span class="fr"><i>寿命：</i> 30-55岁</span><i>性格：</i> 活泼</p>
+        <p><i>祖籍：</i>佛罗里达州KEY地区</p>
+        <br>
+        <p>10CM  水温   15-30   寿命    30     ……</p>
+      </div>
+      <div class="fr"><a href="javascript:void(0)" class="addbut"><img src="images/nr-pic-s.jpg"></a><br>
+        <br>
+        相册（5张图片）</div>
+    </div>
+  </div>
+  <!-- 代码 开始 -->
+  <div id="tab" class="w1136">
+    <div class="tabList">
+      <ul>
+        <li >内容</li>
+        <li class="cur">问答</li>
+        <li>讨论</li>
+        <li>与论坛连接</li>
+      </ul>
+    </div>
+    <div class="tabCon w1136">
+    
+    
+    <div  >
+      <ul>
+      <li class="m_10"> 
+      <dl class="menu_min"><span class="menu_tit">品种简介</span> <p class="x-xian2"></p></dl> 
+     
+      <dl class="nav_min">
+            
+          <span class="menu_tit_p"> <p> 由(Garman,1891)命名，属小型泥龟，体长在12厘米左右。果核泥龟的生命周期一般在30-55年左右；野生的果核背甲上
+时常吸附着藻类，这有助于它们很好的融入自然环境中，为其提供了有效的保护；偶尔会在水面上进行捕食，但更多的时
+候是在河床底部的沙土或淤泥中寻找食物。</p>
+
+<p>背甲比较宽阔与平坦，最高与最宽处是均在背部中央的后方，成体果核无脊椎骨，盾甲边缘没有锯齿，而刚出生的幼体却
+有一条脊椎骨（背部中央）。第1块椎盾普遍的较长，向前方延伸扩张，与第1、2块缘盾相接处。第2-5块的椎盾宽度通常
+都大于长度，背甲上的椎盾显得比较扁平与宽阔，也许在背部中央形成很浅的凹槽。第10块缘盾明显得高于其它几块。背
+甲的颜色从黑色到棕褐色有着不同的变化，有些甚至于接近透明色。因而，有时可以看到骨架的结构。三条易变的浅黄色
+或奶油色的纵向条纹出现在背部，随着时间会变得黯淡或模糊。</p>
+
+</span>
+<img src=images/nr-pic-s1.jpg>
+</dl>
+</li>
+
+<li> 
+      <dl class="menu_min"><span class="menu_tit">喂养方式</span> <p class="x-xian2"></p></dl> 
+     
+      <dl class="nav_min">
+            
+          <span class="menu_tit_p"> <p> 由(Garman,1891)命名，属小型泥龟，体长在12厘米左右。果核泥龟的生命周期一般在30-55年左右；野生的果核背甲上
+时常吸附着藻类，这有助于它们很好的融入自然环境中，为其提供了有效的保护；偶尔会在水面上进行捕食，但更多的时
+候是在河床底部的沙土或淤泥中寻找食物。</p>
+
+<p>背甲比较宽阔与平坦，最高与最宽处是均在背部中央的后方，成体果核无脊椎骨，盾甲边缘没有锯齿，而刚出生的幼体却
+有一条脊椎骨（背部中央）。第1块椎盾普遍的较长，向前方延伸扩张，与第1、2块缘盾相接处。第2-5块的椎盾宽度通常
+都大于长度，背甲上的椎盾显得比较扁平与宽阔，也许在背部中央形成很浅的凹槽。第10块缘盾明显得高于其它几块。背
+甲的颜色从黑色到棕褐色有着不同的变化，有些甚至于接近透明色。因而，有时可以看到骨架的结构。三条易变的浅黄色
+或奶油色的纵向条纹出现在背部，随着时间会变得黯淡或模糊。</p>
+
+
+</span>
+<img src=images/nr-pic-s1.jpg>
+</dl>
+</li>
+
+      
+      </ul>
+      
+      
+        
+      </div>
+      <div class="cur">
+        <ul class="menu_list">
+          <li class=""> <span class="fuMenu">鱼类是体被骨鳞、以鳃呼吸、通过尾部和躯干部的摆动以及鳍的协调作用游泳</span> <img class="xiala" src="images/xia.png" />
+            <dl class="nav10">
+            </dl>
+            <p class="zcd" id="zcd1">鱼类是体被骨鳞、以鳃呼吸、通过尾部和躯干部的摆动以及鳍的协调作用游泳和凭上下颌摄食的变温水生脊椎动物，属于脊索动物门中的脊椎动物亚门，一般人们把脊椎动物分为鱼类（53%）、鸟类（18%）、爬行类（12%）、哺乳类（9%）、两栖类（8%）五大类。</p>
+          </li>
+          <li class=""> <span class="fuMenu">鱼字骨刻文演变：</span> <img class="xiala" src="images/xia.png" />
+            <dl class="nav10">
+            </dl>
+            <p class="zcd" id="zcd2">引自，丁再献、丁蕾《东夷文化与山东·骨刻文释读》十九章第二节，中国文史出版社2012年2月版。鱼类属于脊索动物门中的脊椎动物亚门，一般人把脊椎动物分为鱼类（53%）、鸟类（18%）、爬行类（12%）、哺乳类（9%）、两栖类（8%）五大类。根据已故加拿大[2]  学者Nelson（1994年）统计，全球当时已知鱼类共有24618种，占已命名脊椎动物一半以上，且新种鱼类不断被发现。全球已命名的鱼种约在32100种。</p>
+          </li>
+          <li class=""> <span class="fuMenu">鱼字拼音yu，鱼类（fish）是最古老的脊椎动物。</span> <img class="xiala" src="images/xia.png" />
+            <dl class="nav10">
+            </dl>
+            <p class="zcd" id="zcd3">世界上现存已发现的鱼类约三万二千种，鱼生活在水里，分布在海洋和淡水中，海洋中生活着占三分之二，其余的生活在淡水中。中国计有二千五百种，其中可供药用的有百种以上，常见的药用动物有海马、海龙、黄鳝、鲤鱼、鲫鱼、鲟鱼（鳔为鱼鳔胶）</p>
+          </li>
+        </ul>
+      </div>
+      <div>红尘客栈、牛仔很忙、给我一首歌的时间、听妈妈的话</div>
+      <div>被风吹过的夏天、江南、一千年以后</div>
+      <div>十年、K歌之王、浮夸</div>
+    </div>
+  </div>
+  <!-- 代码 结束 --> 
+</div>
+<!--footer s-->
+<div class="footer">
+  <div class="w1136">
+    <div class="f-dh">
+      <div class="fdh1">&nbsp;&nbsp;&nbsp;<img src="images/logo.png"><br>
+        <div class="nav20"></div>
+        宠物百科 专注为爱好者服务</div>
+      <div class="fdh2">产品<a href="#">宅宠社区</a><a href="#">宅宠商城</a><a href="#">鱼友交易</a></div>
+      <div class="fdh2">联系<a href="#">关于我们</a><a href="#">商业合作</a><a href="#">联系我们</a></div>
+      <div class="fdh2">其他<a href="#">隐私版权</a><a href="#">免责申明</a><a href="#">网站地图</a><a href="#">触屏版</a></div>
+      <div class="fdh3">
+        <li><img src="images/2wm_1.jpg">
+          <div class="nav10"></div>
+          鱼邻APP</li>
+        <li><img src="images/2wm_2.jpg">
+          <div class="nav10"></div>
+          宅宠百科微信公众号</li>
+        <div class="nav10"></div>
+        <a href="#">宅宠百科官方群：xxxxxxxxxxx</a></div>
+    </div>
+    <div class="nav40"></div>
+    <p>Copyright ©2017-2024 zhaichong.cc.All Right Reserved. 宅宠@版权所有<br>
+      宅宠百科（粤ICP备xxxxxxxx 号－x）       粤公网安备 XXXXXXXXXXXX号  增值电信业务经营许可证编号：粤 XX-XXXXXXXX</p>
+  </div>
+</div>
+
+<!--footer e--> 
+	<div class="back"><img src="images/back.png"></div>
+<!--弹窗-->
+<div class="jmxx">
+  <div class="bg"></div>
+  <div class="v_out1 v_out_p1"> <a class="close"></a>
+    <div class="prev1"><a href="javascript:void(0)"></a></div>
+    <div class="v_show1">
+      <div class="v_cont1">
+        <ul>
+          <li index="0"><img src="images/nr-xq-t1.jpg"></li>
+          <li index="1" style="background:#ff0">[第2讲]</li>
+          <li index="2" style="background:#f0f">[第3讲]</li>
+          <li index="3" style="background:#999">[第4讲]</li>
+          <li index="4" style="background:#666">[第5讲]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="next1"><a href="javascript:void(0)"></a> </div>
+    <ul class="circle1">
+      <li class="circle-cur1"><img src="images/nr-xq-t1-s.jpg"></li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+  
+		 $(function(){
+
+				/*======next======*/
+				$(".next1 a").click(function(){ nextscroll() });
+
+				function nextscroll(){
+
+						var vcon = $(".v_cont1 ");
+						var offset = ($(".v_cont1 li").width())*-1;
+						
+						vcon.stop().animate({left:offset},"slow",function(){
+
+							 var firstItem = $(".v_cont1 ul li").first();
+							 vcon.find("ul").append(firstItem);
+							 $(this).css("left","0px");
+
+							 circle()
+							
+						});  
+					
+				};
+				function circle(){
+					  
+						var currentItem = $(".v_cont1 ul li").first();
+						var currentIndex = currentItem.attr("index");
+
+						$(".circle1 li").removeClass("circle-cur1");
+						$(".circle1 li").eq(currentIndex).addClass("circle-cur1");
+						
+				}
+
+				//setInterval(nextscroll,2000)
+				 
+				/*======prev======*/
+				$(".prev1 a").click(function(){
+
+						var vcon = $(".v_cont1 ");
+						var offset = ($(".v_cont1 li").width()*-1);
+
+						var lastItem = $(".v_cont1 ul li").last();
+						vcon.find("ul").prepend(lastItem);
+						vcon.css("left",offset);
+						vcon.animate({left:"0px"},"slow",function(){
+							 circle()
+						})
+
+				 });
+
+			   /*======btn====circle======*/
+				 var animateEnd = 1;
+
+				$(".circle1 li").click(function(){
+
+					   if(animateEnd==0){return;}
+
+					   $(this).addClass("circle-cur1").siblings().removeClass("circle-cur1");
+					
+						var nextindex = $(this).index();
+						var currentindex = $(".v_cont1 li").first().attr("index");
+						var curr = $(".v_cont1 li").first().clone();
+						
+						if(nextindex > currentindex){
+
+								for (var i = 0; i < nextindex - currentindex; i++) {
+									 
+									 var firstItem = $(".v_cont1 li").first();
+									 $(".v_cont1 ul").append(firstItem); 
+										
+								}
+
+								$(".v_cont1 ul").prepend(curr);
+
+								var offset = ($(".v_cont1 li").width())*-1;
+
+								if(animateEnd==1){
+
+									animateEnd=0;	
+									$(".v_cont1").stop().animate({left:offset},"slow",function(){
+
+											$(".v_cont1 ul li").first().remove();
+											$(".v_cont1").css("left","0px");
+											animateEnd=1;
+
+									}); 
+
+								} 
+
+						}else{
+
+								var curt = $(".v_cont1 li").last().clone();
+
+								for (var i = 0; i < currentindex - nextindex; i++) {
+									 var lastItem = $(".v_cont1 li").last();
+									 $(".v_cont1 ul").prepend(lastItem);
+								}
+
+								$(".v_cont1 ul").append(curt);
+
+								var offset = ($(".v_cont1 li").width())*-1;
+
+								$(".v_cont1").css("left",offset);
+										
+
+								  if(animateEnd==1){
+
+										animateEnd=0;	
+										$(".v_cont1").stop().animate({left:"0px"},"slow",function(){
+											
+											$(".v_cont1 ul li").last().remove();
+											animateEnd=1;
+										  
+										}); 
+
+									} 
+							
+							}
+
+				});
+
+		 })
+  
+</script>
+</body>
+</html>

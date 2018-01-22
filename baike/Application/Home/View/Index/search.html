@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>宅宠百科_搜索页</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link type="text/css" rel="stylesheet" href="css/all.css" />
+
+<!--fullSlide s-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+<!--fullSlide e-->
+</head>
+
+<body>
+<div class="header">
+  <div class="logo">
+    <div class="bk-zc fr"><img src="images/icon.png" class="fl"><a href="#">论坛进入</a><span><a href="#">注册</a>| <a href="#">登录</a></span><img src="images/search.png"></div>
+    <img src="images/logo.png"> </div></div>
+  <div class="wrap"> 
+  <!--fullSlide s-->
+   <div class="fullSlide">
+	<div class="bd">
+		<ul>
+			<li _src="url(images/ny-banner1.jpg)" style="background:#54a0a8 center 0 no-repeat;"><a href="#"></a></li>
+			<li _src="url(images/ny-banner1.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
+			<li _src="url(images/ny-banner1.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
+			
+		</ul>
+	</div>	
+	<span class="prev"></span>
+	<span class="next"></span>
+</div>
+ <script type="text/javascript">
+$(".fullSlide").hover(function(){
+    $(this).find(".prev,.next").stop(true, true)
+});
+$(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+ <!--fullSlide end-->
+	   <div class="dh w1136"> <a href="">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a> </div>
+  <div class="dh1 w1136"> <a href="">灯科鱼</a><a href="">鳉鱼</a><a href="">丽丽鱼</a><a href="">鼠鱼</a><a href="">龙鱼</a><a href="#">罗汉鱼</a> </div>
+	  <ul class="dh2 w1136 bj_h">
+		  <li id="dh2-h"><span class="dh2-tit dh2-tit-h" >温度</span>
+      <p class="fl">
+      <div class="dh2-h">
+        <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_1">
+          <span> </span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_2">
+          <span></span> 16-20度</label>
+         <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_3">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_4">
+          <span> </span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_5">
+          <span></span> 16-20度</label>
+          <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_6">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_7">
+          <span> </span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_8">
+          <span></span> 16-20度</label>
+         <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_9">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_10">
+          <span> </span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_11">
+          <span></span> 16-20度</label>
+          <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_12">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_13">
+          <span> </span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_14">
+          <span></span> 16-20度</label>
+         <label>
+          <input type="radio" name="wendu" value="10度以下" id="wendu_15">
+          <span></span> 10度以下</label>
+        <label>
+          <input type="radio" name="wendu" value="10-15度" id="wendu_16">
+          <span> </span> 10-15度</label>
+        <label>
+          <input type="radio" name="wendu" value="16-20度" id="wendu_17">
+          <span></span> 16-20度</label>
+
+      
+      </div>
+      </p>
+    </li>
+		  <li><span class="dh2-tit">长度</span><p class="fl">
+		      <label>
+		        <input type="radio" name="zdu" value="1CM以下" id="zdu"><span></span>
+		        1CM以下</label>		      
+		      <label>
+		        <input type="radio" name="zdu" value="1-2CM" id="zdu_1"><span></span>
+		        1-2CM</label>		    
+		      <label>
+		        <input type="radio" name="zdu" value="2-3CM" id="zdu_2"><span></span>
+		        2-3CM</label>     
+	        </p></li>
+		  <li><span class="dh2-tit">PH值</span><p class="fl">
+		      <label>
+		        <input type="radio" name="PH" value="6.5-7" id="PH"><span></span>
+		        6.5-7</label>		      
+		      <label>
+		        <input type="radio" name="PH" value="7-7.5" id="PH_1"><span></span>
+		        7-7.5</label>		    
+		      <label>
+		        <input type="radio" name="PH" value="7.5-8" id="PH_2"><span></span>
+		        7.5-8</label>      
+	        </p></li>
+		  <li><span class="dh2-tit">食物类容</span></li>
+	  </ul>      
+      <div class="ss-nr w1136">     
+      <!--代码部分begin-->
+	<div class="lanren">
+		<div class="hidden">
+			<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+	<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+	<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+<li><img src="images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
+<span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+		</div>
+		<ul class="list">数据加载中，请稍后...</ul>
+		<div class="more"><a href="javascript:;" onClick="lanren.loadMore();"><img src="images/more.png"></a></div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		var _content = []; //临时存储li循环内容
+		var lanren = {
+			_default:4, //默认显示图片个数
+			_loading:3,  //每次点击按钮后加载的个数
+			init:function(){
+				var lis = $(".lanren .hidden li");
+				$(".lanren ul.list").html("");
+				for(var n=0;n<lanren._default;n++){
+					lis.eq(n).appendTo(".lanren ul.list");
+				}
+				$(".lanren ul.list img").each(function(){
+					$(this).attr('src',$(this).attr('realSrc'));
+				})
+				for(var i=lanren._default;i<lis.length;i++){
+					_content.push(lis.eq(i));
+				}
+				$(".lanren .hidden").html("");
+			},
+			loadMore:function(){
+				var mLis = $(".lanren ul.list li").length;
+				for(var i =0;i<lanren._loading;i++){
+					var target = _content.shift();
+					if(!target){
+						$('.lanren .more').html("<p>全部加载完毕...</p>");
+						break;
+					}
+					$(".lanren ul.list").append(target);
+					$(".lanren ul.list img").eq(mLis+i).each(function(){
+						$(this).attr('src',$(this).attr('realSrc'));
+					});
+				}
+			}
+		}
+		lanren.init();
+		$(function(){	
+	$('.back').click(function(){
+		window.scrollTo(0, 0);
+	});
+
+})
+
+	</script>
+    <!--代码部分end-->
+      <div class="nav40"></div>
+      </div>
+  </div>
+  <!--footer s-->
+  <div class="footer">
+    <div class="w1136">
+      <div class="f-dh">
+      	<div class="fdh1">&nbsp;&nbsp;&nbsp;<img src="images/logo.png"><br><div class="nav20"></div>宠物百科 专注为爱好者服务</div>
+        <div class="fdh2">产品<a href="#">宅宠社区</a><a href="#">宅宠商城</a><a href="#">鱼友交易</a></div>
+        <div class="fdh2">联系<a href="#">关于我们</a><a href="#">商业合作</a><a href="#">联系我们</a></div>
+        <div class="fdh2">其他<a href="#">隐私版权</a><a href="#">免责申明</a><a href="#">网站地图</a><a href="#">触屏版</a></div>
+        <div class="fdh3"><li><img src="images/2wm_1.jpg"><div class="nav10"></div>鱼邻APP</li><li><img src="images/2wm_2.jpg"><div class="nav10"></div>宅宠百科微信公众号</li><div class="nav10"></div><a href="#">宅宠百科官方群：xxxxxxxxxxx</a></div>
+      </div>
+      <div class="nav40"></div>
+      <p>Copyright ©2017-2024 zhaichong.cc.All Right Reserved. 宅宠@版权所有<br>
+宅宠百科（粤ICP备xxxxxxxx 号－x）       粤公网安备 XXXXXXXXXXXX号  增值电信业务经营许可证编号：粤 XX-XXXXXXXX</p>
+    </div>
+  </div>
+  <div class="back"><img src="images/back.png"></div>
+  <!--footer e--> 
+
+</body>
+</html>
