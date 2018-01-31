@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
-    <title>H+ 后台主题UI框架 - 数据表格</title>
-    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+    <title>分类管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="__PUBLIC__/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-    <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-
+<!--     <link rel="shortcut icon" href="favicon.ico">
+ -->    
+ <link href="__PUBLIC__/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+<!--     <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+ -->
     <!-- Data Tables -->
     <link href="__PUBLIC__/hplus/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
 
@@ -124,40 +125,15 @@
                                 </tr>
                             </tfoot>
                         </table>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="dataTables_info" id="DataTables_Table_0_info" role="alert" aria-live="polite" aria-relevant="all">显示 1 到 10 项，共 57 项</div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
-                                    <ul class="pagination">
-                                        <li class="paginate_button previous disabled" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_previous"><a href="#">上一页</a></li><li class="paginate_button active" aria-controls="DataTables_Table_0" tabindex="0"><a href="#">1</a></li>
-                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">2</a></li>
-                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">3</a></li>
-                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">4</a></li>
-                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">5</a></li>
-                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">6</a></li>
-                                        <li class="paginate_button next" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_next"><a href="#">下一页</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        {$page}
                     </div>
                 </div>
             </div>
         </div>
         
     </div>
-    <script src="__PUBLIC__/hplus/js/jquery.min.js?v=2.1.4"></script>
-    <script src="__PUBLIC__/hplus/js/bootstrap.min.js?v=3.3.5"></script>
-    <script src="__PUBLIC__/hplus/js/plugins/jeditable/jquery.jeditable.js"></script>
-    <script src="__PUBLIC__/hplus/js/plugins/dataTables/jquery.dataTables.js"></script>
-    <script src="__PUBLIC__/hplus/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-    <script src="__PUBLIC__/hplus/js/content.min.js?v=1.0.0"></script>
-    <script>
-        $(document).ready(function(){$(".dataTables-example").dataTable();var oTable=$("#editable").dataTable();oTable.$("td").editable("../example_ajax.php",{"callback":function(sValue,y){var aPos=oTable.fnGetPosition(this);oTable.fnUpdate(sValue,aPos[0],aPos[1])},"submitdata":function(value,settings){return{"row_id":this.parentNode.getAttribute("id"),"column":oTable.fnGetPosition(this)[2]}},"width":"90%","height":"100%"})});function fnClickAddRow(){$("#editable").dataTable().fnAddData(["Custom row","New row","New row","New row","New row"])};
-    </script>
+<!--     <script src="__PUBLIC__/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/hplus/js/bootstrap.min.js?v=3.3.5"></script> -->
     <script type="text/javascript"  charset="UTF-8"></script>
 </body>
 
