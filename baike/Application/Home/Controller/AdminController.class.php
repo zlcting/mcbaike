@@ -10,36 +10,38 @@ class AdminController extends Controller {
 
     }
 
+    //后台首页
     public function index(){
 
         $this->assign('name',$name);
         $this->display();
     }
 
-    /**
+     /**
         顶级分类添加
         // $Model = M();
         // $Model->query('SELECT * FROM baike_user WHERE status = 1');
      **/
     public function entryClass(){
-
-        //  <div id="pages">  
-        //       {$page}  
-        //  </div>  
-        //  $pageStr = $subPages->show_SubPages(2);  
-        //  $this->assign('page',$pageStr); 
-
         //$class = new \Home\Model\ClassModel();
+        $limit = 2;
         $class = M('class');
-        // 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
-        $list = $class->select();
-        $this->assign('list',$list);// 赋值数据集
-        $count= $class->where('status=1')->count();// 查询满足要求的总记录数
-        $Page = new \Org\Util\UserPage($count,2);  
-        $show = $Page->Show();// 分页显示输出
-        $this->assign('page',$show);// 赋值分页输出
 
-        $this->display(); // 输出模板
+        $map['status'] = 1;
+
+        $list = $class->where($map)->order('create_time')->page($_GET['p'].','.$limit)->select();
+        $count= $class->where($map)->count();
+
+        $Page = new \Org\Util\UserPage($count,$limit);  
+
+        foreach($map as $key=>$val) {//分页参数
+            $Page->parameter[$key]   =   urlencode($val);
+        }
+        
+        $show = $Page->Show();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+        $this->display();
 
     }
 
