@@ -24,7 +24,6 @@ class AdminController extends Controller {
     public function entryClass(){
         $dict = get_dict('class');
         $limit = 10;
-        $class = M('class');
         $p = input('get.p',1);
         $level = input('get.level',0);
         $name = input('get.name','');
@@ -43,8 +42,9 @@ class AdminController extends Controller {
         }
         
         $map['status'] = 1;
+        $class = M('class');
         //p($map);
-        $list = $class->where($map)->order('create_time')->page($p.','.$limit)->select();
+        $list = $class->where($map)->order('create_time desc')->page($p.','.$limit)->select();
         //p(M()->getLastSql());
         $count= $class->where($map)->count();
         //p($list);
@@ -61,6 +61,61 @@ class AdminController extends Controller {
         $this->display();
 
     }
+    public function entryClassAdd(){
+        //p($map);
+        $post = input('post.');
+        if(!empty($post)){
+            p($post);
+            $data['name'] = $post['name'];
+            $data['level'] = $post['level'];
+            $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
+            $data['p_id'] = !empty($post['p_id'])?$post['p_id']:0;
+            $data['create_time'] = time();
+            $data['status'] = 1;
+            $class = M('class');
+            $re = $class->add($data);
+            // p(M()->getLastSql());
+            // p($re);
+            // exit;
+            if($re){
+                //$this->redirect('entryClass', array(), 0, '页面跳转中...');
+                $this->success('新增成功', 'entryClass');
+            }else{
+                $this->error('保存失败');
+            }
+            
+
+        } else {
+
+            $dict = get_dict('class');
+            $class = M('class');
+            $map['status'] = 1;
+            $map['level'] = 1;
+            $class_list = $class->where($map)->select();
+            //p($class_list);exit();
+            $this->assign('dict',$dict);
+            $this->assign('class_list',$class_list);
+            $this->display();
+        }
+
+    }
+
+
+    public function entryClassEditor(){
+
+        $this->display();
+    }
+
+    public function entryAjax(){
+        $category = 1;
+        $map['status'] = 1;
+        $map['p_id'] = input('get.p_id');
+        if(!empty($map['p_id'])){
+            $class = M('class');
+            $class_list = $class->where($map)->select();
+            echo json_encode($class_list);
+        }
+    }
 
     public function entryClassLevel(){
 
@@ -68,6 +123,10 @@ class AdminController extends Controller {
     }
 
     public function buttons(){
+        $this->display();
+    }
+
+    public function form_basic(){
         $this->display();
     }
 
