@@ -85,7 +85,7 @@
                                         <td>{$vo.create_time|date="y-m-d",###}</td>
                                         <td>{$dict['status'][$vo['status']]}</td>
                                          <td>
-                                            <a href="#" target="_self">
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/entryClassEditor.html?id={$vo.id}" target="_self">
                                             <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
                                             </a>  
                                              <if condition="$vo.level neq 3">
