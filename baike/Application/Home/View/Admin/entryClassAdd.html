@@ -41,11 +41,11 @@
                         </div> -->
                     </div>
                     <div class="ibox-content">
-                        <form method="post" class="form-horizontal">
+                        <form method="post" class="form-horizontal" target="_self" id = "form">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">分类名称</label>
                                 <div class="col-sm-2">
-                                    <input type="text" class="form-control"> 
+                                    <input type="text" class="form-control" name="name" id = "name"> 
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
@@ -69,7 +69,6 @@
                                     <label class="col-sm-2 control-label">一级分类</label>
                                     <div class="col-sm-2">
                                         <select class="form-control m-b" name="top_p_id" onChange="getDataForAjax()" id = "cate">
-                                            <option value="0">请选择</option>
                                              <foreach name="class_list" item="vo" key="k" >
                                                  <option value="{$vo.id}">{$vo.name}</option>
                                              </foreach>
@@ -83,14 +82,13 @@
                                     <label class="col-sm-2 control-label">二级分类</label>
                                     <div class="col-sm-2">
                                         <select class="form-control m-b" name="p_id" id="s_p_type">
-                                            <option>请选择</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
-                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <button class="btn btn-primary" type="button" onclick="form_submit()">保存内容</button>
                                     <button class="btn btn-white" type="submit">取消</button>
                                 </div>
                             </div>
@@ -127,11 +125,50 @@
 
             function getlevel(){
                  level = $('#level').val();
+                 if(level == 1){
+                    $("#div_top_type").hide();
+                    $("#div_s_type").hide();
+                 }
                  if(level == 2){
                     $("#div_top_type").show();
+                    $("#div_s_type").hide();
                  }
                  if(level == 3){
+                    $("#div_top_type").show();
                     $("#div_s_type").show();
+                 }
+
+            }
+
+            function form_submit(){
+                 name = $('#name').val();
+                 level = $('#level').val();
+                 p_id = $('#cate').val();
+                 s_p_type = $('#s_p_type').val();
+                 if(name == ''){
+                    alert('分类名称不能为空');
+                    return false;
+                 }
+                if(level == '' || level == 0){
+                    alert('分类等级不能为空');
+                    return false;
+
+                 }
+
+                 if(level == 2 && (p_id == '' || p_id  == 0)){
+                    alert('请填写分类');
+                    return false;
+
+                 }
+
+                if(level == 2 && (p_id == '' || p_id  == 0 || s_p_type == '' || s_p_type  == 0)){
+                    alert('请填写正确二级分类');
+                    return false;
+
+                 }
+
+                 if (confirm("是否确认保存"))  { 
+                        $("#form").submit();
                  }
 
             }
