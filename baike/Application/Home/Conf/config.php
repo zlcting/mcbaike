@@ -1,4 +1,13 @@
 <?php
+
+//分类等级
+$dict['class']['level'] = array(
+    "0" => "全部",
+    "1" => "一级",
+    "2" => "二级",
+    "3" => "三级",
+);
+
 return array(
     'DB_TYPE'               =>  'mysql',     // 数据库类型
 	'DB_HOST'               =>  '127.0.0.1', // 服务器地址
@@ -27,4 +36,7 @@ return array(
 		//'Lib'     => APP_PATH.'Lib',
 	),
 	'URL_MODEL'          =>  2,
+
+	
+	'BAIKE_DICT'         => $dict, 
 );
