@@ -61,11 +61,13 @@ class AdminController extends Controller {
         $this->display();
 
     }
+    
+    //添加
+
     public function entryClassAdd(){
         //p($map);
         $post = input('post.');
         if(!empty($post)){
-            p($post);
             $data['name'] = $post['name'];
             $data['level'] = $post['level'];
             $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
@@ -101,10 +103,50 @@ class AdminController extends Controller {
     }
 
 
+    //编辑
     public function entryClassEditor(){
+        $post = input('post.');
+        if(!empty($post)){
+            $data['id'] = $post['id'];
+            $data['name'] = $post['name'];
+            $data['level'] = $post['level'];
+            $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
+            $data['p_id'] = !empty($post['p_id'])?$post['p_id']:0;
+            $data['create_time'] = time();
+            $data['status'] = 1;
+            $class = M('class');
+            $re = $class->save($data);
+            // p(M()->getLastSql());
+            // p($re);
+            // exit;
+            if($re){
+                //$this->redirect('entryClass', array(), 0, '页面跳转中...');
+                $this->success('更新成功', 'entryClass');
+            }else{
+                $this->error('保存失败');
+            }
+            
+        } else {
 
-        $this->display();
+            $id = input('get.id');
+            $dict = get_dict('class');
+            $class = M('class');
+            $class_info = $class->where(array('id'=>$id))->find();
+            $top_map['status'] = 1;
+            $top_map['level'] = 1;
+            $class_list = $class->where($top_map)->select();
+            $p_map['status'] = 1;
+            $p_map['level'] = 2;
+            $p_class_list = $class->where($p_map)->select();
+            $this->assign('dict',$dict);
+            $this->assign('class_info',$class_info);
+            $this->assign('class_list',$class_list);
+            $this->assign('p_class_list',$p_class_list);
+        
+            $this->display();
+        }
     }
+
 
     public function entryAjax(){
         $category = 1;
