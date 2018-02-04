@@ -12,6 +12,40 @@ $dict['class']['status'] = array(
     "2" => "删除",
 );
 
+
+$dict['entry']['status'] = array(
+    "1" => "正常",
+    "2" => "删除",
+);
+
+//温度
+$dict['entry']['tem'] = array(
+    "1" => "10度以下",
+    "2" => "10-15度",
+    "3" => "16-20度",
+    "4" => "21-25度",
+);
+ 
+//长度
+$dict['entry']['len'] = array(
+    "1" => "1CM以下",
+    "2" => "1-2CM",
+    "3" => "2-3CM",
+);
+$dict['entry']['ph'] = array(
+    "1" => "6.5-7",
+    "2" => "7-7.5",
+    "3" => "7.5-8",
+);
+$dict['entry']['status'] = array(
+    "1" => "正常",
+    "2" => "删除",
+);
+$dict['entry']['character'] = array(
+    "1" => "活泼",
+    "2" => "安静",
+);
+
 return array(
     'DB_TYPE'               =>  'mysql',     // 数据库类型
 	'DB_HOST'               =>  '127.0.0.1', // 服务器地址
