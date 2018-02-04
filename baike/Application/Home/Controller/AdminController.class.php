@@ -218,6 +218,47 @@ class AdminController extends Controller {
 
     }
 
+    //词条列表
+    public function entryList(){
+
+        $p = input('get.p',1);
+        $name = input('get.name','');
+        $entryDb = D('entry');
+        if(!empty($name)){
+             $map['name'] = $name;
+        }
+        $map['status'] = 1;
+        $limit = 10;
+        $list = $entryDb->where($map)->order('create_time desc')->page($p.','.$limit)->select();
+        //p(M()->getLastSql());
+        $count= $entryDb->where($map)->count();
+        $Page = new \Org\Util\UserPage($count,$limit);  
+        foreach($map as $key=>$val) {//分页参数
+            $Page->parameter[$key]   =   urlencode($val);
+        }
+        $show = $Page->Show();
+
+        $dict = get_dict('entry');
+
+        $this->assign('map',$map);
+        $this->assign('dict',$dict);
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+        $this->display();
+    }
+
+    //百科词条添加
+    public function entryAdd(){
+        $map['status']=1;
+        $map['level']=1;
+        $class = D('class');
+        $class_list = $class->where($map)->select();
+        $dict = get_dict('entry');
+        $this->assign('dict',$dict);
+        $this->assign('class_list',$class_list);
+        $this->display();
+    }
+
     public function buttons(){
         $this->display();
     }
