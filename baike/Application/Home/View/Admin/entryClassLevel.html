@@ -16,45 +16,48 @@
     <link href="__PUBLIC__/hplus/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
 </head>
 <body>
-	<h2>Basic Tree</h2>
-	<p>Click the arrow on the left to expand or collapse nodes.</p>
+	<h2>导航管理</h2>
+	<p>请根据导航栏位置合理选择需要显示再导航栏的分类</p>
 	<div style="margin:20px 0;"></div>
 	<div class="easyui-panel" style="padding:5px">
-		<ul class="easyui-tree">
+		<form method="post" class="form-horizontal" target="_self" id = "form">
+		 <ul class="easyui-tree">
+			<foreach name="tree" item="vo" key="k" >
 			<li>
-				<span><input type="checkbox" checked="checked">My Documents</span>
+				<span><input type="checkbox" <if condition="!empty($nav[$vo[id]])">checked="checked"</if>  name="" value="{$vo.id}">{$vo.name}</span>
 				<ul>
+					<foreach name="vo.sub" item="s_type" key="kk" >
 					<li >
-						<span>Photos &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  <a class="btn btn-success btn-rounded" href="buttons.html#">编辑</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-danger btn-rounded" href="buttons.html#">危险</a> <a href='/admin/auth/authAdd?id={{$item.id}}' target="_blank"> <span style="color: blue">添加</span></a>
-					    </span>
+						<span> <input type="checkbox" <if condition="!empty($nav[$vo[id]]['sub'][$s_type[id]])">checked="checked"</if>  name="" value="{$s_type.id}">{$s_type.name} </span>
 						<ul>
+							<foreach name="s_type.sub" item="t_type" key="kkk" >
 							<li>
-								<span>Friend</span>
+								<span><input type="checkbox" <if condition="!empty($nav[$vo[id]]['sub'][$s_type[id]]['sub'][$t_type[id]])">checked="checked"</if>  name="tree[{$vo['id']}][{$s_type['id']}][]" value="{$t_type.id}">{$t_type.name}</span>
 							</li>
-							<li>
-								<span>Wife</span>
-							</li>
-							<li>
-								<span>Company</span>
-							</li>
+							</foreach>
 						</ul>
 					</li>
-					<li>
-						<span>Program Files</span>
-						<ul>
-							<li>Intel</li>
-							<li>Java</li>
-							<li>Microsoft Office</li>
-							<li>Games</li>
-						</ul>
-					</li>
-					<li>index.html</li>
-					<li>about.html</li>
-					<li>welcome.html</li>
+					</foreach>
 				</ul>
 			</li>
+		</foreach>
 		</ul>
+	</form>
 	</div>
+	<p></p>
+	<p></p>
+	<div class="">              	
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning " type="button" onclick="form_submit()"><span class="bold">确定</span>
+	</div>
+<script type="text/javascript">
+	        function form_submit(){
+                 if (confirm("是否确认保存"))  { 
+                        $("#form").submit();
+                 }
+
+            }
+</script>
 
 </body>
 </html>

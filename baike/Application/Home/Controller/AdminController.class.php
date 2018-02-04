@@ -159,9 +159,63 @@ class AdminController extends Controller {
         }
     }
 
+    //导航管理
     public function entryClassLevel(){
+        $post = input('post.');
+        if(!empty($post)){
+            //p($post);
+            $id = array();
+            $tree = $post['tree'];
+            foreach ($tree as $k => $v) {
+                $id[$k] = $k;
+                foreach ($v as $kk => $vv) {
+                    $id[$kk] = $kk;
+                    foreach ($vv as $value) {
+                        $id[$value] = $value;
+                    }
+                }
+            }
+            $class = D('class');
+            $class_list = $class->getClassbyMap(array('id'=>array('IN',$id)));
+            $nav = array();
+            //第一级
+            foreach ($tree as $k => $v) {
+                $nav[$k]['name'] = $class_list[$k]['name'];
+                $nav[$k]['id'] = $class_list[$k]['id'];
+                //第二级
+                foreach ($v as $kk => $vv) {
+                    $nav[$k]['sub'][$kk]['name'] = $class_list[$kk]['name'];
+                    $nav[$k]['sub'][$kk]['id'] = $class_list[$kk]['id'];
+                    //第三级
+                    foreach ($vv as $value) {
+                        $nav[$k]['sub'][$kk]['sub'][$value]['id'] = $value;
+                        $nav[$k]['sub'][$kk]['sub'][$value]['name'] = $class_list[$value]['name'];
+                    }
+                }
+            }
+            $nav_json = json_encode($nav);
+            $data['id'] = 1;
+            $data['nav'] = $nav_json;
+            $re = M('nav')->save($data);
 
-        $this->display();
+            if($re){
+                //$this->redirect('entryClass', array(), 0, '页面跳转中...');
+                $this->success('更新成功', 'entryClassLevel');
+            }else{
+                $this->error('保存失败');
+            }
+
+        }else{
+            $class = D('class');
+            $tree = $class->classtree();
+            $nav = M('nav')->find();
+            $nav = json_decode($nav['nav'],true);
+                        //p($nav);
+            $this->assign('nav',$nav);
+            $this->assign('tree',$tree);
+            $this->display(); 
+        }
+
     }
 
     public function buttons(){

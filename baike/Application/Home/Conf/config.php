@@ -2,10 +2,14 @@
 
 //分类等级
 $dict['class']['level'] = array(
-    "0" => "全部",
     "1" => "一级",
     "2" => "二级",
     "3" => "三级",
+);
+
+$dict['class']['status'] = array(
+    "1" => "正常",
+    "2" => "删除",
 );
 
 return array(
@@ -37,6 +41,6 @@ return array(
 	),
 	'URL_MODEL'          =>  2,
 
-	
+
 	'BAIKE_DICT'         => $dict, 
 );
