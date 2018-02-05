@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>词条添加</title>
+    <meta name="keywords" content="词条添加">
+    <meta name="description" content="词条添加">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <form  action="" class="wizard-big wizard ">
+                            <div class="steps clearfix">
+                                <ul role="tablist">
+                                        <li role="tab" class="first current" >
+                                            <a id="form-t-0" href="#form-h-0" >
+                                            <span class="number">1.</span> 词条信息</a>
+                                        </li>
+                                            <li class="disabled" aria-disabled="true">
+                                                <a href="#form-h-1" aria-controls="form-p-1"><span class="number">2.</span> 图片信息
+                                                </a>
+                                            </li>
+                                            <li  class="disabled">
+                                                <a  href="#form-h-2"><span class="number">3.</span> 问答详情</a>
+                                            </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form method="post" class="form-horizontal" target="_self" id = "form">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">分类名称</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="name" id = "name"> 
+                                </div>
+                            </div>
+                            <div id="div_top_type">
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">一级分类</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="top_p_id" onChange="getDataForAjax()" id = "cate">
+                                             <option value="0">请选择</option>
+                                             <foreach name="class_list" item="vo" key="k" >
+                                                 <option value="{$vo.id}">{$vo.name}</option>
+                                             </foreach>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="div_s_type" >
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">二级分类</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="p_id" id="s_p_type" onChange="getSecDataForAjax()">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="div_s_type" >
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">三级分类</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="class_id" id="t_p_type" >
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">性格</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="character">
+                                             <foreach name="dict['character']" item="vo" key="k" >
+                                                 <option value="{$k}">{$vo}</option>
+                                             </foreach>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">温度</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="tem">
+                                             <foreach name="dict['tem']" item="vo" key="k" >
+                                                 <option value="{$k}">{$vo}</option>
+                                             </foreach>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">长度</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="len">
+                                             <foreach name="dict['len']" item="vo" key="k" >
+                                                 <option value="{$k}">{$vo}</option>
+                                             </foreach>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">PH值</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="ph">
+                                             <foreach name="dict['ph']" item="vo" key="k" >
+                                                 <option value="{$k}">{$vo}</option>
+                                             </foreach>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">寿命</label>
+                                <div class="col-sm-1">
+                                    <input type="text" class="form-control" name="name" id = "name"> 
+                                </div>年
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">品种简介</label>
+                                <div class="col-sm-5">
+                                    <textarea name="introduction" id="introduction" class="form-control" cols ="100" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">喂养方式</label>
+                                <div class="col-sm-5">
+                                    <textarea name="feed" id="feed" class="form-control" cols ="100" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="button" onclick="form_submit()">保存内容</button>
+                                    <button class="btn btn-white" type="submit">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="__PUBLIC__/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/hplus/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="__PUBLIC__/hplus/js/content.min.js?v=1.0.0"></script><div class="gohome"><a class="animated bounceInUp" href="index.html?v=4.0" title="返回首页"><i class="fa fa-home"></i></a></div>
+    <script src="__PUBLIC__/hplus/js/plugins/staps/jquery.steps.min.js"></script>
+    <script src="__PUBLIC__/hplus/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/hplus/js/plugins/validate/messages_zh.min.js"></script>
+
+    <script type="text/javascript">
+            function getDataForAjax() {
+                p_id = $('#cate').val();
+                        $.ajax({
+                        type:"get",
+                        url:"{$Think.const.BAIKE_ADMIN_URL}/entryAjax",
+                        dataType:'json',
+                        data:{
+                            p_id:p_id
+                        },
+                        success:function (data) {
+                            $('#s_p_type').empty();
+                            $('#s_p_type').append("<option value=0>请选择</option>");
+                            for(var i = 0;i < data.length;i++){
+                                $('#s_p_type').append("<option value=" + data[i]['id'] + ">"
+                                    + data[i]['name'] + "</option>");
+                            }
+                        }
+                        });
+            }
+
+            function getSecDataForAjax() {
+                        p_id = $('#s_p_type').val();
+                        $.ajax({
+                        type:"get",
+                        url:"{$Think.const.BAIKE_ADMIN_URL}/entryAjax",
+                        dataType:'json',
+                        data:{
+                            p_id:p_id
+                        },
+                        success:function (data) {
+                            $('#t_p_type').empty();
+                            $('#t_p_type').append("<option value=0>请选择</option>");
+                            for(var i = 0;i < data.length;i++){
+                                $('#t_p_type').append("<option value=" + data[i]['id'] + ">"
+                                    + data[i]['name'] + "</option>");
+                            }
+                        }
+                        });
+            }
+
+
+                function form_submit(){
+                 name = $('#name').val();
+                 class_id = $('#t_p_type').val();
+                 feed = $('#feed').val();
+                 introduction = $('#introduction').val();
+                 if(name == ''){
+                    alert('名称不能为空');
+                    return false;
+                 }
+
+                 if(class_id == '' || class_id == 0){
+                    alert('请选择分类');
+                    return false;
+
+                 }
+
+                 if (confirm("是否确认保存"))  { 
+                        $("#form").submit();
+                 }
+
+            }
+    </script>
+</body>
+
+</html>
