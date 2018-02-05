@@ -248,15 +248,67 @@ class AdminController extends Controller {
     }
 
     //百科词条添加
-    public function entryAdd(){
-        $map['status']=1;
-        $map['level']=1;
-        $class = D('class');
-        $class_list = $class->where($map)->select();
-        $dict = get_dict('entry');
-        $this->assign('dict',$dict);
-        $this->assign('class_list',$class_list);
-        $this->display();
+    public function entryAdd() {
+
+        $post = input('post.');
+        if (!empty($post)) {
+            $data['name'] = $post['name'];
+            $data['character'] = $post['character'];
+            $data['tem'] = $post['tem'];
+            $data['len'] = $post['len'];
+            $data['class_id'] = !empty($post['class_id'])?$post['class_id'];
+            $data['create_time'] = time();
+            $data['status'] = 1;
+            $entry = M('entry');
+            $re = $entry->add($data);
+            if($re){
+                //$this->redirect('entryClass', array(), 0, '页面跳转中...');
+                $this->success('保存成功', 'entryList');
+            } else {
+                $this->error('保存失败');
+            }
+        } else {
+            $map['status']=1;
+            $map['level']=1;
+            $class = D('class');
+            $class_list = $class->where($map)->select();
+            $dict = get_dict('entry');
+            $this->assign('dict',$dict);
+            $this->assign('class_list',$class_list);
+            $this->display();
+        }
+
+    }
+
+    //词条编辑
+    public function entryEditor() {
+        $post = input('post.');
+        if(!empty($post)) {
+            $data['id'] = $post['name'];
+            $data['name'] = $post['name'];
+            $data['character'] = $post['character'];
+            $data['tem'] = $post['tem'];
+            $data['len'] = $post['len'];
+            $data['class_id'] = !empty($post['class_id'])?$post['class_id'];
+            $data['create_time'] = time();
+            $data['status'] = 1;
+            $entry = M('entry');
+            $re = $entry->save($data);
+        } else {
+
+            $id = input('get.id');
+            $map['status'] = 1;
+            $map['level'] = 1;
+            $class = D('class');
+            $class_list = $class->where($map)->select();
+            $entry = D('entry');
+            $entry_info = $entry->where(array('id'=>$id))->find();
+            $dict = get_dict('entry');
+            $this->assign('dict',$dict);
+            $this->assign('class_list',$class_list);
+            $this->assign('entry_info',$entry_info);
+            $this->display();
+        }
     }
 
     public function buttons(){
