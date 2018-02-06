@@ -256,7 +256,7 @@ class AdminController extends Controller {
             $data['character'] = $post['character'];
             $data['tem'] = $post['tem'];
             $data['len'] = $post['len'];
-            $data['class_id'] = !empty($post['class_id'])?$post['class_id'];
+            $data['class_id'] = !empty($post['class_id'])?$post['class_id']:'';
             $data['create_time'] = time();
             $data['status'] = 1;
             $entry = M('entry');
@@ -289,7 +289,7 @@ class AdminController extends Controller {
             $data['character'] = $post['character'];
             $data['tem'] = $post['tem'];
             $data['len'] = $post['len'];
-            $data['class_id'] = !empty($post['class_id'])?$post['class_id'];
+            $data['class_id'] = !empty($post['class_id'])?$post['class_id']:'';
             $data['create_time'] = time();
             $data['status'] = 1;
             $entry = M('entry');
@@ -309,6 +309,56 @@ class AdminController extends Controller {
             $this->assign('entry_info',$entry_info);
             $this->display();
         }
+    }
+
+    public function qaEditor(){
+        $entry_id = input('get.entry_id');
+        $dict = get_dict('qa');
+        $qa = D('question');
+        $list = $qa->where(array('entry_id'=>$entry_id))->order('updatetime desc')->select();
+        $this->assign('entry_id',$entry_id);
+        $this->assign('list',$list);
+        $this->assign('dict',$dict);
+        $this->display();
+    }
+
+    public function qaPostUpdate(){
+        $post = input('post.');
+        $data['id'] = $post['id'];
+        $data['title'] = $post['title'];
+        $data['entry_id'] = $post['entry_id'];
+        $data['content'] = $post['content'];
+        $data['updatetime'] = time();
+        $data['status'] = 1;
+        $qa = M('question');
+        $re = $qa->save($data);
+         // p(M()->getLastSql());
+         // exit();
+        if($re){
+                $this->redirect('qaEditor', array('entry_id'=>$data['entry_id']));
+        }else{
+                $this->error('保存失败');
+         } 
+    }
+    public function qaPostAdd(){
+        $post = input('post.');
+        $data['title'] = $post['title'];
+        $data['entry_id'] = $post['entry_id'];
+        
+        $data['content'] = $post['content'];
+        $data['createtime'] = time();
+        $data['updatetime'] = time();
+        $data['status'] = 1;
+        $qa = D('question');
+        $re = $qa->add($data);
+         // p(M()->getLastSql());
+         // exit();
+        if($re){
+                $this->redirect('qaEditor', array('entry_id'=>$data['entry_id']));
+                //$this->success('更新成功', 'entryClassLevel');
+        }else{
+                $this->error('保存失败');
+         } 
     }
 
     public function buttons(){

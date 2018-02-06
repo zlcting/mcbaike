@@ -45,7 +45,10 @@ $dict['entry']['character'] = array(
     "1" => "活泼",
     "2" => "安静",
 );
-
+$dict['qa']['status'] = array(
+    "1" => "正常",
+    "2" => "删除",
+);
 return array(
     'DB_TYPE'               =>  'mysql',     // 数据库类型
 	'DB_HOST'               =>  '127.0.0.1', // 服务器地址
