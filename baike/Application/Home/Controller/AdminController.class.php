@@ -363,8 +363,26 @@ class AdminController extends Controller {
     }
 
 
+    //图片列表
     public function picList(){
-
+        $p = input('get.p',1);
+        $map['status'] = 1;
+        $map['e_id'] = input('get.e_id');
+        $class = M('pic');
+        $limit = 10;
+        $list = $class->where($map)->order('create_time desc')->page($p.','.$limit)->select();
+        //p(M()->getLastSql());
+        $count= $class->where($map)->count();
+        $Page = new \Org\Util\UserPage($count,$limit);  
+        foreach($map as $key=>$val) {//分页参数
+            $Page->parameter[$key]   =   urlencode($val);
+        }
+        $show = $Page->Show();
+        $dict = get_dict('entry');
+        $this->assign('dict',$dict);
+        $this->assign('map',$map);
+        $this->assign('list',$list);
+        $this->assign('page',$show);
         $this->display();
     }
 
