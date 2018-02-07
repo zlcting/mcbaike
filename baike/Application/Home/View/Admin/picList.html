@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>问答管理 - FooTable</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/plugins/footable/footable.core.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+    <link href="__PUBLIC__/hplus/css/plugins/steps/jquery.steps.css" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <form  action="" class="wizard-big wizard ">
+                            <div class="steps clearfix">
+                                <ul role="tablist">
+                                        <li role="tab" class="disabled" >
+                                            <a id="form-t-0" href="#form-h-0" >
+                                            <span class="number">1.</span> 词条信息</a>
+                                        </li>
+                                        <li class="first current" aria-disabled="true">
+                                            <a href="#form-h-1" aria-controls="form-p-1"><span class="number">2.</span> 图片信息
+                                            </a>
+                                        </li>
+                                        <li  class="disabled">
+                                            <a  href="#form-h-2"><span class="number">3.</span> 问答详情</a>
+                                        </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>图片列表列表<small> </small>
+                        <a href="{$Think.const.BAIKE_ADMIN_URL}/entryAdd.html" target="_self">
+                            <button class="btn btn-warning " type="button"><span class="bold">上传图片</span>
+                        </a> 
+                        </h5>
+                        </button>
+                    <form action="" method="get" id="form"  target="_self">
+                    <div class="ibox-content">
+                        <div class="">
+
+                                <label> 词条名称：
+                                    <input type="search" name="name" class="form-control" value="{$map['name']}">
+                                </label>
+                            <a onclick="form_search()" href="javascript:void(0);" class="btn btn-primary ">查找</a>
+                        </div>
+                    </div>
+                    </form>
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>名称</th>
+                                    <th>分类</th>
+                                    <th>性格</th>
+                                    <th>祖籍</th>
+                                    <th>寿命</th>
+                                    <th>创建时间</th>
+                                    <th>状态</th>
+                                    <th>操作</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name="list" item="vo" key="k" >
+                                    <tr class="gradeA">
+                                        <td>{$vo.id}</td>
+                                        <td>{$vo.name}</td>
+                                        <td>{$vo.class_id}</td>
+                                        <td>{$vo.character}</td>
+                                        <td>{$vo.descent}</td>
+                                        <td>{$vo.life}</td>
+                                        <td>{$vo.create_time|date="y-m-d H:i:s",###}</td>
+                                        <td>{$dict['status'][$vo['status']]}</td>
+                                         <td>
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/entryEditor.html?id={$vo.id}" target="_self">
+                                            <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
+                                            </a>  
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/pic.html?eid={$vo.id}" target="_self">
+                                                <button class="btn btn-info " type="button"><i class="fa fa-list"></i>图片</button>
+                                            </a> 
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/qa.html?eid={$vo.id}" target="_self">
+                                                <button class="btn btn-info " type="button"><i class="fa fa-list"></i>问答</button>
+                                            </a> 
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </table>
+                        {$page}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="__PUBLIC__/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/hplus/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="__PUBLIC__/hplus/js/plugins/footable/footable.all.min.js"></script>
+    <script src="__PUBLIC__/hplus/js/content.min.js?v=1.0.0"></script>
+    <script>
+        $(document).ready(function(){$(".footable").footable();$(".footable2").footable()});
+    </script>
+</body>
+
+</html>

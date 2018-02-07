@@ -311,6 +311,7 @@ class AdminController extends Controller {
         }
     }
 
+    //问答列表
     public function qaEditor(){
         $entry_id = input('get.entry_id');
         $dict = get_dict('qa');
@@ -321,7 +322,7 @@ class AdminController extends Controller {
         $this->assign('dict',$dict);
         $this->display();
     }
-
+    //问答编辑提交
     public function qaPostUpdate(){
         $post = input('post.');
         $data['id'] = $post['id'];
@@ -359,6 +360,12 @@ class AdminController extends Controller {
         }else{
                 $this->error('保存失败');
          } 
+    }
+
+
+    public function picList(){
+
+        $this->display();
     }
 
     public function buttons(){
