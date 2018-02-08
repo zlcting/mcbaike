@@ -296,7 +296,7 @@ class AdminController extends Controller {
             $re = $entry->save($data);
         } else {
 
-            $id = input('get.id');
+            $id = input('get.e_id');
             $map['status'] = 1;
             $map['level'] = 1;
             $class = D('class');
@@ -304,6 +304,7 @@ class AdminController extends Controller {
             $entry = D('entry');
             $entry_info = $entry->where(array('id'=>$id))->find();
             $dict = get_dict('entry');
+            $this->assign('e_id',$id);
             $this->assign('dict',$dict);
             $this->assign('class_list',$class_list);
             $this->assign('entry_info',$entry_info);
@@ -313,10 +314,12 @@ class AdminController extends Controller {
 
     //问答列表
     public function qaEditor(){
-        $entry_id = input('get.entry_id');
+        $entry_id = input('get.e_id');
         $dict = get_dict('qa');
         $qa = D('question');
         $list = $qa->where(array('entry_id'=>$entry_id))->order('updatetime desc')->select();
+        
+        $this->assign('e_id',$entry_id);
         $this->assign('entry_id',$entry_id);
         $this->assign('list',$list);
         $this->assign('dict',$dict);
@@ -379,11 +382,50 @@ class AdminController extends Controller {
         }
         $show = $Page->Show();
         $dict = get_dict('entry');
+        $this->assign('e_id',$map['e_id']);
         $this->assign('dict',$dict);
         $this->assign('map',$map);
         $this->assign('list',$list);
         $this->assign('page',$show);
         $this->display();
+    }
+
+    public function picUpload(){
+        $e_id = input('get.e_id');
+        if(empty($e_id)){
+             $this->ajaxReturn('参数错误');
+             exit;
+        }
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =     $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'; // 设置附件上传根目录
+        $upload->savePath  =     ''; // 设置附件上传（子）目录
+        $upload->subName   =     array('date','Ymd'); 
+        // 上传文件 
+        $info   =   $upload->upload();
+        if(!$info) {// 上传错误提示错误信息
+
+            $this->ajaxReturn($upload->getError());
+
+        } else {// 上传成功
+
+            $pic = D('pic');
+            $data['e_id'] = $e_id;
+            $data['name'] = $info['file']['savename'];
+            $data['link'] = $info['file']['savepath'].$info['file']['savename'];
+            $data['type'] = 1;
+            $data['status'] = 1;
+            $data['create_time'] = time();
+            $re = $pic ->add($data);
+            if($re){
+                $this->ajaxReturn('上传成功');
+
+            } else {
+
+                $this->ajaxReturn('DB错误：'.$re);
+            }
+        }
     }
 
     public function buttons(){
