@@ -80,4 +80,8 @@ return array(
 
 
 	'BAIKE_DICT'         => $dict, 
+      // 视图输出字符串内容替换
+    'view_replace_str'       => [
+        '__IMG__'=>  '/public/img/',          
+    ],
 );
