@@ -29,16 +29,16 @@
                             <div class="steps clearfix">
                                 <ul role="tablist">
                                         <li role="tab" class="disabled" >
-                                            <a id="form-t-0" href="#form-h-0" >
+                                            <a id="entryEditor" href="{$Think.const.BAIKE_ADMIN_URL}entryEditor?e_id={$e_id}" target="_self">
                                             <span class="number">1.</span> 词条信息</a>
                                         </li>
-                                            <li class="disabled" aria-disabled="true">
-                                                <a href="#form-h-1" aria-controls="form-p-1"><span class="number">2.</span> 图片信息
-                                                </a>
-                                            </li>
-                                            <li  class="first current">
-                                                <a  href="#form-h-2"><span class="number">3.</span> 问答详情</a>
-                                            </li>
+                                        <li class="disabled" aria-disabled="true">
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}picList?e_id={$e_id}"  target="_self" aria-controls="form-p-1"><span class="number">2.</span> 图片信息
+                                            </a>
+                                        </li>
+                                        <li  class="first current">
+                                            <a  href="" target="_self"><span class="number">3.</span> 问答详情</a>
+                                        </li>
                                 </ul>
                             </div>
                         </form>

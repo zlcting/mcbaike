@@ -36,7 +36,7 @@
                             <div class="steps clearfix">
                                 <ul role="tablist">
                                         <li role="tab" class="disabled" >
-                                            <a id="form-t-0" href="#form-h-0" >
+                                            <a id="entryEditor" href="{$Think.const.BAIKE_ADMIN_URL}entryEditor?e_id={$map['e_id']}" target="_self">
                                             <span class="number">1.</span> 词条信息</a>
                                         </li>
                                         <li class="first current" aria-disabled="true">
@@ -44,7 +44,7 @@
                                             </a>
                                         </li>
                                         <li  class="disabled">
-                                            <a  href="#form-h-2"><span class="number">3.</span> 问答详情</a>
+                                            <a  href="{$Think.const.BAIKE_ADMIN_URL}qaEditor?e_id={$map['e_id']}" target="_self"><span class="number">3.</span> 问答详情</a>
                                         </li>
                                 </ul>
                             </div>
@@ -103,7 +103,7 @@
  -->                                    <td>{$vo.create_time|date="y-m-d H:i:s",###}</td>
                                         <td>{$dict['status'][$vo['status']]}</td>
                                          <td>
-                                            <a href="__PUBLIC__/hplus/img/p_big1.jpg" title="图片" data-gallery="">
+                                            <a href="__PUBLIC__/Uploads/img/{$vo.link}" title="图片" data-gallery="">
                                                 <button class="btn btn-info " type="button"><i class="fa fa-list"></i>预览</button>
                                             </a> 
                                         </td>
@@ -153,7 +153,7 @@ var uploader = WebUploader.create({
     swf:   'Uploader.swf',
 
     // 文件接收服务端。
-    server: 'http://webuploader.duapp.com/server/fileupload.php',
+    server: '{$Think.const.BAIKE_ADMIN_URL}picUpload?e_id={$map['e_id']}',
 
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
@@ -209,15 +209,16 @@ uploader.on( 'uploadProgress', function( file, percentage ) {
 });
 
 // 文件上传成功，给item添加成功class, 用样式标记上传成功。
-uploader.on( 'uploadSuccess', function( file ) {
+uploader.on( 'uploadSuccess', function( file , response ) {
+
     $( '#'+file.id ).addClass('upload-state-done');
+    $( '#'+file.id ).append("<div class=''>"+response+"</div>");
 });
 
 // 文件上传失败，显示上传出错。
 uploader.on( 'uploadError', function( file ) {
     var $li = $( '#'+file.id ),
         $error = $li.find('div.error');
-
     // 避免重复创建
     if ( !$error.length ) {
         $error = $('<div class="error"></div>').appendTo( $li );

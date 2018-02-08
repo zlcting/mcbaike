@@ -73,13 +73,13 @@
                                         <td>{$vo.create_time|date="y-m-d H:i:s",###}</td>
                                         <td>{$dict['status'][$vo['status']]}</td>
                                          <td>
-                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/entryEditor.html?id={$vo.id}" target="_self">
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/entryEditor.html?e_id={$vo.id}" target="_self">
                                             <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
                                             </a>  
-                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/pic.html?eid={$vo.id}" target="_self">
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/picList.html?e_id={$vo.id}" target="_self">
                                                 <button class="btn btn-info " type="button"><i class="fa fa-list"></i>图片</button>
                                             </a> 
-                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/qa.html?eid={$vo.id}" target="_self">
+                                            <a href="{$Think.const.BAIKE_ADMIN_URL}/qaEditor.html?e_id={$vo.id}" target="_self">
                                                 <button class="btn btn-info " type="button"><i class="fa fa-list"></i>问答</button>
                                             </a> 
 
