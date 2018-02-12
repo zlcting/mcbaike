@@ -4,22 +4,10 @@ use Think\Controller;
 class IndexController extends Controller {
     public function index(){
         
-        $name = 'ThinkPHP';
+        $User = D('User');
         $this->assign('name',$name);
         $this->display();
     }
-
-    public function index1(){
-        // 导入Org类库包 Library/Org/Util/Date.class.php类库
-        import("Org.Util.Date");
-        // 导入Home模块下面的 Application/Home/Util/UserUtil.class.php类库
-        import("Home.Util.UserUtil");
-        // 导入当前模块下面的类库 
-        import("@.Util.Array");
-        // 导入Vendor类库包 Library/Vendor/Zend/Server.class.php
-        import('Vendor.Zend.Server');
-    }
-
 
     public function res(){
         $uc_api = new \Lib\Ucclient\client();
@@ -44,6 +32,16 @@ class IndexController extends Controller {
             echo '注册成功';
         }
         p($uid);exit;
+    }
+
+    public function detail(){
+        $this->display();
+
+    }
+
+    public function search(){
+        $this->display();
+
     }
 
 }
