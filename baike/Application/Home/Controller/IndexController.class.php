@@ -4,9 +4,16 @@ use Think\Controller;
 class IndexController extends Controller {
     public function index(){
         
-        $User = D('User');
-        $this->assign('name',$name);
-        $this->display();
+        $p = input('get.p',1);
+        $map['status'] = 2;
+        $map['e_id'] = 0;
+        $map['type'] = 2;
+        $class = M('pic');
+        $list = $class->where($map)->order('update_time desc')->limit(7)->select();
+        // p(M()->getLastSql());
+        $dict = get_dict('pic');
+        $this->assign('list',$list);
+        $this->display();  
     }
 
     public function res(){
