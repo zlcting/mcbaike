@@ -24,7 +24,7 @@ class UserController extends Controller {
        $code =  I('post.code');
 
        $re = check_verify($code); 
-       //$re =1;
+       $re =1;
         if($re){
             $email_check= filter_var($name, FILTER_VALIDATE_EMAIL);
             if($email_check){
@@ -32,10 +32,11 @@ class UserController extends Controller {
             }else{
                  $isuid = 0;//用户名登录
             }
-            $uc_api = new \Lib\Ucclient\client();
+            $uc_api = new \Ucenter\Client\UcApi();
 
             list($uid, $username, $password, $email) = $uc_api -> uc_user_login($name, $pass, $isuid);
-
+            echo $uc_api->uc_user_synlogin($uid);
+           // p($uid);exit();
                 if($uid > 0) {
                     $succ =  '登录成功';
                 } elseif($uid == -1) {
@@ -66,7 +67,7 @@ class UserController extends Controller {
     //注册
 
     public function register(){
-
+        $uc_api  = new \Ucenter\Client\UcApi();
         $this->display();
     }
 
@@ -89,7 +90,7 @@ class UserController extends Controller {
         }
 
         if(empty($error)){
-            $uc_api = new \Lib\Ucclient\client();
+            $uc_api = new \Ucenter\Client\UcApi();
             $uid = $uc_api->uc_user_register('test_user', '123', 'test@163.com');
 
             if($uid <= 0) {
