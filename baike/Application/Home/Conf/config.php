@@ -49,6 +49,15 @@ $dict['qa']['status'] = array(
     "1" => "正常",
     "2" => "删除",
 );
+
+
+$dict['pic']['status'] = array(
+    "1" => "正常",
+    "2" => "封面应用",
+    "-1" => "删除",
+);
+
+
 return array(
     'DB_TYPE'               =>  'mysql',     // 数据库类型
 	'DB_HOST'               =>  '127.0.0.1', // 服务器地址

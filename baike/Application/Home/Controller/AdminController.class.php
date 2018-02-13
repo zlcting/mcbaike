@@ -392,7 +392,8 @@ class AdminController extends Controller {
 
     public function picUpload(){
         $e_id = input('get.e_id');
-        if(empty($e_id)){
+        $type = input('get.type', 1);
+        if(empty($e_id) && $type == 1){
              $this->ajaxReturn('参数错误');
              exit;
         }
@@ -404,8 +405,15 @@ class AdminController extends Controller {
         $upload->subName   =     array('date','Ymd'); 
         // 上传文件 
         $info   =   $upload->upload();
+        $thumb_name = 'thumb'.$info['file']['savename'];
+        //处理图片
+        $image = new \Think\Image();
+        $path = $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$info['file']['savename'];
+        $thumb_path =  $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$thumb_name;
+        $image->open($path);
+        $image->thumb( 1136, 460 )->save($path);
+        $image->thumb( 310, 220 )->save($thumb_path);
         if(!$info) {// 上传错误提示错误信息
-
             $this->ajaxReturn($upload->getError());
 
         } else {// 上传成功
@@ -413,10 +421,12 @@ class AdminController extends Controller {
             $pic = D('pic');
             $data['e_id'] = $e_id;
             $data['name'] = $info['file']['savename'];
-            $data['link'] = $info['file']['savepath'].$info['file']['savename'];
-            $data['type'] = 1;
+            $data['thumb_name'] = $thumb_name;
+            $data['link'] = $info['file']['savepath'];
+            $data['type'] = $type;
             $data['status'] = 1;
             $data['create_time'] = time();
+            $data['update_time'] = time();
             $re = $pic ->add($data);
             if($re){
                 $this->ajaxReturn('上传成功');
@@ -428,6 +438,51 @@ class AdminController extends Controller {
         }
     }
 
+    public function indexPic(){
+        $p = input('get.p',1);
+        $map['status'] = array('in','1,2,-1');
+        $map['e_id'] = 0;
+        $map['type'] = 2;
+        $class = M('pic');
+        $limit = 10;
+        $list = $class->where($map)->order('update_time desc')->page($p.','.$limit)->select();
+        // p(M()->getLastSql());
+        $count= $class->where($map)->count();
+        $Page = new \Org\Util\UserPage($count,$limit);  
+        foreach($map as $key=>$val) {//分页参数
+            $Page->parameter[$key]   =   urlencode($val);
+        }
+        $show = $Page->Show();
+        $dict = get_dict('pic');
+        $this->assign('e_id',$map['e_id']);
+        $this->assign('dict',$dict);
+        $this->assign('map',$map);
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+        $this->display();  
+    }
+
+    //删除图片方法
+    public function picdel(){
+        $post = input('post.');
+        $id_arr = $post['id'];
+        $pic = M('pic');
+        $re = $pic ->where(array('id'=>array('in',$id_arr)))->save(array('status'=>'-1','update_time'=>time()));
+        // p(M()->getLastSql());
+        $this->redirect('indexPic', array(), 0, '页面跳转中...');
+
+    }
+
+    //应用该图片为首页封面图轮播图
+    public function useCover(){
+        $id = input('get.id');
+        $status = input('get.status',$status);
+        $pic = M('pic');
+        $re = $pic ->where(array('id'=>$id))->save(array('status'=>$status,'update_time'=>time()));
+         //p(M()->getLastSql());
+        $this->redirect('indexPic', array(), 0, '页面跳转中...');
+
+    }
     public function buttons(){
         $this->display();
     }
