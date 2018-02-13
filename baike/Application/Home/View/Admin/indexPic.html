@@ -69,12 +69,12 @@
                                                 <button class="btn btn-info " type="button"><i class="fa fa-list"></i>预览</button>
                                             </a> 
                                             <if condition="$vo['status'] eq 1">
-                                                <a href="useCover?id={$vo.id}&status=2">
+                                                <a href="useCover?id={$vo.id}&status=2" target="_self">
                                                     <button class="btn btn-info " type="button"><i class="fa fa-list"></i>应用</button>
                                                 </a> 
                                             </if>
                                             <if condition="$vo['status'] eq 2">
-                                                <a href="useCover?id={$vo.id}&status=1">
+                                                <a href="useCover?id={$vo.id}&status=1" target="_self">
                                                     <button class="btn btn-info " type="button"><i class="fa fa-list"></i>取消应用</button>
                                                 </a> 
                                             </if>
