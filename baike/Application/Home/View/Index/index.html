@@ -12,9 +12,9 @@
 
 <body>
 <div class="header">
-  <div class="logo">
-    <div class="bk-zc fr"><img src="__PUBLIC__/images/icon.png" class="fl"><a href="#">论坛进入</a><span><a href="#">注册</a>| <a href="{:U('user/login')}">登录</a></span><img src="__PUBLIC__/images/search.png"></div>
-    <img src="__PUBLIC__/images/logo.png"> </div>
+
+  <include file="header" />
+
   <div class="wrap"> 
     <!--banner s-->
     <div class="v_out v_out_p">
@@ -23,7 +23,7 @@
           <ul>
           	<foreach name="list" item="vo" key="k" >
             <li index="{$k}"><img src="{$Think.const.IMG}{$vo.link}/{$vo.name}">
-              <div class="bj-tit"></div>
+              <!-- <div class="bj-tit"></div> -->
             </li>
         	</foreach>
           </ul>
@@ -159,21 +159,7 @@
     <!--zcbk e--> 
   </div>
   <!--footer s-->
-  <div class="footer">
-    <div class="w1136">
-      <div class="f-dh">
-      	<div class="fdh1">&nbsp;&nbsp;&nbsp;<img src="__PUBLIC__/images/logo.png"><br><div class="nav20"></div>宠物百科 专注为爱好者服务</div>
-        <div class="fdh2">产品<a href="#">宅宠社区</a><a href="#">宅宠商城</a><a href="#">鱼友交易</a></div>
-        <div class="fdh2">联系<a href="#">关于我们</a><a href="#">商业合作</a><a href="#">联系我们</a></div>
-        <div class="fdh2">其他<a href="#">隐私版权</a><a href="#">免责申明</a><a href="#">网站地图</a><a href="#">触屏版</a></div>
-        <div class="fdh3"><li><img src="__PUBLIC__/images/2wm_1.jpg"><div class="nav10"></div>鱼邻APP</li><li><img src="__PUBLIC__/images/2wm_2.jpg"><div class="nav10"></div>宅宠百科微信公众号</li><div class="nav10"></div><a href="#">宅宠百科官方群：xxxxxxxxxxx</a></div>
-      </div>
-      <div class="nav40"></div>
-      <p>Copyright ©2017-2024 zhaichong.cc.All Right Reserved. 宅宠@版权所有<br>
-宅宠百科（粤ICP备xxxxxxxx 号－x）       粤公网安备 XXXXXXXXXXXX号  增值电信业务经营许可证编号：粤 XX-XXXXXXXX</p>
-    </div>
-  </div>
-  
+	<include file="foot" />
   <!--footer e--> 
 </div>
 </body>
