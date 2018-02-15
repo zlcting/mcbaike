@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入口管理 </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/plugins/footable/footable.core.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+    <link href="__PUBLIC__/hplus/css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <!-- Data Tables -->
+    <link href="__PUBLIC__/hplus/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/hplus/css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
+    <!--弹窗 -->
+    <link rel="stylesheet" href="__PUBLIC__/my_popup/my_popup.css">
+
+</head>
+<body class="gray-bg">
+     <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                    <h5>入口导航管理<small> </small>
+                    </h5>
+                    <form action="" method="post"   target="_self">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th><!-- <input type="checkbox" name=""/> -->名称</th>
+                                    <th>分类</th>
+                                    <th>展示图片</th>
+                                    <th>状态</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name="list" item="vo" key="k" >
+                                    <tr class="gradeA">
+                                        <td>第1个入口</td>
+                                        <td>
+                                        <select class="form-control m-b" name="" id = "cate">
+                                             <option value="0">请选择</option>
+                                             <foreach name="class_list" item="vo" key="k" >
+                                                 <option value="{$v.id}">{$v.name}</option>
+                                             </foreach>
+                                        </select>
+                                        </td>
+                                        <td id="11">
+                                            <img alt="image"  width="100" height="100" src="__PUBLIC__/hplus/img/p1.jpg" /> 
+                                            <button class="btn1 popup-show" data-linked-id="myPopup" type="button">选择图片</button>
+                                        </td>
+                                        <td>1</td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </table>
+                        <button class="btn btn-warning " type="submit">
+                            <span class="bold">保存
+                        </span>
+                        </button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- <button id="btn-one">我是一个普通按钮</button>-->    
+    <button class="btn1 popup-show" data-linked-id="myPopup">出来吧</button>
+    <div class="my-popup" id="myPopup">
+        <div class="popup-content">
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-content layer-photos-demo" id="layer-photos-demo">
+                                    <a  title="">
+                                         选择<input name='subject' type="radio" value="Chinese" /> 
+                                        <img alt="image" width="100" height="100"   src="__PUBLIC__/hplus/img/p1.jpg" />
+                                    </a>
+                                    <a  title="">
+                                         选择<input name='subject' type="radio" value="Chinese" /> 
+                                        <img alt="image" width="100" height="100" src="__PUBLIC__/hplus/img/p2.jpg" />
+                                    </a>
+                                    <a  title="">
+                                         选择<input name='subject' type="radio" value="Chinese" /> 
+                                        <img alt="image" width="100" height="100"  src="__PUBLIC__/hplus/img/p3.jpg" />
+                                    </a>
+                                    <a  title="">
+                                         选择<input name='subject' type="radio" value="Chinese" /> 
+                                        <img alt="image" width="100" height="100"  src="__PUBLIC__/hplus/img/p1.jpg" />
+                                    </a>
+                                    <a  title="">
+                                         选择<input name='subject' type="radio" value="Chinese" /> 
+                                        <img alt="image" width="100" height="100" src="__PUBLIC__/hplus/img/p1.jpg" />
+                                    </a>
+                                    <a  title="">
+                                         选择<input name='subject' type="radio" value="Chinese" /> 
+                                        <img alt="image" width="100" height="100" src="__PUBLIC__/hplus/img/p1.jpg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+            <button class="popup-close" data-linked-id="myPopup">确定</button>
+            <!-- <button id="btn2">修改</button> -->
+        </div>
+    </div>
+    <script src="__PUBLIC__/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/hplus/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="__PUBLIC__/hplus/js/plugins/footable/footable.all.min.js"></script>
+    <script src="__PUBLIC__/hplus/js/content.min.js?v=1.0.0"></script>
+    <script src="__PUBLIC__/hplus/js/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
+    <script src="__PUBLIC__/my_popup/my_popup.js"></script>
+
+    <script>
+        $(document).ready(function(){$(".footable").footable();$(".footable2").footable()});
+    </script>
+    <script>
+        window.onload = function () {
+            var oBtnOne = document.getElementById("btn-one");
+            var oBtnTwo = document.getElementById('btn2');
+            var oMsg = document.getElementById('msg');
+
+            var myPopup = new MyPopup('myPopup', {
+                param: {
+                    isfixed: false,                     // 弹窗是否固定居中（默认true可以） 值：true、false
+                    bgclose: false,                     // 可否通过点击背景关闭弹窗 （默认true可以） 值：true、false
+                    type: 'none',                   // 弹窗出现的方式（默认none无动画） 值：none、opacity、top、right、bottom、left
+                    time: 400,                          // 弹窗出现动画的时长（默认200ms）
+                    bgcolor: '#000',                    // 背景颜色（默认transparent）
+                    opacity: 0.2                        // 背景透明度（默认0）
+                },
+                showFn: function () {
+                    console.log('弹窗出现之前执行的同步函数');
+                },
+                closeFn: function () {
+                    console.log('弹窗关闭之前执行的同步函数');
+                }
+            })
+
+            oBtnOne.onclick = function () {
+                myPopup.show(null, {top:100, left:100});
+            }
+
+            // var i = 0;
+            // var arr = ['月照纱窗，个个孔明诸葛亮；风送花圃，阵阵畹华梅兰芳。', '望江楼，望江流，望江楼下望江流，江楼千古，江流千古；印月井，印月影，印月井中印月影，月井万年，月影万年。']
+            // oBtnTwo.onclick = function () {
+            //     if ( i == 0 ) {
+            //         oMsg.innerHTML = arr[0];
+            //         i = 1;
+            //     } else {
+            //         oMsg.innerHTML = arr[1];
+            //         i = 0;
+            //     }
+            // }
+        }
+    </script>
+</body>
+
+</html>

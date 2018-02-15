@@ -12,108 +12,78 @@
 
 <body>
 <div class="header">
-  <div class="logo">
+
+    <div class="logo">
     <div class="bk-zc fr"><img src="/baike/Public/images/icon.png" class="fl"><a href="#">论坛进入</a><span><a href="#">注册</a>| <a href="<?php echo U('user/login');?>">登录</a></span><img src="/baike/Public/images/search.png"></div>
-    <img src="/baike/Public/images/logo.png"> </div>
+    <img src="/baike/Public/images/logo.png"> 
+ </div>
+
   <div class="wrap"> 
     <!--banner s-->
     <div class="v_out v_out_p">
       <div class="v_show">
         <div class="v_cont">
           <ul>
-            <li index="0"><img src="/baike/Public/images/banner1.jpg">
-              <div class="bj-tit">观赏鱼-A</div>
-            </li>
-            <li index="1"><img src="/baike/Public/images/banner1.jpg">
-              <div class="bj-tit">观赏鱼-A</div>
-            </li>
-            <li index="2"><img src="/baike/Public/images/banner1.jpg">
-              <div class="bj-tit">观赏鱼-A</div>
-            </li>
-            <li index="3"><img src="/baike/Public/images/banner1.jpg">
-              <div class="bj-tit">观赏鱼-A</div>
-            </li>
-            <li index="4"><img src="/baike/Public/images/banner1.jpg">
-              <div class="bj-tit">观赏鱼-A</div>
-              ]</li>
-            <li index="5"><img src="/baike/Public/images/banner1.jpg">
-              <div class="bj-tit">观赏鱼-A</div>
-            </li>
-            <li index="6"><img src="/baike/Public/images/banner1.jpg">
-              <div class="bj-tit">观赏鱼-A</div>
-            </li>
+          	<?php if(is_array($list)): foreach($list as $k=>$vo): ?><li index="<?php echo ($k); ?>"><img src="<?php echo (IMG); echo ($vo["link"]); ?>/<?php echo ($vo["name"]); ?>">
+              <!-- <div class="bj-tit"></div> -->
+            </li><?php endforeach; endif; ?>
           </ul>
         </div>
       </div>
       <ul class="circle">
-        <li class="circle-cur"><img src="/baike/Public/images/banner1_l.jpg"></li>
+      	<?php if(is_array($list)): foreach($list as $k=>$vo): ?><li <?php if($k == 0): ?>class="circle-cur"<?php endif; ?> <?php if($k == 6): ?>style="margin-right:0"<?php endif; ?> ><img src="<?php echo (IMG); echo ($vo["link"]); ?>/<?php echo ($vo["thumb_name"]); ?>" height="122" width="153"></li><?php endforeach; endif; ?>
+<!--     	<li><img src="<?php echo (IMG); echo ($vo["link"]); ?>/<?php echo ($vo["thumb_name"]); ?>"></li>
         <li><img src="/baike/Public/images/banner2_l.jpg"></li>
         <li><img src="/baike/Public/images/banner3_l.jpg"></li>
         <li><img src="/baike/Public/images/banner4_l.jpg"></li>
         <li><img src="/baike/Public/images/banner5_l.jpg"></li>
         <li><img src="/baike/Public/images/banner6_l.jpg"></li>
-        <li style="margin-right:0"><img src="/baike/Public/images/banner7_l.jpg"></li>
+        <li style="margin-right:0"><img src="/baike/Public/images/banner7_l.jpg"></li> -->
       </ul>
     </div>
     <script type="text/javascript">
   
 		 $(function(){
-
 				/*======next======*/
 				$(".next a").click(function(){ nextscroll() });
-
 				function nextscroll(){
-
 						var vcon = $(".v_cont ");
 						var offset = ($(".v_cont li").width())*-1;
 						
 						vcon.stop().animate({left:offset},"slow",function(){
-
 							 var firstItem = $(".v_cont ul li").first();
 							 vcon.find("ul").append(firstItem);
 							 $(this).css("left","0px");
-
 							 circle()
 							
 						});  
 					
 				};
-
-
 				function circle(){
 					  
 						var currentItem = $(".v_cont ul li").first();
 						var currentIndex = currentItem.attr("index");
-
 						$(".circle li").removeClass("circle-cur");
 						$(".circle li").eq(currentIndex).addClass("circle-cur");
 						
 				}
-
 				//setInterval(nextscroll,2000)
 				 
 				/*======prev======*/
 				$(".prev a").click(function(){
-
 						var vcon = $(".v_cont ");
 						var offset = ($(".v_cont li").width()*-1);
-
 						var lastItem = $(".v_cont ul li").last();
 						vcon.find("ul").prepend(lastItem);
 						vcon.css("left",offset);
 						vcon.animate({left:"0px"},"slow",function(){
 							 circle()
 						})
-
 				 });
-
 			   /*======btn====circle======*/
 				 var animateEnd = 1;
-
 				$(".circle li").click(function(){
-
 					   if(animateEnd==0){return;}
-
 					   $(this).addClass("circle-cur").siblings().removeClass("circle-cur");
 					
 						var nextindex = $(this).index();
@@ -121,49 +91,33 @@
 						var curr = $(".v_cont li").first().clone();
 						
 						if(nextindex > currentindex){
-
 								for (var i = 0; i < nextindex - currentindex; i++) {
 									 
 									 var firstItem = $(".v_cont li").first();
 									 $(".v_cont ul").append(firstItem); 
 										
 								}
-
 								$(".v_cont ul").prepend(curr);
-
 								var offset = ($(".v_cont li").width())*-1;
-
 								if(animateEnd==1){
-
 									animateEnd=0;	
 									$(".v_cont").stop().animate({left:offset},"slow",function(){
-
 											$(".v_cont ul li").first().remove();
 											$(".v_cont").css("left","0px");
 											animateEnd=1;
-
 									}); 
-
 								} 
-
 						}else{
-
 								var curt = $(".v_cont li").last().clone();
-
 								for (var i = 0; i < currentindex - nextindex; i++) {
 									 var lastItem = $(".v_cont li").last();
 									 $(".v_cont ul").prepend(lastItem);
 								}
-
 								$(".v_cont ul").append(curt);
-
 								var offset = ($(".v_cont li").width())*-1;
-
 								$(".v_cont").css("left",offset);
 										
-
 								  if(animateEnd==1){
-
 										animateEnd=0;	
 										$(".v_cont").stop().animate({left:"0px"},"slow",function(){
 											
@@ -171,13 +125,10 @@
 											animateEnd=1;
 										  
 										}); 
-
 									} 
 							
 							}
-
 				});
-
 		 })
   
 </script> 
@@ -207,7 +158,7 @@
     <!--zcbk e--> 
   </div>
   <!--footer s-->
-  <div class="footer">
+	  <div class="footer">
     <div class="w1136">
       <div class="f-dh">
       	<div class="fdh1">&nbsp;&nbsp;&nbsp;<img src="/baike/Public/images/logo.png"><br><div class="nav20"></div>宠物百科 专注为爱好者服务</div>
@@ -221,7 +172,6 @@
 宅宠百科（粤ICP备xxxxxxxx 号－x）       粤公网安备 XXXXXXXXXXXX号  增值电信业务经营许可证编号：粤 XX-XXXXXXXX</p>
     </div>
   </div>
-  
   <!--footer e--> 
 </div>
 </body>

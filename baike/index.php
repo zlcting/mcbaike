@@ -20,7 +20,7 @@ define('APP_DEBUG',True);
 // define('BIND_CONTROLLER','Index'); // 绑定Index控制器到当前入口文件
 // 定义应用目录
 define('APP_PATH','./Application/');
-
+require APP_PATH.'Home/Conf/const.php';//自定常量
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

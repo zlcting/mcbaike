@@ -70,8 +70,14 @@ class AdminController extends Controller {
         if(!empty($post)){
             $data['name'] = $post['name'];
             $data['level'] = $post['level'];
-            $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
-            $data['p_id'] = !empty($post['p_id'])?$post['p_id']:0;
+            if($data['level'] == 1){
+                $data['top_p_id'] = 0;
+                $data['p_id'] = 0;
+            }else{
+                $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
+                $data['p_id'] = !empty($post['p_id'])?$post['p_id']:0;
+            }
+            
             $data['create_time'] = time();
             $data['status'] = 1;
             $class = M('class');
@@ -483,6 +489,23 @@ class AdminController extends Controller {
         $this->redirect('indexPic', array(), 0, '页面跳转中...');
 
     }
+
+    //首页入口管理
+    public function indexNav(){
+        $index_nav = M('index_nav');
+        $list = $index_nav->select();
+        $this->assign('list',$list);
+        $this->display();
+    }
+
+
+    public function demo(){
+        $index_nav = M('index_nav');
+        $list = $index_nav->select();
+        $this->assign('list',$list);
+        $this->display();
+    }
+    
     public function buttons(){
         $this->display();
     }

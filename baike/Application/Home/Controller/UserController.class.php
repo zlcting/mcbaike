@@ -30,7 +30,7 @@ class UserController extends Controller {
             if($email_check){
                 $isuid = 2;//邮箱登录
             }else{
-                 $isuid = 0;//用户名登录
+                $isuid = 0;//用户名登录
             }
             $uc_api = new \Ucenter\Client\UcApi();
 
@@ -76,7 +76,7 @@ class UserController extends Controller {
 
        $name =  I('post.username');
        $pass =  I('post.pass');
-       $email =  I('post.email');
+       $email = I('post.email');
        $code =  I('post.code');
 
        $re = check_verify($code); 

@@ -51,4 +51,9 @@ class IndexController extends Controller {
 
     }
 
+
+    public function foot(){
+        $this->display();
+    }
+
 }

@@ -19,7 +19,7 @@ define('UC_DBCONNECT', '3306');//端口
 define('UC_DBTABLEPRE', '`mcbaike`.uc_');//数据库名和前缀
 
 $GLOBALS['uc_controls'] = array();
-
+print_r(UC_API);exit();
 class client {
 
 	//注册验证
@@ -74,5 +74,27 @@ class client {
 			return '';
 		}
 	}
+
+	function uc_api_post($module, $action, $arg = array()) {
+	$s = $sep = '';
+	foreach($arg as $k => $v) {
+		$k = urlencode($k);
+		if(is_array($v)) {
+			$s2 = $sep2 = '';
+			foreach($v as $k2 => $v2) {
+				$k2 = urlencode($k2);
+				$s2 .= "$sep2{$k}[$k2]=".urlencode(uc_stripslashes($v2));
+				$sep2 = '&';
+			}
+			$s .= $sep.$s2;
+		} else {
+			$s .= "$sep$k=".urlencode(uc_stripslashes($v));
+		}
+		$sep = '&';
+	}
+	$postdata = uc_api_requestdata($module, $action, $s);
+
+	return uc_fopen2(UC_API.'/index.php', 500000, $postdata, '', TRUE, UC_IP, 20);
+}
 
 }    
