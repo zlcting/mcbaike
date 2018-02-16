@@ -492,10 +492,48 @@ class AdminController extends Controller {
 
     //首页入口管理
     public function indexNav(){
+        $class = M('class');
+        $entry_class = $class->where(array('level'=>1,'status'=>1))->select();
+
         $index_nav = M('index_nav');
         $list = $index_nav->select();
+
+        $pic = M('pic');
+        $pic_list = $pic->where(array('type'=>2,'e_id'=>0,'status'=>array('in','1,2')))->select();
+        //拼装一下图片数组
+        $pic_id_index = array();
+        foreach ($pic_list as $key => $value) {
+            $pic_id_index[$value['id']] = $value;
+        }
+        foreach ($list as $k => $v) {
+            if(!empty($v['pic_id'])){
+               $list[$k]['pic_url'] = $pic_id_index[$v['pic_id']]['link'].$pic_id_index[$v['pic_id']]['thumb_name'];
+            }
+        }
         $this->assign('list',$list);
+        $this->assign('pic_id_index',$pic_id_index);
+        $this->assign('entry_class',$entry_class);
         $this->display();
+    }
+
+    public function postIndexNav(){
+        $post = input('post.');
+        p($post);
+        $index_nav = array();
+        foreach ($post['class_id'] as $key => $value) {
+            $index_nav[$key]['id'] = $key;
+            $index_nav[$key]['class_id'] = $value;
+        }
+
+        foreach ($post['pic_id'] as $key => $value) {
+            $index_nav[$key]['id'] = $key;
+            $index_nav[$key]['pic_id'] = $value;
+        }
+        $index_nav_db = M('index_nav');
+        foreach ($index_nav as $v) {
+            $index_nav_db->save($v);
+        }
+        $this->redirect('indexNav', array(), 0, '页面跳转中...');
     }
 
 
