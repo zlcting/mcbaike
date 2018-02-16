@@ -11,6 +11,11 @@ class IndexController extends Controller {
         $class = M('pic');
         $list = $class->where($map)->order('update_time desc')->limit(7)->select();
         // p(M()->getLastSql());
+
+
+        $index_nav_db = M('index_nav');
+        $index_nav_db ->select();
+
         $dict = get_dict('pic');
         $this->assign('list',$list);
         $this->display();  
