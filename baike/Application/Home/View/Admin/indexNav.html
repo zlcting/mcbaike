@@ -53,6 +53,7 @@
                                         <td id="11">
                                             <!-- <img alt="image"  width="100" height="100" src="__PUBLIC__/hplus/img/p1.jpg" />  -->
                                             <input type="hidden" name="pic_id[{$vo.id}]" id = "pic_id_{$vo.id}" value="{$vo.pic_id}">
+                                            <input type="hidden" name="img_url[{$vo.id}]" id = "img_url_{$vo.id}" value="{$vo.img_url}" >
                                             <img alt="image"  width="100" height="100" src="{$Think.const.IMG}{$vo.pic_url}" id = "new_img_{$vo.id}"/> 
                                             <button class="btn1 popup-show" data-linked-id="myPopup" type="button" nav_id = "1" onclick="choose_pic({$vo.id})">选择图片</button>
                                         </td>
@@ -162,7 +163,9 @@
                 var nav_id = $("#tmp_nav_id").val();
 
                 $("#new_img_"+nav_id).attr('src',pic_url);
+
                 $("#pic_id_"+nav_id).val(pic_id);
+                $("#img_url_"+nav_id).val(pic_url);
             }
         }
 

@@ -518,7 +518,6 @@ class AdminController extends Controller {
 
     public function postIndexNav(){
         $post = input('post.');
-        p($post);
         $index_nav = array();
         foreach ($post['class_id'] as $key => $value) {
             $index_nav[$key]['id'] = $key;
@@ -529,6 +528,12 @@ class AdminController extends Controller {
             $index_nav[$key]['id'] = $key;
             $index_nav[$key]['pic_id'] = $value;
         }
+        
+        foreach ($post['img_url'] as $key => $value) {
+            $index_nav[$key]['id'] = $key;
+            $index_nav[$key]['img_url'] = $value;
+        }
+
         $index_nav_db = M('index_nav');
         foreach ($index_nav as $v) {
             $index_nav_db->save($v);
