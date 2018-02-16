@@ -67,20 +67,16 @@ class UserController extends Controller {
     //注册
 
     public function register(){
-        $uc_api  = new \Ucenter\Client\UcApi();
         $this->display();
     }
 
-
+    //注册action
     public function check_register(){
-
        $name =  I('post.username');
        $pass =  I('post.pass');
        $email = I('post.email');
        $code =  I('post.code');
-
        $re = check_verify($code); 
-
         if(!$re){
              $error =  '验证码错误';
         }
@@ -91,36 +87,69 @@ class UserController extends Controller {
 
         if(empty($error)){
             $uc_api = new \Ucenter\Client\UcApi();
-            $uid = $uc_api->uc_user_register('test_user', '123', 'test@163.com');
-
-            if($uid <= 0) {
-                if($uid == -1) {
-                    $error =  '用户名不合法';
-                } elseif($uid == -2) {
-                    $error =  '包含要允许注册的词语';
-                } elseif($uid == -3) {
-                    $error =  '用户名已经存在';
-                } elseif($uid == -4) {
-                    $error =  'Email 格式有误';
-                } elseif($uid == -5) {
-                    $error =  'Email 不允许注册';
-                } elseif($uid == -6) {
-                    $error = '该 Email 已经被注册';
-                } else {
-                    $error =  '未定义';
-                }
-            } else {
-                $succ =  '注册成功';
+            // $uid = $uc_api->uc_user_register($name, $pass, $email);
+            // if($uid <= 0) {
+            //     if($uid == -1) {
+            //         $error =  '用户名不合法';
+            //     } elseif($uid == -2) {
+            //         $error =  '包含要允许注册的词语';
+            //     } elseif($uid == -3) {
+            //         $error =  '用户名已经存在';
+            //     } elseif($uid == -4) {
+            //         $error =  'Email 格式有误';
+            //     } elseif($uid == -5) {
+            //         $error =  'Email 不允许注册';
+            //     } elseif($uid == -6) {
+            //         $error = '该 Email 已经被注册';
+            //     } else {
+            //         $error =  '未定义';
+            //     }
+            // } else {
+            //     $succ =  '注册成功';
+            // }
+            $ucresult = $uc_api->uc_user_checkemail($_GET['email']);
+            if($ucresult == -4) {
+                $error =  'Email 格式有误';
+            } elseif($ucresult == -5) {
+                 $error =  'Email 不允许注册';
+            } elseif($ucresult == -6) {
+                 $error =  '该 Email 已经被注册';
             }
+
+            $ucresult = $uc_api ->uc_user_checkname($_GET['email']);
+            if($ucresult == -1) {
+                $error = '用户名不合法';
+            } elseif($ucresult == -2) {
+                $error = '包含要允许注册的词语';
+            } elseif($ucresult == -3) {
+                $error = '用户名已经存在';
+            }
+
+               $user = M('user');
+               $data['name'] = $name;
+               $data['goup'] = 1;
+               $data['account'] = $name;
+               $data['email'] = $email;
+               $data['pass'] = md5($pass);
+               $data['status'] = 0;
+               $uid = $user->add($data);
+               if(!$uid){
+                $error = "数据库错误";
+               }
         }
-
-            if(!empty($error)) {
-
-                $this->error($error, U('User/login'));
-
+            if(empty($error)) {
+               $ver_email = $this->ver_email($uid,$email);
+               if($ver_email){
+                   $title = "萌宠百科邮箱验证"；
+                   $content = "<p>请点击下面链接完成邮箱验证</p>";
+                   $content .="<p><a href = '$ver_email' target='_blank'>$ver_email</a></p>"   
+                   $re = send_mail('274480298@qq.com',$title,$content);
+               }
+               $this->assign('ver_email',$ver_email);
+               $this->assign('email',$email);
+               $this->display();
            } else {
-
-                $this->success($succ, U('Index/index'));
+                 $this->error($error, U('User/register'));
            }
     }
 
@@ -132,6 +161,24 @@ class UserController extends Controller {
             echo 1;
         }else{
             echo 2;
+        }
+    }
+
+    //生成邮箱验证秘钥串
+    private function ver_email($uid,$email){
+        $data['uid'] = $uid;
+        $data['email'] = $email;
+        $data['createtime'] = time();
+        $data['status'] = 0;
+        $ver = json_encode($data);
+        $ver = base64_encode($ver);
+        $ver = md5($ver);
+        $user_email =  M('user_email');
+        $re = $user_email ->add($data);
+        if($re){
+            return $ver;
+        }else{
+            return false;
         }
     }
 

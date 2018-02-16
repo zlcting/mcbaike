@@ -188,3 +188,37 @@ function input($name,$default='',$filter=null,$datas=null)
     is_array($data) && array_walk_recursive($data,'other_safe_filter');
     return $data;
 }
+
+     //otakupet_test_IczsyW   
+    //k5fgpCM2hbXrszfq
+    function send_mail($email,$title,$content) {
+      $url = 'http://api.sendcloud.net/apiv2/mail/send';
+      $API_USER = 'otakupet_test_IczsyW';
+      $API_KEY = 'k5fgpCM2hbXrszfq';
+
+      //您需要登录SendCloud创建API_USER，使用API_USER和API_KEY才可以进行邮件的发送。
+      $param = array(
+          'apiUser' => $API_USER,
+          'apiKey' => $API_KEY,
+          'from' => 'service@sendcloud.im',
+          'fromName' => '萌宠百科邮箱验证',
+          'to' => $email,
+          'subject' => $title,
+          'html' => $content,
+          'respEmailId' => 'true'
+      );
+
+    $data = http_build_query($param);
+
+    $options = array(
+          'http' => array(
+          'method'  => 'POST',
+          'header'  => 'Content-Type: application/x-www-form-urlencoded',
+          'content' => $data
+    ));
+
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    return $result;
+  }

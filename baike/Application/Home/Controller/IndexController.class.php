@@ -14,10 +14,17 @@ class IndexController extends Controller {
 
 
         $index_nav_db = M('index_nav');
-        $index_nav_db ->select();
 
+
+        $nav_res =  $index_nav_db
+        ->join(' as i LEFT JOIN __CLASS__ as c  ON i.class_id = c.id')
+        ->field('c.id as e_id,i.id,i.img_url,c.name')
+        ->select();
+        //  p(M('')->getLastSql());
+        // p($nav_res);
         $dict = get_dict('pic');
         $this->assign('list',$list);
+        $this->assign('nav_res',$nav_res);
         $this->display();  
     }
 
