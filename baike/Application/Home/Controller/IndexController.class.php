@@ -3,7 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        
+
         $p = input('get.p',1);
         $map['status'] = 2;
         $map['e_id'] = 0;

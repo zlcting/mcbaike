@@ -36,7 +36,6 @@ class UserController extends Controller {
 
             list($uid, $username, $password, $email) = $uc_api -> uc_user_login($name, $pass, $isuid);
             echo $uc_api->uc_user_synlogin($uid);
-           // p($uid);exit();
                 if($uid > 0) {
                     $succ =  '登录成功';
                 } elseif($uid == -1) {
@@ -58,6 +57,9 @@ class UserController extends Controller {
             $this->error($error, U('User/login'));
 
        } else {
+            $_SESSION['baike']['name'] = $username;
+            $_SESSION['baike']['email'] = $email;
+            
 
             $this->success($succ, U('Index/index'));
        }
