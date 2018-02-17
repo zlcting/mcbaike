@@ -77,9 +77,9 @@ class UserController extends Controller {
        $email = I('post.email');
        $code =  I('post.code');
        $re = check_verify($code); 
-        // if(!$re){
-        //      $error =  '验证码错误';
-        // }
+        if(!$re){
+             $error =  '验证码错误';
+        }
 
         if(empty($name) || empty($pass) || empty($email)){
             $error =  '请正确填写注册信息';
@@ -87,26 +87,26 @@ class UserController extends Controller {
 
         if(empty($error)){
             $uc_api = new \Ucenter\Client\UcApi();
-            // $uid = $uc_api->uc_user_register($name, $pass, $email);
-            // if($uid <= 0) {
-            //     if($uid == -1) {
-            //         $error =  '用户名不合法';
-            //     } elseif($uid == -2) {
-            //         $error =  '包含要允许注册的词语';
-            //     } elseif($uid == -3) {
-            //         $error =  '用户名已经存在';
-            //     } elseif($uid == -4) {
-            //         $error =  'Email 格式有误';
-            //     } elseif($uid == -5) {
-            //         $error =  'Email 不允许注册';
-            //     } elseif($uid == -6) {
-            //         $error = '该 Email 已经被注册';
-            //     } else {
-            //         $error =  '未定义';
-            //     }
-            // } else {
-            //     $succ =  '注册成功';
-            // }
+            $uid = $uc_api->uc_user_register($name, $pass, $email);
+            if($uid <= 0) {
+                if($uid == -1) {
+                    $error =  '用户名不合法';
+                } elseif($uid == -2) {
+                    $error =  '包含要允许注册的词语';
+                } elseif($uid == -3) {
+                    $error =  '用户名已经存在';
+                } elseif($uid == -4) {
+                    $error =  'Email 格式有误';
+                } elseif($uid == -5) {
+                    $error =  'Email 不允许注册';
+                } elseif($uid == -6) {
+                    $error = '该 Email 已经被注册';
+                } else {
+                    $error =  '未定义';
+                }
+            } else {
+                $succ =  '注册成功';
+            }
             // $ucresult = $uc_api->uc_user_checkemail($_GET['email']);
             // if($ucresult == -4) {
             //     $error =  'Email 格式有误';
@@ -132,12 +132,12 @@ class UserController extends Controller {
                $data['email'] = $email;
                $data['pass'] = md5($pass);
                $data['status'] = 0;
-               //$uid = $user->add($data);
+               $uid = $user->add($data);
                // p($uid);
                // p(M()->getlastsql());exit();
-               // if(!$uid){
-               //  $error = "用户名已经存在";
-               // }
+               if(!$uid){
+                $error = "用户名已经存在";
+               }
         }
             if(empty($error)) {
                //$email = "274480298@qq.com";
@@ -174,7 +174,6 @@ class UserController extends Controller {
 
     //生成邮箱验证秘钥串
     private function ver_email($uid,$email){
-        $uid = 1;
         $data['uid'] = $uid;
         $data['email'] = $email;
         $data['createtime'] = time();

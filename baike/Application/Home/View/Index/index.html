@@ -141,11 +141,18 @@
       <img src="__PUBLIC__/images/sy-zcbk.png">
       <div class="nav20"></div>
       <div class="nav40"></div>
+
       <ul class="zc_zs">
-        <li><img src="__PUBLIC__/images/sy-bk1.jpg">
+      	<foreach name="nav_res" item="vo" key="k" >
+        <li <if condition="$vo['id'] eq 4" > style="margin-right:0" </if> ><img src="{$vo.img_url}">
           <div class="nav20"></div>
-          <a href="#">观赏鱼</a></li>
-        <li><img src="__PUBLIC__/images/sy-bk2.jpg">
+          <a href="#{$vo.e_id}">{$vo.name}</a>
+        </li>
+    	</foreach>
+<!--         
+			<li><img src="__PUBLIC__/images/sy-bk2.jpg">
+          <div class="nav20"></div>
+          <a href="#">宠物龟</a></li><li><img src="__PUBLIC__/images/sy-bk2.jpg">
           <div class="nav20"></div>
           <a href="#">宠物龟</a></li>
         <li><img src="__PUBLIC__/images/sy-bk3.jpg">
@@ -153,7 +160,7 @@
           <a href="#">水草</a></li>
         <li style="margin-right:0"><img src="__PUBLIC__/images/sy-bk4.jpg">
           <div class="nav20"></div>
-          <a href="#">鱼缸设备</a></li>
+          <a href="#">鱼缸设备</a></li> -->
       </ul>
     </div>
     <!--zcbk e--> 
