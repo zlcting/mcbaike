@@ -412,13 +412,17 @@ class AdminController extends Controller {
         // 上传文件 
         $info   =   $upload->upload();
         $thumb_name = 'thumb'.$info['file']['savename'];
+        $thumb_272 = 'thumb_272'.$info['file']['savename'];
         //处理图片
         $image = new \Think\Image();
         $path = $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$info['file']['savename'];
         $thumb_path =  $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$thumb_name;
+        $thumb272_path =  $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$thumb_272;
         $image->open($path);
         $image->thumb( 1136, 460 )->save($path);
         $image->thumb( 310, 220 )->save($thumb_path);
+        $image->open($path);
+        $image->thumb( 272, 272 )->save($thumb272_path);
         if(!$info) {// 上传错误提示错误信息
             $this->ajaxReturn($upload->getError());
 
@@ -428,6 +432,7 @@ class AdminController extends Controller {
             $data['e_id'] = $e_id;
             $data['name'] = $info['file']['savename'];
             $data['thumb_name'] = $thumb_name;
+            $data['thumb_272'] = $thumb_272;
             $data['link'] = $info['file']['savepath'];
             $data['type'] = $type;
             $data['status'] = 1;
@@ -528,7 +533,7 @@ class AdminController extends Controller {
             $index_nav[$key]['id'] = $key;
             $index_nav[$key]['pic_id'] = $value;
         }
-        
+
         foreach ($post['img_url'] as $key => $value) {
             $index_nav[$key]['id'] = $key;
             $index_nav[$key]['img_url'] = $value;
@@ -538,6 +543,7 @@ class AdminController extends Controller {
         foreach ($index_nav as $v) {
             $index_nav_db->save($v);
         }
+
         $this->redirect('indexNav', array(), 0, '页面跳转中...');
     }
 

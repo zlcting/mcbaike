@@ -77,9 +77,9 @@ class UserController extends Controller {
        $email = I('post.email');
        $code =  I('post.code');
        $re = check_verify($code); 
-        if(!$re){
-             $error =  '验证码错误';
-        }
+        // if(!$re){
+        //      $error =  '验证码错误';
+        // }
 
         if(empty($name) || empty($pass) || empty($email)){
             $error =  '请正确填写注册信息';
@@ -107,43 +107,51 @@ class UserController extends Controller {
             // } else {
             //     $succ =  '注册成功';
             // }
-            $ucresult = $uc_api->uc_user_checkemail($_GET['email']);
-            if($ucresult == -4) {
-                $error =  'Email 格式有误';
-            } elseif($ucresult == -5) {
-                 $error =  'Email 不允许注册';
-            } elseif($ucresult == -6) {
-                 $error =  '该 Email 已经被注册';
-            }
+            // $ucresult = $uc_api->uc_user_checkemail($_GET['email']);
+            // if($ucresult == -4) {
+            //     $error =  'Email 格式有误';
+            // } elseif($ucresult == -5) {
+            //      $error =  'Email 不允许注册';
+            // } elseif($ucresult == -6) {
+            //      $error =  '该 Email 已经被注册';
+            // }
 
-            $ucresult = $uc_api ->uc_user_checkname($_GET['email']);
-            if($ucresult == -1) {
-                $error = '用户名不合法';
-            } elseif($ucresult == -2) {
-                $error = '包含要允许注册的词语';
-            } elseif($ucresult == -3) {
-                $error = '用户名已经存在';
-            }
+            // $ucresult = $uc_api ->uc_user_checkname($_GET['name']);
+            // if($ucresult == -1) {
+            //     $error = '用户名不合法';
+            // } elseif($ucresult == -2) {
+            //     $error = '包含要允许注册的词语';
+            // } elseif($ucresult == -3) {
+            //     $error = '用户名已经存在';
+            // }
 
                $user = M('user');
                $data['name'] = $name;
-               $data['goup'] = 1;
+               $data['group'] = 1;
                $data['account'] = $name;
                $data['email'] = $email;
                $data['pass'] = md5($pass);
                $data['status'] = 0;
-               $uid = $user->add($data);
-               if(!$uid){
-                $error = "数据库错误";
-               }
+               //$uid = $user->add($data);
+               // p($uid);
+               // p(M()->getlastsql());exit();
+               // if(!$uid){
+               //  $error = "用户名已经存在";
+               // }
         }
             if(empty($error)) {
+               //$email = "274480298@qq.com";
                $ver_email = $this->ver_email($uid,$email);
                if($ver_email){
-                   $title = "萌宠百科邮箱验证"；
+                   $send_code['uid'] = $uid;
+                   $send_code['ver_email'] = $ver_email;
+                   $pa = json_encode($send_code);
+                   $pa = base64_encode($pa);
+                   $href = $_SERVER['HTTP_ORIGIN'].'/baike/home/public/veremail?ver='.$pa;
+                   $title = "萌宠百科邮箱验证";
                    $content = "<p>请点击下面链接完成邮箱验证</p>";
-                   $content .="<p><a href = '$ver_email' target='_blank'>$ver_email</a></p>"   
-                   $re = send_mail('274480298@qq.com',$title,$content);
+                   $content .="<p><a href = '{$href}' target='_blank'>{$href}</a></p>";   
+                   $re = send_mail($email,$title,$content);
                }
                $this->assign('ver_email',$ver_email);
                $this->assign('email',$email);
@@ -166,6 +174,7 @@ class UserController extends Controller {
 
     //生成邮箱验证秘钥串
     private function ver_email($uid,$email){
+        $uid = 1;
         $data['uid'] = $uid;
         $data['email'] = $email;
         $data['createtime'] = time();
@@ -173,6 +182,7 @@ class UserController extends Controller {
         $ver = json_encode($data);
         $ver = base64_encode($ver);
         $ver = md5($ver);
+        $data['ver'] = $ver;
         $user_email =  M('user_email');
         $re = $user_email ->add($data);
         if($re){
