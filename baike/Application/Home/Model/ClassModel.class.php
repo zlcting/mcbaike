@@ -28,26 +28,12 @@ class ClassModel extends Model {
         	}
         }
 
-        foreach ($class_list as $key => $value) {
-        	if($value['level'] == 3){
-        		$tree[$value['top_p_id']]['sub'][$value['p_id']]['sub'][$value['id']] = $value;
-        	}
-        }
-
         //判断删除不完整的树
         if(!empty($effective)){
         	foreach ($tree as $k => $v) {
         		if(empty($v['sub'])){
         			unset($tree[$k]);
-        		} else {
-        			foreach ($v['sub'] as $kk => $vv) {
-    				    if(empty($vv['sub'])){
-    						unset($tree[$k]['sub'][$vv['id']]);
-    					}
-        			}
-
-
-        		}
+        		} 
         		
         	}
         }

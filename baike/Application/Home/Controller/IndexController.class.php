@@ -68,18 +68,50 @@ class IndexController extends Controller {
     }
 
     public function detail(){
+
+        $nav = $this->getNav();
+        $map['class_id'] = array('IN',$nav['sub_str']);
+        $map['status'] = 1;
+        $entry = M('entry')->where($map)->select();
+        $entry_arr = array();
+        foreach ($entry as $key => $value) {
+            $entry_arr[$value['class_id']][$value['id']] = $value;
+        }
+        //echo M()->getLastSql();
+        //p($nav);
+        p($entry_arr);exit();
+        $this->assign('entry_arr',$entry_arr);
+        $this->assign('nav',$nav);
         $this->display();
 
     }
 
     public function search(){
+        $nav = $this->getNav();
+        //p($nav);exit();
+        $this->assign('nav',$nav);
         $this->display();
-
     }
 
 
     public function foot(){
         $this->display();
+    }
+
+
+    private function getNav(){
+        $nav = M('nav')->find();
+        $nav = json_decode($nav['nav'],true);
+        $re = array();
+        foreach ($nav as $key => $value) {
+            $re['top'][$key]['name'] = $value['name'];
+            $re['top'][$key]['id'] = $value['id'];
+            foreach ($value['sub'] as $k => $v) {
+                $re['sub'][$key][$k] = $v;
+                $re['sub_str'][] = $v['id'];
+            }
+        }
+        return $re;
     }
 
 }

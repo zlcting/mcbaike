@@ -4,7 +4,7 @@
 $dict['class']['level'] = array(
     "1" => "一级",
     "2" => "二级",
-    "3" => "三级",
+    //"3" => "三级",
 );
 
 $dict['class']['status'] = array(

@@ -73,6 +73,9 @@ class AdminController extends Controller {
             if($data['level'] == 1){
                 $data['top_p_id'] = 0;
                 $data['p_id'] = 0;
+            }elseif($data['level'] == 2){//分类等级未level2时 top_p_id 与p_id相同
+                $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
+                $data['p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
             }else{
                 $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
                 $data['p_id'] = !empty($post['p_id'])?$post['p_id']:0;
@@ -86,8 +89,8 @@ class AdminController extends Controller {
             // p($re);
             // exit;
             if($re){
-                //$this->redirect('entryClass', array(), 0, '页面跳转中...');
-                $this->success('新增成功', 'entryClass');
+                $this->redirect('entryClass', array(), 0, '页面跳转中...');
+                //$this->success('新增成功', 'entryClass');
             }else{
                 $this->error('保存失败');
             }
@@ -169,7 +172,6 @@ class AdminController extends Controller {
     public function entryClassLevel(){
         $post = input('post.');
         if(!empty($post)){
-            //p($post);
             $id = array();
             $tree = $post['tree'];
             foreach ($tree as $k => $v) {
@@ -192,11 +194,6 @@ class AdminController extends Controller {
                 foreach ($v as $kk => $vv) {
                     $nav[$k]['sub'][$kk]['name'] = $class_list[$kk]['name'];
                     $nav[$k]['sub'][$kk]['id'] = $class_list[$kk]['id'];
-                    //第三级
-                    foreach ($vv as $value) {
-                        $nav[$k]['sub'][$kk]['sub'][$value]['id'] = $value;
-                        $nav[$k]['sub'][$kk]['sub'][$value]['name'] = $class_list[$value]['name'];
-                    }
                 }
             }
             $nav_json = json_encode($nav);

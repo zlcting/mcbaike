@@ -1,30 +1,28 @@
 <div class="dh w1136">
-    <a href="">观赏鱼</a>
+    <foreach name="nav[top]" item="vo" key="k" >
+          <a href="">{$vo.name}</a>
+    </foreach>  
+<!--     <a href="" style="background: #0071a4;">观赏鱼</a>
     <a href="">宠物龟</a>
     <a href="">缸内植物</a>
-    <a href="">观赏虾</a><a href="">鱼缸设备</a> </div>
+    <a href="">观赏虾</a><a href="">鱼缸设备</a>  -->
+  </div>
   <div class="dh1 w1136">
     <ul>
-      <li><a href="">灯科鱼</a>
-        <div class="dh-cd"><a href="">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
-      </li>
-
-      <li><a href="#">鳉鱼</a>
-        <div class="dh-cd"><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
-      </li>
-      <li><a href="#">丽丽鱼</a>
-        <div class="dh-cd"><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
-      </li>
-      <li><a href="#">鼠鱼</a>
-        <div class="dh-cd"><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
-      </li>
-      <li>
-        <a href="#">龙鱼</a>
-        <div class="dh-cd"><a href="">鱼缸设备</a></div>
-      </li>
-      <li><a href="#">罗汉鱼</a>
-        <div class="dh-cd"><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
-      </li>
+        <foreach name="nav[sub]" item="vo" key="k" >
+          <a href="">{$vo.name}</a>
+                <li><a href="#">鳉鱼</a>
+                   <div class="dh-cd">
+                    <a href="">宠物龟</a>
+                    <a href="">缸内植物</a>
+                    <a href="">观赏虾</a>
+                    <a href="">鱼缸设备</a>
+                  </div>
+               </li>
+        </foreach>  
+        <li><a href="" style="color: #22a3dd">灯科鱼</a>
+        <div class="dh-cd"><a href="" style="color: #22a3dd">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
+        </li>
     </ul>
   </div>
   <ul class="dh2 w1136">
