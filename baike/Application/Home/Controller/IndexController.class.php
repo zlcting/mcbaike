@@ -88,8 +88,14 @@ class IndexController extends Controller {
 
     public function search(){
         $nav = $this->getNav();
-        //p($nav);exit();
-        $this->assign('nav',$nav);
+        $top_class_id = input('get.top_class_id');
+        $class_id = input('get.class_id');
+        $top = $nav['top'];
+        $sub = $nav['sub'][$top_class_id];
+        //p($sub);exit();
+        $this->assign('top_class_id',$top_class_id);
+        $this->assign('top',$top);
+        $this->assign('sub',$sub);
         $this->display();
     }
 

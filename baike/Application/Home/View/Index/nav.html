@@ -1,6 +1,6 @@
 <div class="dh w1136">
-    <foreach name="nav[top]" item="vo" key="k" >
-          <a href="">{$vo.name}</a>
+    <foreach name="top" item="vo" key="k" >
+          <a href=""  <if condition="$top_class_id eq $vo[id]"> style="background: #0071a4;" </if>>{$vo.name}</a>
     </foreach>  
 <!--     <a href="" style="background: #0071a4;">观赏鱼</a>
     <a href="">宠物龟</a>
@@ -9,20 +9,21 @@
   </div>
   <div class="dh1 w1136">
     <ul>
-        <foreach name="nav[sub]" item="vo" key="k" >
-          <a href="">{$vo.name}</a>
-                <li><a href="#">鳉鱼</a>
-                   <div class="dh-cd">
-                    <a href="">宠物龟</a>
-                    <a href="">缸内植物</a>
-                    <a href="">观赏虾</a>
-                    <a href="">鱼缸设备</a>
-                  </div>
+        <foreach name="sub" item="vv" key="kk" >
+                <li><a href="#" <if condition="$class_id eq $vv[id]"> style="color: #22a3dd" </if>>{$vv.name}</a>
+                    <if condition=" !empty($entry_arr[$vo.id])">
+                     <div class="dh-cd">
+                      <a href="">宠物龟</a>
+                      <a href="">缸内植物</a>
+                      <a href="">观赏虾</a>
+                      <a href="">鱼缸设备</a>
+                    </div>
+                  </if>
                </li>
         </foreach>  
-        <li><a href="" style="color: #22a3dd">灯科鱼</a>
-        <div class="dh-cd"><a href="" style="color: #22a3dd">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
-        </li>
+<!--         <li><a href="" style="color: #22a3dd">灯科鱼</a>
+          <div class="dh-cd"><a href="" style="color: #22a3dd">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
+        </li> -->
     </ul>
   </div>
   <ul class="dh2 w1136">
