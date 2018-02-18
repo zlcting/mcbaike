@@ -1,4 +1,12 @@
   <div class="logo">
-    <div class="bk-zc fr"><img src="__PUBLIC__/images/icon.png" class="fl"><a href="/forum">论坛进入</a><span><a href="{:U('user/register')}">注册</a>| <a href="{:U('user/login')}">登录</a></span><img src="__PUBLIC__/images/search.png"></div>
+ 	<div class="bk-zc fr">
+ 		<img src="__PUBLIC__/images/icon.png" class="fl"><a href="/forum">论坛进入</a>
+ 		<if condition="!empty($user['name'])">
+ 			<span><a>{$user['name']}</a></span>
+ 		<else />
+ 		<span><a href="{:U('user/register')}">注册</a>| <a href="{:U('user/login')}">登录</a></span>
+ 		</if>
+    	<img src="__PUBLIC__/images/search.png">
+	</div>
     <img src="__PUBLIC__/images/logo.png"> 
  </div>

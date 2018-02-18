@@ -15,138 +15,18 @@
 <script src="__PUBLIC__/js/tab.js"></script>
 <script src="__PUBLIC__/js/menu.js"></script>
 </head>
-
 <body>
-  <include file="header" />
-
+<div class="header">
+    <div class="logo">
+    <include file="header" />
+   </div>
+</div>
 <div class="wrap height-30"> 
   <!--fullSlide s-->
-  <div class="fullSlide">
-    <div class="bd">
-      <ul>
-        <li _src="url(__PUBLIC__/images/ny-banner1.jpg)" style="background:#54a0a8 center 0 no-repeat;"><a href="#"></a></li>
-        <li _src="url(__PUBLIC__/images/ny-banner1.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
-        <li _src="url(__PUBLIC__/images/ny-banner1.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
-      </ul>
-    </div>
-    <span class="prev"></span> <span class="next"></span> </div>
-  <script type="text/javascript">
-$(".fullSlide").hover(function(){
-    $(this).find(".prev,.next").stop(true, true)
-});
-$(".fullSlide").slide({
-    titCell: ".hd ul",
-    mainCell: ".bd ul",
-    effect: "fold",
-    autoPlay: true,
-    autoPage: true,
-    trigger: "click",
-    startFun: function(i) {
-        var curLi = jQuery(".fullSlide .bd li").eq(i);
-        if ( !! curLi.attr("_src")) {
-            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
-        }
-    }
-});
-</script> 
+    <include file="slide" />
   <!--fullSlide end-->
-  <div class="dh w1136"> <a href="">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a> </div>
-  <div class="dh1 w1136">
-    <ul>
-      <li><a href="">灯科鱼</a>
-      <div class="dh-cd"><a href="">观赏鱼</a><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div>
-      </li>
-      <li><a href="#">鳉鱼</a><div class="dh-cd"><a href="">宠物龟</a><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div></li>
-      <li><a href="#">丽丽鱼</a><div class="dh-cd"><a href="">缸内植物</a><a href="">观赏虾</a><a href="">鱼缸设备</a></div></li>
-      <li><a href="#">鼠鱼</a><div class="dh-cd"><a href="">观赏虾</a><a href="">鱼缸设备</a></div></li>
-      <li><a href="#">龙鱼</a><div class="dh-cd"><a href="">鱼缸设备</a></div></li>
-      <li><a href="#">罗汉鱼</a><div class="dh-cd"><a href="">观赏虾</a><a href="">鱼缸设备</a></div></li>
-    </ul>
-  </div>
-  <ul class="dh2 w1136">
-     <li id="dh2-h"><span class="dh2-tit dh2-tit-h" >温度</span>
-      <p class="fl">
-        <div class="dh2-tit-h">
-        <label>
-          <input type="radio" name="wendu" value="10度以下" id="wendu">
-          <span></span> 10度以下</label>
-        <label>
-          <input type="radio" name="wendu" value="10-15度" id="wendu_1">
-          <span></span> 10-15度</label>
-        <label>
-          <input type="radio" name="wendu" value="16-20度" id="wendu_2">
-          <span></span> 16-20度</label>
-        <label>
-          <input type="radio" name="wendu" value="21-25度" id="wendu_3">
-          <span></span> 21-25度</label>
-                  <label>
-          <input type="radio" name="wendu" value="10度以下" id="wendu_4">
-          <span></span> 10度以下</label>
-        <label>
-          <input type="radio" name="wendu" value="10-15度" id="wendu_5">
-          <span></span> 10-15度</label>
-        <label>
-          <input type="radio" name="wendu" value="16-20度" id="wendu_6">
-          <span></span> 16-20度</label>
-        <label>
-          <input type="radio" name="wendu" value="21-25度" id="wendu_7">
-          <span></span> 21-25度</label>
+      <include file="nav" />
 
-        <label>
-          <input type="radio" name="wendu" value="10度以下" id="wendu_8">
-          <span></span> 10度以下</label>
-        <label>
-          <input type="radio" name="wendu" value="10-15度" id="wendu_9">
-          <span></span> 10-15度</label>
-        <label>
-          <input type="radio" name="wendu" value="16-20度" id="wendu_10">
-          <span></span> 16-20度</label>
-        <label>
-          <input type="radio" name="wendu" value="21-25度" id="wendu_11">
-          <span></span> 21-25度</label>
-                  <label>
-          <input type="radio" name="wendu" value="10度以下" id="wendu_12">
-          <span></span> 10度以下</label>
-        <label>
-          <input type="radio" name="wendu" value="10-15度" id="wendu_13">
-          <span></span> 10-15度</label>
-        <label>
-          <input type="radio" name="wendu" value="16-20度" id="wendu_14">
-          <span></span> 16-20度</label>
-        <label>
-          <input type="radio" name="wendu" value="21-25度" id="wendu_15">
-          <span></span> 21-25度</label>
-          </div>
-      </p>
-    </li>
-    <li><span class="dh2-tit">长度</span>
-      <p class="fl">
-        <label>
-          <input type="radio" name="zdu" value="1CM以下" id="zdu">
-          <span></span> 1CM以下</label>
-        <label>
-          <input type="radio" name="zdu" value="1-2CM" id="zdu_1">
-          <span></span> 1-2CM</label>
-        <label>
-          <input type="radio" name="zdu" value="2-3CM" id="zdu_2">
-          <span></span> 2-3CM</label>
-      </p>
-    </li>
-    <li><span class="dh2-tit">PH值</span>
-      <p class="fl">
-        <label>
-          <input type="radio" name="PH" value="6.5-7" id="PH">
-          <span></span> 6.5-7</label>
-        <label>
-          <input type="radio" name="PH" value="7-7.5" id="PH_1">
-          <span></span> 7-7.5</label>
-        <label>
-          <input type="radio" name="PH" value="7.5-8" id="PH_2">
-          <span></span> 7.5-8</label>
-      </p>
-    </li>
-    <li><span class="dh2-tit">食物类容</span></li>
-  </ul>
   <div class="nr w1136">
     <div class="nr-tit"><span class="fr" style="color:#cacaca; font-size:10px;"><img src="__PUBLIC__/images/wujiao.png" width="16px"> 收藏</span>果核泥龟</div>
     <div class="nr-xq">

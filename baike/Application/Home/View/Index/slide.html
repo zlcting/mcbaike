@@ -1,0 +1,28 @@
+<div class="fullSlide">
+    <div class="bd">
+      <ul>
+        <li _src="url(__PUBLIC__/images/ny-banner1.jpg)" style="background:#54a0a8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(__PUBLIC__/images/ny-banner1.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(__PUBLIC__/images/ny-banner1.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
+      </ul>
+    </div>
+    <span class="prev"></span> <span class="next"></span> </div>
+  <script type="text/javascript">
+$(".fullSlide").hover(function(){
+    $(this).find(".prev,.next").stop(true, true)
+});
+$(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script> 

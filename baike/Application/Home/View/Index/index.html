@@ -146,21 +146,9 @@
       	<foreach name="nav_res" item="vo" key="k" >
         <li <if condition="$vo['id'] eq 4" > style="margin-right:0" </if> ><img src="{$vo.img_url}">
           <div class="nav20"></div>
-          <a href="#{$vo.e_id}">{$vo.name}</a>
+          <a href="{:U('index/search',array('class'=>$vo['e_id']))}">{$vo.name}</a>
         </li>
     	</foreach>
-<!--         
-			<li><img src="__PUBLIC__/images/sy-bk2.jpg">
-          <div class="nav20"></div>
-          <a href="#">宠物龟</a></li><li><img src="__PUBLIC__/images/sy-bk2.jpg">
-          <div class="nav20"></div>
-          <a href="#">宠物龟</a></li>
-        <li><img src="__PUBLIC__/images/sy-bk3.jpg">
-          <div class="nav20"></div>
-          <a href="#">水草</a></li>
-        <li style="margin-right:0"><img src="__PUBLIC__/images/sy-bk4.jpg">
-          <div class="nav20"></div>
-          <a href="#">鱼缸设备</a></li> -->
       </ul>
     </div>
     <!--zcbk e--> 

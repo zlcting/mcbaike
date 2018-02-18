@@ -2,8 +2,21 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-    public function index(){
 
+
+    //构造函数
+    public function _initialize()  
+    {  
+        $user = array();
+        if(!empty($_SESSION['baike'])){
+            $user = $_SESSION['baike'];
+        }
+        $this->assign('user',$user);
+    } 
+
+
+    public function index(){
+        
         $p = input('get.p',1);
         $map['status'] = 2;
         $map['e_id'] = 0;
@@ -23,6 +36,7 @@ class IndexController extends Controller {
         //  p(M('')->getLastSql());
         // p($nav_res);
         $dict = get_dict('pic');
+
         $this->assign('list',$list);
         $this->assign('nav_res',$nav_res);
         $this->display();  
