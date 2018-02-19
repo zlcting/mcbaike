@@ -93,6 +93,8 @@ class IndexController extends Controller {
         $top = $nav['top'];
         $sub = $nav['sub'][$top_class_id];
         //p($sub);exit();
+        $dict = get_dict('entry');
+        $this->assign('dict',$dict);
         $this->assign('top_class_id',$top_class_id);
         $this->assign('top',$top);
         $this->assign('sub',$sub);
