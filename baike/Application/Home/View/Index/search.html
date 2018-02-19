@@ -34,10 +34,14 @@
 
     <foreach name="entry_data" item="vv" key="kk" >
       <li>
-        <img src="{$Think.const.IMG}{$vv.link}/{$vv.thumb_name}" class="fl">
-        <div class="fr">{$vv.name}<br>
-        <span class="fl">长度:1111</span> <span class="fl">PH值:aadasd</span> <span class="fl">温度:asdasdasd</span><br>
-        <span class="fl">祖籍：aaaaaaaa</span><span class="fl">寿命：asdasdasdas</span> </div>
+         <if condition="!empty($vv[thumb_272])">
+        <img src="{$Think.const.IMG}{$vv.link}/{$vv.thumb_272}" class="fl" width="140" height="120">
+        <else/>
+        <img src="__PUBLIC__/images/timg.jpeg" class="fl" width="140" height="120">
+        </if>
+        <div class="fr"><a href="{:U('detail',array('id'=>$vv[id]))}" target="_self" style="color: #22a3dd">{$vv.name}</a><br>
+        <span class="fl">长度:{$dict['len'][$vv['len']]}</span> <span class="fl">PH值:{$dict['ph'][$vv['ph']]}</span> <span class="fl">温度:{$dict['tem'][$vv['tem']]}</span><br>
+        <span class="fl">祖籍：{$vv.descent}</span><span class="fl">寿命：{$vv.life}</span> </div>
       </li>
     </foreach>
       

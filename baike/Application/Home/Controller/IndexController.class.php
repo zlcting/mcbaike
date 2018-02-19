@@ -154,7 +154,8 @@ class IndexController extends Controller {
                  $entry_data[$value['e_id']]['thumb_name'] = $value['thumb_name'];
                 }
          //p($entry_data);exit();    
-         
+        $dict = get_dict('entry');//dict字典值
+        $this->assign('dict',$dict);
         $this->assign('entry_data',$entry_data);               
         $this->assign('get_arr',$get_arr);
         $this->assign('nav_url',$nav_url);
