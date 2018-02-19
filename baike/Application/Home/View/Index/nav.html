@@ -1,17 +1,23 @@
+<style type="text/css">
+a.nodefault{ 
+  text-decoration:none; 
+  color:#333; 
+} 
+</style>
 <div class="dh w1136">
     <foreach name="top" item="vo" key="k" >
-          <a href=""  <if condition="$top_class_id eq $vo[id]"> style="background: #0071a4;" </if>>{$vo.name}</a>
+          <a href="{:U(index/search,array('top_class_id'=>$vo[id]))}"  <if condition="$top_class_id eq $vo[id]"> style="background: #0071a4;" </if>>{$vo.name}</a>
     </foreach>  
   </div>
   <div class="dh1 w1136">
     <ul>
         <foreach name="sub" item="vv" key="kk" >
-                <li><a href="#" <if condition="$class_id eq $vv[id]"> style="color: #22a3dd" </if>>{$vv.name}</a>
+                <li><a href="{:U(index/search,array('top_class_id'=>$top_class_id,'class_id'=>$vv[id]))}" <if condition="$class_id eq $vv[id]"> style="color: #22a3dd" </if>>{$vv.name}</a>
                     <if condition=" !empty($entry_arr[$vo.id])">
                      <div class="dh-cd">
                       <a href="">宠物龟</a>
                       <a href="">缸内植物</a>
-                      <a href="">观赏虾</a>
+                      <a href="">观赏虾</a>  
                       <a href="">鱼缸设备</a>
                     </div>
                   </if>
@@ -41,37 +47,49 @@
     </li> -->
     <li><span class="dh2-tit">温度</span>
       <p class="fl">
-         <foreach name="dict[tem]" item="vv" key="kk" >
-          <label>
-          <input type="radio" name="wendu" value="{$kk}" id="wendu">
-          <span></span> {$vv}</label>
+         <foreach name="search_dict[tem]" item="vv" key="kk" >
+            <label>
+              <a href="{$vv[url]}" class="nodefault">            
+                <input type="radio" name="wendu" value="{$kk}" id="wendu" <if condition="$get_arr[tem] eq $kk"> checked="checked" </if>>
+                <span></span> {$vv.name}
+              </a>
+           </label>
          </foreach>
       </p>
     </li>
     <li><span class="dh2-tit">长度</span>
       <p class="fl">
-        <foreach name="dict[len]" item="vv" key="kk" >
+        <foreach name="search_dict[len]" item="vv" key="kk" >
         <label>
-          <input type="radio" name="zdu" value="{$kk}" id="zdu">
-          <span></span> {$vv}</label>
+          <a href="{$vv[url]}" class="nodefault"> 
+          <input type="radio" name="zdu" value="{$kk}" id="zdu" <if condition="$get_arr[len] eq $kk"> checked="checked" </if>>
+          <span></span> {$vv.name}</label>
+        </a>
         </foreach>
       </p>
     </li>
     <li><span class="dh2-tit">PH值</span>
       <p class="fl">
-         <foreach name="dict[ph]" item="vv" key="kk" >
+         <foreach name="search_dict[ph]" item="vv" key="kk" >
           <label>
-            <input type="radio" name="PH" value="{$kk}" id="PH">
-            <span></span>{$vv}</label>
+             <a href="{$vv[url]}" class="nodefault"> 
+            <input type="radio" name="PH" value="{$kk}" id="PH" <if condition="$get_arr[ph] eq $kk"> checked="checked" </if>>
+            <span></span>{$vv.name}
+            </a>
+          </label>
         </foreach>
       </p>
     </li>
     <li><span class="dh2-tit">食物类容</span>
       <p class="fl">
-        <foreach name="dict[food]" item="vv" key="kk" >
+        <foreach name="search_dict[food]" item="vv" key="kk" >
             <label>
-          <input type="radio" name="PH" value="{$kk}" id="PH">
-          <span></span> {$vv}</label>
+            <a href="{$vv[url]}" class="nodefault"> 
+            <input type="radio" name="food" value="{$kk}" id="food" <if condition="$get_arr[food] eq $kk"> checked="checked" </if>>
+            <span></span> {$vv.name}
+            </a>
+          </label>
+            
         </foreach>
       </p>
     </li>

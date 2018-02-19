@@ -90,11 +90,16 @@ class IndexController extends Controller {
         $nav = $this->getNav();
         $top_class_id = input('get.top_class_id');
         $class_id = input('get.class_id');
+        $get_arr = input('get.');
+
         $top = $nav['top'];
         $sub = $nav['sub'][$top_class_id];
-        //p($sub);exit();
-        $dict = get_dict('entry');
-        $this->assign('dict',$dict);
+        //p($get_arr);exit();
+        $nav_url = $this->getNavUrl();
+
+        $this->assign('get_arr',$get_arr);
+        $this->assign('nav_url',$nav_url);
+        $this->assign('class_id',$class_id);
         $this->assign('top_class_id',$top_class_id);
         $this->assign('top',$top);
         $this->assign('sub',$sub);
@@ -107,6 +112,7 @@ class IndexController extends Controller {
     }
 
 
+    //获取导航栏内容
     private function getNav(){
         $nav = M('nav')->find();
         $nav = json_decode($nav['nav'],true);
@@ -121,5 +127,27 @@ class IndexController extends Controller {
         }
         return $re;
     }
+
+    private function getNavUrl(){
+        $map = input('get.');
+        //p($map);
+        $dict = get_dict('entry');//dict字典值
+        $search_dict = array('tem','len','ph','food');
+            foreach ($search_dict as $key => $value) {
+                $tmp[$value] = $map;//u方法 获取当前除去要选择的选项的参数生成的变量
+                unset($tmp[$value][$value]);
+
+                foreach ($dict[$value] as $k => $v) {
+                    $search_dict[$value][$k]['name'] = $v;
+
+                    $search_dict[$value][$k]['url'] = U('search', array_merge($tmp[$value],array($value=>$k)));
+                }
+                unset($search_dict[$key]);
+            }
+
+        $this->assign('search_dict',$search_dict);
+    }
+
+
 
 }
