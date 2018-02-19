@@ -86,16 +86,48 @@ class IndexController extends Controller {
 
     }
 
+    //搜索页面
     public function search(){
         $nav = $this->getNav();
-        $top_class_id = input('get.top_class_id');
+        $top = $nav['top'];
+        $first = current($top);
+        $top_class_id = input('get.top_class_id',$first['id']);
         $class_id = input('get.class_id');
         $get_arr = input('get.');
-
-        $top = $nav['top'];
+        
         $sub = $nav['sub'][$top_class_id];
         //p($get_arr);exit();
         $nav_url = $this->getNavUrl();
+
+
+
+        if(!empty($class_id)){
+            $map['class_id'] = $class_id;
+        }else{
+
+        }
+        if(!empty($get_arr['tem'])){
+            $map['tem'] = $get_arr['tem'];
+        }
+
+        if(!empty($get_arr['len'])){
+            $map['len'] = $get_arr['len'];
+        }
+
+        if(!empty($get_arr['ph'])){
+            $map['ph'] = $get_arr['ph'];
+        }
+
+        if(!empty($get_arr['food'])){
+            $map['food'] = $get_arr['food'];
+        }
+
+        $entry = M('entry');
+
+        $entry_list =  $entry
+        ->join(' as e LEFT JOIN __CLASS__ as c  ON i.class_id = c.id')
+        ->field('c.id as e_id,i.id,i.img_url,c.name')
+        ->select();
 
         $this->assign('get_arr',$get_arr);
         $this->assign('nav_url',$nav_url);
