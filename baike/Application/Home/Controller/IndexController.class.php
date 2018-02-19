@@ -70,6 +70,11 @@ class IndexController extends Controller {
     public function detail(){
 
         $nav = $this->getNav();
+        $top = $nav['top'];
+        $first = current($top);
+        $top_class_id = input('get.top_class_id',$first['id']);
+        $sub = $nav['sub'][$top_class_id];
+
         $map['class_id'] = array('IN',$nav['sub_str']);
         $map['status'] = 1;
         $entry = M('entry')->where($map)->select();
@@ -77,11 +82,15 @@ class IndexController extends Controller {
         foreach ($entry as $key => $value) {
             $entry_arr[$value['class_id']][$value['id']] = $value;
         }
+                $nav_url = $this->getNavUrl();
+
         //echo M()->getLastSql();
         //p($nav);
-        p($entry_arr);exit();
+        //p($entry_arr);exit();
         $this->assign('entry_arr',$entry_arr);
         $this->assign('nav',$nav);
+        $this->assign('top',$top);
+        $this->assign('sub',$sub);
         $this->display();
 
     }
@@ -100,12 +109,13 @@ class IndexController extends Controller {
         $nav_url = $this->getNavUrl();
 
 
-
+        //列表start
         if(!empty($class_id)){
             $map['class_id'] = $class_id;
         }else{
 
         }
+
         if(!empty($get_arr['tem'])){
             $map['tem'] = $get_arr['tem'];
         }
@@ -123,12 +133,29 @@ class IndexController extends Controller {
         }
 
         $entry = M('entry');
-
         $entry_list =  $entry
-        ->join(' as e LEFT JOIN __CLASS__ as c  ON i.class_id = c.id')
-        ->field('c.id as e_id,i.id,i.img_url,c.name')
+        ->where($map)
         ->select();
+        foreach ($entry_list as $key => $v) {
+            $entry_data[$v['id']] = $v;
+            $e_id[] = $v['id'];
+        }
 
+
+        $pic = M('pic');
+        $pic_list = $pic->where(array('e_id'=>array('IN',$e_id)))->where(array('status'=>1))
+                    ->group('e_id')
+                    ->select();
+
+        foreach ($pic_list as $key => $value) {
+                 $entry_data[$value['e_id']]['pic_name'] = $value['name'];
+                 $entry_data[$value['e_id']]['link'] = $value['link'];
+                 $entry_data[$value['e_id']]['thumb_272'] = $value['thumb_272'];
+                 $entry_data[$value['e_id']]['thumb_name'] = $value['thumb_name'];
+                }
+         //p($entry_data);exit();    
+         
+        $this->assign('entry_data',$entry_data);               
         $this->assign('get_arr',$get_arr);
         $this->assign('nav_url',$nav_url);
         $this->assign('class_id',$class_id);
