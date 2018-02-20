@@ -6,19 +6,18 @@ a.nodefault{
 </style>
 <div class="dh w1136">
     <foreach name="top" item="vo" key="k" >
-          <a href="{:U(index/search,array('top_class_id'=>$vo[id]))}"  <if condition="$top_class_id eq $vo[id]"> style="background: #0071a4;" </if>>{$vo.name}</a>
+          <a href="{:U(search,array('top_class_id'=>$vo[id]))}"  <if condition="$top_class_id eq $vo[id]"> style="background: #0071a4;" </if>>{$vo.name}</a>
     </foreach>  
   </div>
   <div class="dh1 w1136">
     <ul>
         <foreach name="sub" item="vv" key="kk" >
-                <li><a href="{:U(index/search,array('top_class_id'=>$top_class_id,'class_id'=>$vv[id]))}" <if condition="$class_id eq $vv[id]"> style="color: #22a3dd" </if>>{$vv.name}</a>
-                    <if condition=" !empty($entry_arr[$vo.id])">
+                <li><a href="{:U(search,array('top_class_id'=>$top_class_id,'class_id'=>$vv[id]))}" <if condition="$class_id eq $vv[id]"> style="color: #22a3dd" </if>>{$vv.name}</a>
+                    <if condition=" !empty($entry_arr[$vv['id']])">
                      <div class="dh-cd">
-                      <a href="">宠物龟</a>
-                      <a href="">缸内植物</a>
-                      <a href="">观赏虾</a>  
-                      <a href="">鱼缸设备</a>
+                       <foreach name="entry_arr[$vv[id]]" item="vvv" key="kkk" >
+                       <a href="{:U(detail,array('id'=>$vvv['id']))}">{$vvv.name}</a> 
+                      </foreach>
                     </div>
                   </if>
                </li>

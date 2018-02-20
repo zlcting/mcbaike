@@ -42,55 +42,70 @@ class IndexController extends Controller {
         $this->display();  
     }
 
-    public function res(){
-        $uc_api = new \Lib\Ucclient\client();
-        $uid = $uc_api->uc_user_register('test_user', '123', 'test@163.com');
-        if($uid <= 0) {
-            if($uid == -1) {
-                echo '用户名不合法';
-            } elseif($uid == -2) {
-                echo '包含要允许注册的词语';
-            } elseif($uid == -3) {
-                echo '用户名已经存在';
-            } elseif($uid == -4) {
-                echo 'Email 格式有误';
-            } elseif($uid == -5) {
-                echo 'Email 不允许注册';
-            } elseif($uid == -6) {
-                echo '该 Email 已经被注册';
-            } else {
-                echo '未定义';
-            }
-        } else {
-            echo '注册成功';
-        }
-        p($uid);exit;
-    }
-
+    //详情页
     public function detail(){
 
+        $id = input('get.id');
+
+        $entrydb = M('entry');
+        $info =  $entrydb ->where(array('id'=>$id))->find();//内容详情
+
+        $pic_list = M('pic')->where(array('e_id'=>$info['id'],'status'=>1))->select();
+        //简介图片和喂养方式图片
+        foreach ($pic as $key => $value) {
+            if($info['feed_pic'] == $value['id']){
+                $feed_pic = $value;
+            }
+
+            if($info['introduction_pic'] == $value['id']){
+                $introduction_pic = $value;
+            }
+        }
+
+        $question = M('question')->where(array('entry_id'=>$info['id'],'status'=>1))->select();
+        //echo M()->getLastSql();
+        //nav 开始
+        //1.nav 渲染开始 第一级和第二级导航
         $nav = $this->getNav();
         $top = $nav['top'];
-        $first = current($top);
-        $top_class_id = input('get.top_class_id',$first['id']);
+        $class_id = $info['class_id'];
+        $class_arr = M('class')->where(array('id'=>$class_id))->find();
+        $top_class_id = $class_arr['top_p_id'];
         $sub = $nav['sub'][$top_class_id];
-
+        //p($info);exit();
+        //第三级导航内容
         $map['class_id'] = array('IN',$nav['sub_str']);
         $map['status'] = 1;
-        $entry = M('entry')->where($map)->select();
+        $entry = $entrydb->where($map)->select();
         $entry_arr = array();
         foreach ($entry as $key => $value) {
             $entry_arr[$value['class_id']][$value['id']] = $value;
         }
-                $nav_url = $this->getNavUrl();
-
-        //echo M()->getLastSql();
-        //p($nav);
         //p($entry_arr);exit();
+        // nav 导航
+        $this->getNavUrl();
+
+        //nav dict选中必要参数
+        $get_arr['tem'] = $info['tem'];
+        $get_arr['ph'] = $info['ph'];
+        $get_arr['len'] = $info['len'];
+        $get_arr['food'] = $info['food'];
+
+        $dict = get_dict('entry');//dict字典值
+        $this->assign('dict',$dict);
+        $this->assign('pic_num',count($pic_list));  
+        $this->assign('pic_list',$pic_list);
+        $this->assign('pic_cover',current($pic_list));    
+        $this->assign('question',$question);
+        $this->assign('introduction_pic',$introduction_pic); 
+        $this->assign('feed_pic',$feed_pic);  
         $this->assign('entry_arr',$entry_arr);
-        $this->assign('nav',$nav);
+        $this->assign('info',$info);
         $this->assign('top',$top);
         $this->assign('sub',$sub);
+        $this->assign('get_arr',$get_arr);
+        $this->assign('class_id',$class_id);
+        $this->assign('top_class_id',$top_class_id);
         $this->display();
 
     }
@@ -106,8 +121,7 @@ class IndexController extends Controller {
         
         $sub = $nav['sub'][$top_class_id];
         //p($get_arr);exit();
-        $nav_url = $this->getNavUrl();
-
+        $this->getNavUrl();
 
         //列表start
         if(!empty($class_id)){
@@ -132,21 +146,21 @@ class IndexController extends Controller {
             $map['food'] = $get_arr['food'];
         }
 
+        //p($map);
         $entry = M('entry');
         $entry_list =  $entry
         ->where($map)
         ->select();
+        //echo M()->getLastSql();
         foreach ($entry_list as $key => $v) {
             $entry_data[$v['id']] = $v;
             $e_id[] = $v['id'];
         }
 
-
         $pic = M('pic');
         $pic_list = $pic->where(array('e_id'=>array('IN',$e_id)))->where(array('status'=>1))
                     ->group('e_id')
                     ->select();
-
         foreach ($pic_list as $key => $value) {
                  $entry_data[$value['e_id']]['pic_name'] = $value['name'];
                  $entry_data[$value['e_id']]['link'] = $value['link'];
@@ -158,7 +172,6 @@ class IndexController extends Controller {
         $this->assign('dict',$dict);
         $this->assign('entry_data',$entry_data);               
         $this->assign('get_arr',$get_arr);
-        $this->assign('nav_url',$nav_url);
         $this->assign('class_id',$class_id);
         $this->assign('top_class_id',$top_class_id);
         $this->assign('top',$top);

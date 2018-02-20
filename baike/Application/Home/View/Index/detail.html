@@ -28,18 +28,21 @@
       <include file="nav" />
 
   <div class="nr w1136">
-    <div class="nr-tit"><span class="fr" style="color:#cacaca; font-size:10px;"><img src="__PUBLIC__/images/wujiao.png" width="16px"> 收藏</span>果核泥龟</div>
+    <div class="nr-tit"><span class="fr" style="color:#cacaca; font-size:10px;"><img src="__PUBLIC__/images/wujiao.png" width="16px"> 收藏</span>{$info['name']}</div>
     <div class="nr-xq">
       <div class="fl">
-        <p><span class="fr"><i>易患病：</i> 腐皮</span><i>英文名：</i> Stripedmud turtle </p>
-        <p><span class="fr"><i>寿命：</i> 30-55岁</span><i>性格：</i> 活泼</p>
-        <p><i>祖籍：</i>佛罗里达州KEY地区</p>
+        <p><span class="fr"><i>易患病：</i> {$info['e_disease']}
+          </span>
+          <i>英文名：</i> {$info['en_name']} 
+        </p>
+        <p><span class="fr"><i>寿命：</i> {$info['life']}</span><i>性格：</i> {$info['character']}</p>
+        <p><i>祖籍：</i>{$info['descent']}</p>
         <br>
-        <p>10CM  水温   15-30   寿命    30     ……</p>
+        <p>长度：{$dict['len'][$info['len']]}；生存环境温度：{$dict['tem'][$info['tem']]}；酸碱度：{$dict['ph'][$info['ph']]}</p>
       </div>
-      <div class="fr"><a href="javascript:void(0)" class="addbut"><img src="__PUBLIC__/images/nr-pic-s.jpg"></a><br>
+      <div class="fr"><a href="javascript:void(0)" class="addbut"><img src="{$Think.const.IMG}{$pic_cover.link}/{$pic_cover.thumb_name}" width="330"  height="220"></a><br>
         <br>
-        相册（5张图片）</div>
+        相册（{$pic_num}张图片）</div>
     </div>
   </div>
   <!-- 代码 开始 -->
@@ -48,8 +51,8 @@
       <ul>
         <li class="cur">内容</li>
         <li>问答</li>
-        <li>讨论</li>
-        <li>与论坛连接</li>
+<!--         <li>讨论</li>
+        <li>与论坛连接</li> -->
       </ul>
     </div>
   <div class="tabCon w1136_w">
@@ -59,67 +62,43 @@
       <dl class="menu_min"><span class="menu_tit">品种简介</span> <p class="x-xian2"></p></dl> 
      
       <dl class="nav_min">
-            
-          <span class="menu_tit_p"> <p> 由(Garman,1891)命名，属小型泥龟，体长在12厘米左右。果核泥龟的生命周期一般在30-55年左右；野生的果核背甲上
-      时常吸附着藻类，这有助于它们很好的融入自然环境中，为其提供了有效的保护；偶尔会在水面上进行捕食，但更多的时
-      候是在河床底部的沙土或淤泥中寻找食物。</p>
-
-      <p>背甲比较宽阔与平坦，最高与最宽处是均在背部中央的后方，成体果核无脊椎骨，盾甲边缘没有锯齿，而刚出生的幼体却
-      有一条脊椎骨（背部中央）。第1块椎盾普遍的较长，向前方延伸扩张，与第1、2块缘盾相接处。第2-5块的椎盾宽度通常
-      都大于长度，背甲上的椎盾显得比较扁平与宽阔，也许在背部中央形成很浅的凹槽。第10块缘盾明显得高于其它几块。背
-      甲的颜色从黑色到棕褐色有着不同的变化，有些甚至于接近透明色。因而，有时可以看到骨架的结构。三条易变的浅黄色
-      或奶油色的纵向条纹出现在背部，随着时间会变得黯淡或模糊。</p>
+          <span class="menu_tit_p"> <p>{$info.introduction}</p>
         </span>
-        <img src=__PUBLIC__/images/nr-pic-s1.jpg>
+         <if condition="!empty($introduction_pic)">
+          <img src="{$Think.const.IMG}{$introduction_pic.link}/{$introduction_pic.thumb_name}" width="238" height="169">
+        </if>
       </dl>
       </li>
       <li> 
         <dl class="menu_min"><span class="menu_tit">喂养方式</span> <p class="x-xian2"></p></dl> 
           <dl class="nav_min">
-              <span class="menu_tit_p"> <p> 由(Garman,1891)命名，属小型泥龟，体长在12厘米左右。果核泥龟的生命周期一般在30-55年左右；野生的果核背甲上
-              时常吸附着藻类，这有助于它们很好的融入自然环境中，为其提供了有效的保护；偶尔会在水面上进行捕食，但更多的时
-              候是在河床底部的沙土或淤泥中寻找食物。</p>
-              <p>背甲比较宽阔与平坦，最高与最宽处是均在背部中央的后方，成体果核无脊椎骨，盾甲边缘没有锯齿，而刚出生的幼体却
-              有一条脊椎骨（背部中央）。第1块椎盾普遍的较长，向前方延伸扩张，与第1、2块缘盾相接处。第2-5块的椎盾宽度通常
-              都大于长度，背甲上的椎盾显得比较扁平与宽阔，也许在背部中央形成很浅的凹槽。第10块缘盾明显得高于其它几块。背
-              甲的颜色从黑色到棕褐色有着不同的变化，有些甚至于接近透明色。因而，有时可以看到骨架的结构。三条易变的浅黄色
-              或奶油色的纵向条纹出现在背部，随着时间会变得黯淡或模糊。</p>
+              <span class="menu_tit_p"> <p>{$info.feed}</p>
               </span>
-        <img src=__PUBLIC__/images/nr-pic-s1.jpg>
+              <if condition="!empty($feed_pic)">
+                <img src="{$Think.const.IMG}{$feed_pic.link}/{$feed_pic.thumb_name}" width="238" height="169">
+              </if>
         </dl>
       </li>
     </ul>
     </div>
       <div><ul class="menu_list">
-          <li class=""> <span class="fuMenu">鱼字骨刻文演变：</span> <img class="xiala" src="__PUBLIC__/images/xia.png" />
+        <foreach name="question" item="vo" key="k" >
+          <li class=""> <span class="fuMenu">{$vo.title}</span> 
+            <img class="xiala" src="__PUBLIC__/images/xia.png" />
             <dl class="nav10">
             </dl>
-            <p class="zcd" id="zcd1">引自，丁再献、丁蕾《东夷文化与山东·骨刻文释读》十九章第二节，中国文史出版社2012年2月版。鱼类属于脊索动物门中的脊椎动物亚门，一般人把脊椎动物分为鱼类（53%）、鸟类（18%）、爬行类（12%）、哺乳类（9%）、两栖类（8%）五大类。根据已故加拿大[2]  学者Nelson（1994年）统计，全球当时已知鱼类共有24618种，占已命名脊椎动物一半以上，且新种鱼类不断被发现。全球已命名的鱼种约在32100种。</p>
+            <p class="zcd" id="zcd1">{$vo.content}</p>
           </li>
-          <li class=""> <span class="fuMenu">鱼字拼音yu，鱼类（fish）是最古老的脊椎动物。</span> <img class="xiala" src="__PUBLIC__/images/xia.png" />
+        </foreach> 
+<!--           <li class=""> <span class="fuMenu">鱼字拼音yu，鱼类（fish）是最古老的脊椎动物。</span> <img class="xiala" src="__PUBLIC__/images/xia.png" />
             <dl class="nav10">
             </dl>
             <p class="zcd" id="zcd2">世界上现存已发现的鱼类约三万二千种，鱼生活在水里，分布在海洋和淡水中，海洋中生活着占三分之二，其余的生活在淡水中。中国计有二千五百种，其中可供药用的有百种以上，常见的药用动物有海马、海龙、黄鳝、鲤鱼、鲫鱼、鲟鱼（鳔为鱼鳔胶）</p>
-          </li>  
-          <li class=""> <span class="fuMenu">鱼字拼音yu，鱼类（fish）是最古老的脊椎动物。</span> <img class="xiala" src="__PUBLIC__/images/xia.png" />
-            <dl class="nav10">
-            </dl>
-            <p class="zcd" id="zcd3">世界上现存已发现的鱼类约三万二千种，鱼生活在水里，分布在海洋和淡水中，海洋中生活着占三分之二，其余的生活在淡水中。中国计有二千五百种，其中可供药用的有百种以上，常见的药用动物有海马、海龙、黄鳝、鲤鱼、鲫鱼、鲟鱼（鳔为鱼鳔胶）</p>
-          </li>
-            <li class=""> <span class="fuMenu">鱼字骨刻文演变：</span> <img class="xiala" src="__PUBLIC__/images/xia.png" />
-            <dl class="nav10">
-            </dl>
-            <p class="zcd" id="zcd4">引自，丁再献、丁蕾《东夷文化与山东·骨刻文释读》十九章第二节，中国文史出版社2012年2月版。鱼类属于脊索动物门中的脊椎动物亚门，一般人把脊椎动物分为鱼类（53%）、鸟类（18%）、爬行类（12%）、哺乳类（9%）、两栖类（8%）五大类。根据已故加拿大[2]  学者Nelson（1994年）统计，全球当时已知鱼类共有24618种，占已命名脊椎动物一半以上，且新种鱼类不断被发现。全球已命名的鱼种约在32100种。</p>
-          </li>
-          <li class=""> <span class="fuMenu">鱼字拼音yu，鱼类（fish）是最古老的脊椎动物。</span> <img class="xiala" src="__PUBLIC__/images/xia.png" />
-            <dl class="nav10">
-            </dl>
-            <p class="zcd" id="zcd5">世界上现存已发现的鱼类约三万二千种，鱼生活在水里，分布在海洋和淡水中，海洋中生活着占三分之二，其余的生活在淡水中。中国计有二千五百种，其中可供药用的有百种以上，常见的药用动物有海马、海龙、黄鳝、鲤鱼、鲫鱼、鲟鱼（鳔为鱼鳔胶）</p>
-          </li>
+          </li>   -->
         </ul>
       </div>
-      <div>被风吹过的夏天、江南、一千年以后</div>
-      <div>十年、K歌之王、浮夸</div>
+<!--       <div>被风吹过的夏天、江南、一千年以后</div>
+      <div>十年、K歌之王、浮夸</div> -->
     </div>
   </div>
   <!-- 代码 结束 --> 
@@ -138,28 +117,27 @@
     <div class="v_show1">
       <div class="v_cont1">
         <ul>
-          <li index="0"><img src="__PUBLIC__/images/nr-xq-t1.jpg"></li>
-          <li index="1" style="background:#ff0">[第2讲]</li>
-          <li index="2" style="background:#f0f">[第3讲]</li>
-          <li index="3" style="background:#999">[第4讲]</li>
-          <li index="4" style="background:#666">[第5讲]</li>
+          <foreach name="pic_list" item="vo" key="k" >
+            <li index="{$k}"><img src="{$Think.const.IMG}{$vo.link}/{$vo.name}" width="630" height="420"></li>
+          </foreach>
         </ul>
       </div>
     </div>
     <div class="next1"><a href="javascript:void(0)"></a> </div>
     <ul class="circle1">
-      <li class="circle-cur1"><img src="__PUBLIC__/images/nr-xq-t1-s.jpg"></li>
+      <foreach name="pic_list" item="vo" key="k" >
+      <li class=""><img src="{$Think.const.IMG}{$vo.link}/{$vo.thumb_name}" width="130" height="102"></li>
+      </foreach>
+<!--       <li class="circle-cur1"><img src="__PUBLIC__/images/nr-xq-t1-s.jpg" ></li>
       <li>2</li>
       <li>3</li>
       <li>4</li>
-      <li>5</li>
+      <li>5</li> -->
     </ul>
   </div>
 </div>
 <script type="text/javascript">
-  
      $(function(){
-
         /*======next======*/
         $(".next1 a").click(function(){ nextscroll() });
 
