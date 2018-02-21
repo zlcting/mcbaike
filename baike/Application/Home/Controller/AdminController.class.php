@@ -4,6 +4,15 @@ use Think\Controller;
 
 class AdminController extends Controller {
 
+    //构造函数
+    public function _initialize()  
+    {  
+        $user = $_SESSION['baike'];
+        if(empty($user) || $user['group'] !=2){
+            //$this->redirect('index/index', array(), 0, '页面跳转中...');
+        }
+        $this->assign('user',$user);
+    } 
 
     public function blank(){
         echo "欢迎使用萌宠百科后台";
