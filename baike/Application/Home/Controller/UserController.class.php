@@ -24,18 +24,18 @@ class UserController extends Controller {
        $code =  I('post.code');
 
        $re = check_verify($code); 
-       $re =1;
         if($re){
             $email_check= filter_var($name, FILTER_VALIDATE_EMAIL);
             if($email_check){
                 $isuid = 2;//邮箱登录
+
             }else{
                 $isuid = 0;//用户名登录
             }
             $uc_api = new \Ucenter\Client\UcApi();
 
             list($uid, $username, $password, $email) = $uc_api -> uc_user_login($name, $pass, $isuid);
-            echo $uc_api->uc_user_synlogin($uid);
+            echo $uc_api->uc_user_synlogin($uid);//同步登录论坛
                 if($uid > 0) {
                     $succ =  '登录成功';
                 } elseif($uid == -1) {
@@ -57,10 +57,10 @@ class UserController extends Controller {
             $this->error($error, U('User/login'));
 
        } else {
-            $_SESSION['baike']['name'] = $username;
-            $_SESSION['baike']['email'] = $email;
-            
-
+            $user = M('user')->where(array('name'=>$name,'pass'=>md5($pass)))->find();
+            $_SESSION['baike']['name'] = $user['name'];
+            $_SESSION['baike']['email'] = $user['email'];
+            $_SESSION['baike']['group'] = $user['group'];
             $this->success($succ, U('Index/index'));
        }
 
@@ -109,43 +109,27 @@ class UserController extends Controller {
             } else {
                 $succ =  '注册成功';
             }
-            // $ucresult = $uc_api->uc_user_checkemail($_GET['email']);
-            // if($ucresult == -4) {
-            //     $error =  'Email 格式有误';
-            // } elseif($ucresult == -5) {
-            //      $error =  'Email 不允许注册';
-            // } elseif($ucresult == -6) {
-            //      $error =  '该 Email 已经被注册';
-            // }
-
-            // $ucresult = $uc_api ->uc_user_checkname($_GET['name']);
-            // if($ucresult == -1) {
-            //     $error = '用户名不合法';
-            // } elseif($ucresult == -2) {
-            //     $error = '包含要允许注册的词语';
-            // } elseif($ucresult == -3) {
-            //     $error = '用户名已经存在';
-            // }
-
+        }
+        if(empty($error)){
+                
                $user = M('user');
                $data['name'] = $name;
                $data['group'] = 1;
                $data['account'] = $name;
                $data['email'] = $email;
                $data['pass'] = md5($pass);
+               $data['uid'] = $uid;
                $data['status'] = 0;
-               $uid = $user->add($data);
-               // p($uid);
-               // p(M()->getlastsql());exit();
-               if(!$uid){
+               $user_id = $user->add($data);
+               if(!$user_id){
                 $error = "用户名已经存在";
                }
         }
-            if(empty($error)) {
+        if(empty($error)) {
                //$email = "274480298@qq.com";
-               $ver_email = $this->ver_email($uid,$email);
+               $ver_email = $this->ver_email($user_id,$email);
                if($ver_email){
-                   $send_code['uid'] = $uid;
+                   $send_code['uid'] = $user_id;
                    $send_code['ver_email'] = $ver_email;
                    $pa = json_encode($send_code);
                    $pa = base64_encode($pa);
