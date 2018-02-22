@@ -393,6 +393,7 @@ class AdminController extends Controller {
         if(!empty($map['e_id'])){
            $list = $class->where($map)->order('create_time desc')->page($p.','.$limit)->select(); 
         }
+        $entry_info = M('entry')->where(array('id'=>$map['e_id']))->find();
         
         //p(M()->getLastSql());
         $count= $class->where($map)->count();
@@ -407,7 +408,37 @@ class AdminController extends Controller {
         $this->assign('map',$map);
         $this->assign('list',$list);
         $this->assign('page',$show);
+        $this->assign('entry_info',$entry_info);
+        
         $this->display();
+    }
+
+    //设词条-喂养或简介配图
+    public function setEntryPic(){
+        $feed_pic = input('get.feed_pic');
+        $introduction_pic = input('get.introduction_pic');
+        $id = input('get.e_id');
+
+        if(!empty($feed_pic)){
+            $data['feed_pic'] = $feed_pic;
+        }
+        if(!empty($introduction_pic)){
+            $data['introduction_pic'] = $introduction_pic;
+        }
+
+        $data['id'] = $id;
+        
+        if(!empty($data['id'])&&( $data['feed_pic']|| $data['introduction_pic'])){
+            $re = M('entry')->save($data);
+        }
+
+        if($re){
+            $this->redirect('picList?e_id='.$id, array(), 0, '页面跳转中...');
+        }else{
+            $this->error('更新失败');
+        }
+        
+
     }
 
     public function picUpload(){

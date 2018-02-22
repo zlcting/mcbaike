@@ -103,9 +103,21 @@
  -->                                    <td>{$vo.create_time|date="y-m-d H:i:s",###}</td>
                                         <td>{$dict['status'][$vo['status']]}</td>
                                          <td>
-                                            <a href="__PUBLIC__/Uploads/img/{$vo.link}" title="图片" data-gallery="">
+                                            <a href="__PUBLIC__/Uploads/img/{$vo.link}{$vo.name}" title="图片" data-gallery="">
                                                 <button class="btn btn-info " type="button"><i class="fa fa-list"></i>预览</button>
-                                            </a> 
+                                            </a>
+
+                                            <if condition="$vo['id'] neq $entry_info['introduction_pic']">
+                                                <a href="setEntryPic?introduction_pic={$vo.id}&e_id={$e_id}" target="_self">
+                                                    <button class="btn btn-info " type="button"><i class="fa fa-list"></i>简介配图</button>
+                                                </a> 
+                                            </if>
+
+                                            <if condition="$vo['id'] neq $entry_info['feed_pic']">
+                                                <a href="setEntryPic?feed_pic={$vo.id}&e_id={$e_id}" target="_self">
+                                                    <button class="btn btn-info " type="button"><i class="fa fa-list"></i>喂养配图</button>
+                                                </a> 
+                                            </if> 
                                         </td>
                                     </tr>
                                 </foreach>
