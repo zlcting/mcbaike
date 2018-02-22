@@ -52,7 +52,7 @@ class IndexController extends Controller {
 
         $pic_list = M('pic')->where(array('e_id'=>$info['id'],'status'=>1))->select();
         //简介图片和喂养方式图片
-        foreach ($pic as $key => $value) {
+        foreach ($pic_list as $key => $value) {
             if($info['feed_pic'] == $value['id']){
                 $feed_pic = $value;
             }

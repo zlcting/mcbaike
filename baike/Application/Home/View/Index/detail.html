@@ -61,6 +61,7 @@
       <li class="m_10"> 
       <dl class="menu_min"><span class="menu_tit">品种简介</span> <p class="x-xian2"></p></dl> 
      
+     <if condition="!empty($info['introduction'])">
       <dl class="nav_min">
           <span class="menu_tit_p"> <p>{$info.introduction}</p>
         </span>
@@ -69,16 +70,19 @@
         </if>
       </dl>
       </li>
-      <li> 
-        <dl class="menu_min"><span class="menu_tit">喂养方式</span> <p class="x-xian2"></p></dl> 
-          <dl class="nav_min">
-              <span class="menu_tit_p"> <p>{$info.feed}</p>
-              </span>
-              <if condition="!empty($feed_pic)">
-                <img src="{$Think.const.IMG}{$feed_pic.link}/{$feed_pic.thumb_name}" width="238" height="169">
-              </if>
-        </dl>
-      </li>
+    </if>
+        <if condition="!empty($info['feed'])">
+        <li> 
+          <dl class="menu_min"><span class="menu_tit">喂养方式</span> <p class="x-xian2"></p></dl> 
+            <dl class="nav_min">
+                <span class="menu_tit_p"> <p>{$info.feed}</p>
+                </span>
+                <if condition="!empty($feed_pic)">
+                  <img src="{$Think.const.IMG}{$feed_pic.link}/{$feed_pic.thumb_name}" width="238" height="169">
+                </if>
+          </dl>
+        </li>
+        </if>
     </ul>
     </div>
       <div><ul class="menu_list">
