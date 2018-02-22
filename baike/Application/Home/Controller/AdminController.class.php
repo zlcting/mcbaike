@@ -315,7 +315,12 @@ class AdminController extends Controller {
             $class_list = $class->where($map)->select();
             $entry = D('entry');
             $entry_info = $entry->where(array('id'=>$id))->find();
+            $class_info = $class->where(array('id'=>$entry_info['class_id']))->find();
+            $s_class_list = $class->where(array('p_id'=>$class_info['p_id']))->select();
             $dict = get_dict('entry');
+            
+            $this->assign('s_class_list',$s_class_list);
+            $this->assign('top_class_id',$class_info['p_id']);
             $this->assign('e_id',$id);
             $this->assign('dict',$dict);
             $this->assign('class_list',$class_list);
@@ -385,7 +390,10 @@ class AdminController extends Controller {
         $map['e_id'] = input('get.e_id');
         $class = M('pic');
         $limit = 10;
-        $list = $class->where($map)->order('create_time desc')->page($p.','.$limit)->select();
+        if(!empty($map['e_id'])){
+           $list = $class->where($map)->order('create_time desc')->page($p.','.$limit)->select(); 
+        }
+        
         //p(M()->getLastSql());
         $count= $class->where($map)->count();
         $Page = new \Org\Util\UserPage($count,$limit);  

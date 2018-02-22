@@ -32,11 +32,11 @@
                                             <span class="number">1.</span> 词条信息</a>
                                         </li>
                                             <li class="disabled" aria-disabled="true">
-                                                <a href="{$Think.const.BAIKE_ADMIN_URL}picList?e_id={$e_id}" aria-controls="form-p-1"><span class="number">2.</span> 图片信息
+                                                <a href="{$Think.const.BAIKE_ADMIN_URL}picList?e_id={$e_id}" aria-controls="form-p-1" target="_self"><span class="number">2.</span> 图片信息
                                                 </a>
                                             </li>
                                             <li  class="disabled">
-                                                <a  href="{$Think.const.BAIKE_ADMIN_URL}qaEditor?e_id={$e_id}"><span class="number">3.</span> 问答详情</a>
+                                                <a  href="{$Think.const.BAIKE_ADMIN_URL}qaEditor?e_id={$e_id}"><span class="number" target="_self">3.</span> 问答详情</a>
                                             </li>
                                 </ul>
                             </div>
@@ -54,7 +54,7 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">分类名称</label>
                                 <div class="col-sm-2">
-                                    <input type="text" class="form-control" name="name" id = "name"> 
+                                    <input type="text" class="form-control" name="name" id = "name" value="{$entry_info['name']}"> 
                                 </div>
                             </div>
                             <div id="div_top_type">
@@ -63,9 +63,9 @@
                                     <label class="col-sm-2 control-label">一级分类</label>
                                     <div class="col-sm-2">
                                         <select class="form-control m-b" name="top_p_id" onChange="getDataForAjax()" id = "cate">
-                                             <option value="0">请选择</option>
+                                             <option value="0">请选择 </option>
                                              <foreach name="class_list" item="vo" key="k" >
-                                                 <option value="{$vo.id}">{$vo.name}</option>
+                                                 <option value="{$vo.id}" <if condition="$top_class_id eq $vo[id]"> selected="selected"  </if> >{$vo.name}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -76,13 +76,17 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">二级分类</label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="p_id" id="s_p_type" onChange="getSecDataForAjax()">
+                                        <select class="form-control m-b" name="class_id" id="s_p_type" onChange="getSecDataForAjax()">
+                                             <option value="0">请选择 </option>
+                                             <foreach name="s_class_list" item="vo" key="k" >
+                                                 <option value="{$vo.id}" <if condition="$entry_info[class_id] eq $vo[id]"> selected="selected"  </if> >{$vo.name}</option>
+                                             </foreach>
                                         </select>
                                     </div>
                                 </div>
                             </div>
 
-                            <div id="div_s_type" >
+<!--                             <div id="div_s_type" >
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">三级分类</label>
@@ -91,7 +95,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div>
                                 <div class="hr-line-dashed"></div>
@@ -100,7 +104,7 @@
                                     <div class="col-sm-2">
                                         <select class="form-control m-b" name="character">
                                              <foreach name="dict['character']" item="vo" key="k" >
-                                                 <option value="{$k}">{$vo}</option>
+                                                 <option value="{$k}" <if condition="$entry_info[character] eq $k"> selected="selected"  </if>>{$vo}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -113,7 +117,7 @@
                                     <div class="col-sm-2">
                                         <select class="form-control m-b" name="tem">
                                              <foreach name="dict['tem']" item="vo" key="k" >
-                                                 <option value="{$k}">{$vo}</option>
+                                                 <option value="{$k}" <if condition="$entry_info[tem] eq $k"> selected="selected" </if>>{$vo}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -126,7 +130,7 @@
                                     <div class="col-sm-2">
                                         <select class="form-control m-b" name="len">
                                              <foreach name="dict['len']" item="vo" key="k" >
-                                                 <option value="{$k}">{$vo}</option>
+                                                 <option value="{$k}" <if condition="$entry_info[len] eq $k"> selected="selected" </if>>{$vo}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -139,7 +143,7 @@
                                     <div class="col-sm-2">
                                         <select class="form-control m-b" name="ph">
                                              <foreach name="dict['ph']" item="vo" key="k" >
-                                                 <option value="{$k}">{$vo}</option>
+                                                 <option value="{$k}" <if condition="$entry_info[ph] eq $k"> selected="selected" </if>>{$vo}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -148,19 +152,19 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">寿命</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="name" id = "name"> 
+                                    <input type="text" class="form-control" name="name" id = "name" value="{$entry_info['life']}"> 
                                 </div>年
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">品种简介</label>
                                 <div class="col-sm-5">
-                                    <textarea name="introduction" id="introduction" class="form-control" cols ="100" rows="5"></textarea>
+                                    <textarea name="introduction" id="introduction" class="form-control" cols ="100" rows="5">{$entry_info['introduction']}</textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">喂养方式</label>
                                 <div class="col-sm-5">
-                                    <textarea name="feed" id="feed" class="form-control" cols ="100" rows="5"></textarea>
+                                    <textarea name="feed" id="feed" class="form-control" cols ="100" rows="5">{$entry_info['feed']}</textarea>
                                 </div>
                             </div>
                             <div class="form-group">
