@@ -593,19 +593,93 @@ class AdminController extends Controller {
     }
 
 
-    public function demo(){
-        $index_nav = M('index_nav');
-        $list = $index_nav->select();
-        $this->assign('list',$list);
-        $this->display();
-    }
-    
-    public function buttons(){
+    //标签管理
+    public function tag(){
+        $class = M('class');
+        $entry_class = $class->where(array('level'=>1,'status'=>1))->select();
+        $frist = current($entry_class);
+        $class_id = input('get.class',$frist['id']);
+        $tag = D('tags')->getTopTagByclassid($class_id);
+        $this->assign('tag',$tag);
+        $this->assign('class_id',$class_id);
+        $this->assign('entry_class',$entry_class);
         $this->display();
     }
 
-    public function form_basic(){
-        $this->display();
+    //父标签post提交
+    public function post_top_tag(){
+        $post = input('post.');
+        $insert_tag = array();
+        if($post['insert_tag']){
+            foreach ($post['insert_tag'] as $key => $value) {
+                if(!empty($value['name'])){
+                    $insert_tag[$key]['name'] = $value['name'];
+                    $insert_tag[$key]['level'] = 0;
+                    $insert_tag[$key]['p_id'] = 0;
+                    $insert_tag[$key]['class_id'] = $post['class_id'];
+                    $insert_tag[$key]['position'] = $key;  
+                }
+            }
+        }
+
+        if($post['update_tag']){
+            foreach ($post['update_tag'] as $key => $value) {
+                if(!empty($value['name'])){
+                    $update_tag[$key]['id'] = $value['id'];
+                    $update_tag[$key]['name'] = $value['name'];
+                }
+            }
+        }
+        if(!empty($insert_tag)){
+            foreach ($insert_tag as $key => $value) {
+                M('tags')->add($value);
+            }
+        }
+
+        if(!empty($update_tag)){
+            foreach ($update_tag as $key => $value) {
+                M('tags')->save($value);
+            }
+        }
+
+         $this->redirect('tag?class='.$post['class_id'], array(), 0, '页面跳转中...');
+
     }
+
+    //标签添加编辑
+    public function subtag_add(){
+        $post = input('post.');
+        if(!empty($post)){
+            if(!empty($post['id'])){
+                M('tags')->save($post);
+            }else{
+                unset($post['id']);
+                 M('tags')->add($post);
+            }
+
+            $this->redirect('subtag_list?p_id='.$post['p_id'], array(), 0, '页面跳转中...');
+
+        }else{
+            $id = input('get.id');
+            $tag = M('tags')->where(array('id'=>$id))->find();
+
+            $p_id = input('get.p_id',$tag['p_id']);
+            $p_tag = M('tags')->where(array('id'=>$p_id))->find();
+            $this->assign('p_tag',$p_tag);
+            $this->assign('tag',$tag);
+            $this->display(); 
+        }
+
+    }
+
+    public function subtag_list(){
+        $p_id = input('get.p_id');
+        $tag = M('tags')->where(array('p_id'=>$p_id))->select();
+        $this->assign('tag',$tag);
+        $this->display(); 
+    }
+
+
+
 
 }
