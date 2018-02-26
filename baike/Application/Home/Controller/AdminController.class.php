@@ -165,7 +165,7 @@ class AdminController extends Controller {
         }
     }
 
-
+    //获取class信息
     public function entryAjax(){
         $category = 1;
         $map['status'] = 1;
@@ -176,6 +176,16 @@ class AdminController extends Controller {
             echo json_encode($class_list);
         }
     }
+
+    //获取标签ajax
+    public function tagAjax(){
+        $class_id = input('get.class_id');
+        $tags = D('tags')->gettagsinfo($class_id);
+        if (!empty($class_id)) {
+            echo json_encode($tags);
+        }
+    }
+
 
     //导航管理
     public function entryClassLevel(){
