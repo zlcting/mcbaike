@@ -113,11 +113,11 @@
                             <div>
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">温度</label>
+                                    <label class="col-sm-2 control-label">标签位置1 <span id="pos_1">{$tags[0][name]}:</span> </label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="tem">
-                                             <foreach name="dict['tem']" item="vo" key="k" >
-                                                 <option value="{$k}" <if condition="$entry_info[tem] eq $k"> selected="selected" </if>>{$vo}</option>
+                                        <select class="form-control m-b" name="position_1" id="pos_value_1">
+                                            <foreach name="tags['0']['sub']" item="vo" key="k" >
+                                                 <option value="{$vo.id}" <if condition="$entry_info[position_1] eq $vo.id"> selected="selected" </if>>{$vo.name}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -126,11 +126,11 @@
                             <div>
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">长度</label>
+                                    <label class="col-sm-2 control-label">标签位置2 <span id="pos_2">{$tags[1][name]}:</span> </label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="len">
-                                             <foreach name="dict['len']" item="vo" key="k" >
-                                                 <option value="{$k}" <if condition="$entry_info[len] eq $k"> selected="selected" </if>>{$vo}</option>
+                                        <select class="form-control m-b" name="position_2" id="pos_value_2">
+                                            <foreach name="tags['1']['sub']" item="vo" key="k" >
+                                                 <option value="{$vo.id}" <if condition="$entry_info[position_1] eq $vo.id"> selected="selected" </if>>{$vo.name}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -139,11 +139,24 @@
                             <div>
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">PH值</label>
+                                    <label class="col-sm-2 control-label">标签位置3 <span id="pos_3">{$tags[2][name]}:</span> </label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="ph">
-                                             <foreach name="dict['ph']" item="vo" key="k" >
-                                                 <option value="{$k}" <if condition="$entry_info[ph] eq $k"> selected="selected" </if>>{$vo}</option>
+                                        <select class="form-control m-b" name="position_3" id="pos_value_3">
+                                            <foreach name="tags['2']['sub']" item="vo" key="k" >
+                                                 <option value="{$vo.id}" <if condition="$entry_info[position_1] eq $vo.id"> selected="selected" </if>>{$vo.name}</option>
+                                             </foreach>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">标签位置4 <span id="pos_4">{$tags[3][name]}:</span> </label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control m-b" name="position_4" id="pos_value_4">
+                                            <foreach name="tags['3']['sub']" item="vo" key="k" >
+                                                 <option value="{$vo.id}" <if condition="$entry_info[position_1] eq $vo.id"> selected="selected" </if>>{$vo.name}</option>
                                              </foreach>
                                         </select>
                                     </div>
@@ -173,6 +186,7 @@
                                     <button class="btn btn-white" type="submit">取消</button>
                                 </div>
                             </div>
+                            <input type="hidden" name="id" value="{$entry_info['id']}">
                         </form>
                     </div>
                 </div>
@@ -204,26 +218,54 @@
                             }
                         }
                         });
-            }
 
-            function getSecDataForAjax() {
-                        p_id = $('#s_p_type').val();
                         $.ajax({
                         type:"get",
-                        url:"{$Think.const.BAIKE_ADMIN_URL}/entryAjax",
+                        url:"{$Think.const.BAIKE_ADMIN_URL}/tagAjax",
                         dataType:'json',
                         data:{
-                            p_id:p_id
+                            class_id:p_id
                         },
                         success:function (data) {
-                            $('#t_p_type').empty();
-                            $('#t_p_type').append("<option value=0>请选择</option>");
+                             $('#pos_value_1').empty();
+                             $('#pos_value_2').empty();
+                             $('#pos_value_3').empty();
+                             $('#pos_value_4').empty();
+
+                             $('#pos_1').empty();
+                             $('#pos_2').empty();
+                             $('#pos_3').empty();
+                             $('#pos_4').empty();
                             for(var i = 0;i < data.length;i++){
-                                $('#t_p_type').append("<option value=" + data[i]['id'] + ">"
-                                    + data[i]['name'] + "</option>");
+                                $("#pos_"+data[i]['position']).html(data[i]['name']);
+
+                                for(var j = 0;j < data[i]['sub'].length; j++){
+                                    $("#pos_value_"+data[i]['position']).append("<option value=" + data[i]['sub'][j]['id'] + ">" + data[i]['sub'][j]['name'] + "</option>");
+             
+                                    }
                             }
                         }
                         });
+            }
+
+            function getSecDataForAjax() {
+                        // p_id = $('#s_p_type').val();
+                        // $.ajax({
+                        // type:"get",
+                        // url:"{$Think.const.BAIKE_ADMIN_URL}/entryAjax",
+                        // dataType:'json',
+                        // data:{
+                        //     p_id:p_id
+                        // },
+                        // success:function (data) {
+                        //     $('#t_p_type').empty();
+                        //     $('#t_p_type').append("<option value=0>请选择</option>");
+                        //     for(var i = 0;i < data.length;i++){
+                        //         $('#t_p_type').append("<option value=" + data[i]['id'] + ">"
+                        //             + data[i]['name'] + "</option>");
+                        //     }
+                        // }
+                        // });
             }
 
 

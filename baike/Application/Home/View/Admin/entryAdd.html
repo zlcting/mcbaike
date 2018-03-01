@@ -123,7 +123,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">标签位置2 <span id="pos_2"></span> :</label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="position_2" id="pos_value_1">
+                                        <select class="form-control m-b" name="position_2" id="pos_value_2">
 
                                         </select>
                                     </div>
@@ -134,7 +134,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">标签位置3 <span id="pos_3"></span> :</label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="position_3" id="pos_value_1">
+                                        <select class="form-control m-b" name="position_3" id="pos_value_3">
 
                                         </select>
                                     </div>
@@ -145,7 +145,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">标签位置4 <span id="pos_4"></span> :</label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="position_4" id="pos_value_1">
+                                        <select class="form-control m-b" name="position_4" id="pos_value_4">
 
                                         </select>
                                     </div>
@@ -228,11 +228,10 @@
                             for(var i = 0;i < data.length;i++){
                                 $("#pos_"+data[i]['position']).html(data[i]['name']);
 
-                                for(var j = 0;i < data[i]['sub'].length; j++){
-
-                                $("#pos_value_"+data[i]['position']).append("<option value=" + data[i]['sub'][j]['id'] + ">" + data[i]['sub'][j]['name'] + "</option>");
-         
-                                }
+                                for(var j = 0;j < data[i]['sub'].length; j++){
+                                    $("#pos_value_"+data[i]['position']).append("<option value=" + data[i]['sub'][j]['id'] + ">" + data[i]['sub'][j]['name'] + "</option>");
+             
+                                    }
                             }
                         }
                         });

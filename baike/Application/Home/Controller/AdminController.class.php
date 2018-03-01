@@ -276,8 +276,10 @@ class AdminController extends Controller {
         if (!empty($post)) {
             $data['name'] = $post['name'];
             $data['character'] = $post['character'];
-            $data['tem'] = $post['tem'];
-            $data['len'] = $post['len'];
+            $data['position_1'] = $post['position_1'];
+            $data['position_2'] = $post['position_2'];
+            $data['position_3'] = $post['position_3'];
+            $data['position_4'] = $post['position_4'];
             $data['class_id'] = !empty($post['class_id'])?$post['class_id']:'';
             $data['create_time'] = time();
             $data['status'] = 1;
@@ -306,16 +308,21 @@ class AdminController extends Controller {
     public function entryEditor() {
         $post = input('post.');
         if(!empty($post)) {
-            $data['id'] = $post['name'];
+            $data['id'] = $post['id'];
             $data['name'] = $post['name'];
             $data['character'] = $post['character'];
-            $data['tem'] = $post['tem'];
-            $data['len'] = $post['len'];
+            $data['position_1'] = $post['position_1'];
+            $data['position_2'] = $post['position_2'];
+            $data['position_3'] = $post['position_3'];
+            $data['position_4'] = $post['position_4'];
             $data['class_id'] = !empty($post['class_id'])?$post['class_id']:'';
-            $data['create_time'] = time();
+            //$data['create_time'] = time();
+            $data['update_time'] = time();
             $data['status'] = 1;
+            //p($data);exit;
             $entry = M('entry');
             $re = $entry->save($data);
+            $this->redirect('entryList', array('entry_id'=>$data['entry_id']));
         } else {
 
             $id = input('get.e_id');
@@ -328,7 +335,9 @@ class AdminController extends Controller {
             $class_info = $class->where(array('id'=>$entry_info['class_id']))->find();
             $s_class_list = $class->where(array('p_id'=>$class_info['p_id']))->select();
             $dict = get_dict('entry');
-            
+            $tags = D('tags')->gettagsinfo($class_info['p_id']);
+            //p($tags[0][sub]);
+            $this->assign('tags',$tags);
             $this->assign('s_class_list',$s_class_list);
             $this->assign('top_class_id',$class_info['p_id']);
             $this->assign('e_id',$id);
