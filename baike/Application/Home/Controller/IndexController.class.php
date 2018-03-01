@@ -83,13 +83,13 @@ class IndexController extends Controller {
         }
         //p($entry_arr);exit();
         // nav 导航
-        $this->getNavUrl();
 
         //nav dict选中必要参数
-        $get_arr['tem'] = $info['tem'];
-        $get_arr['ph'] = $info['ph'];
-        $get_arr['len'] = $info['len'];
-        $get_arr['food'] = $info['food'];
+        $get_arr['p1'] = $info['position_1'];
+        $get_arr['p2'] = $info['position_2'];
+        $get_arr['p3'] = $info['position_3'];
+        $get_arr['p4'] = $info['position_4'];
+        $this->getNavUrl($top_class_id,$get_arr);
 
         $dict = get_dict('entry');//dict字典值
         $this->assign('dict',$dict);
@@ -121,7 +121,7 @@ class IndexController extends Controller {
         
         $sub = $nav['sub'][$top_class_id];
         //p($get_arr);exit();
-        $this->getNavUrl();
+        $this->getNavUrl($top_class_id,$get_arr);
 
         //列表start
         if(!empty($class_id)){
@@ -130,20 +130,20 @@ class IndexController extends Controller {
 
         }
 
-        if(!empty($get_arr['tem'])){
-            $map['tem'] = $get_arr['tem'];
+        if(!empty($get_arr['p1'])){
+            $map['position_1'] = $get_arr['p1'];
         }
 
-        if(!empty($get_arr['len'])){
-            $map['len'] = $get_arr['len'];
+        if(!empty($get_arr['p2'])){
+            $map['position_2'] = $get_arr['p2'];
         }
 
-        if(!empty($get_arr['ph'])){
-            $map['ph'] = $get_arr['ph'];
+        if(!empty($get_arr['p3'])){
+            $map['position_3'] = $get_arr['p3'];
         }
 
-        if(!empty($get_arr['food'])){
-            $map['food'] = $get_arr['food'];
+        if(!empty($get_arr['p4'])){
+            $map['position_4'] = $get_arr['p4'];
         }
 
         //p($map);
@@ -201,26 +201,24 @@ class IndexController extends Controller {
         return $re;
     }
 
-    private function getNavUrl(){
-        $map = input('get.');
-        //p($map);
-        $dict = get_dict('entry');//dict字典值
-        $search_dict = array('tem','len','ph','food');
-            foreach ($search_dict as $key => $value) {
-                $tmp[$value] = $map;//u方法 获取当前除去要选择的选项的参数生成的变量
-                unset($tmp[$value][$value]);
 
-                foreach ($dict[$value] as $k => $v) {
-                    $search_dict[$value][$k]['name'] = $v;
 
-                    $search_dict[$value][$k]['url'] = U('search', array_merge($tmp[$value],array($value=>$k)));
+    private function getNavUrl($class_id,$map){
+        $tags = D('tags')->gettagsinfo($class_id);
+        //$map = input('get.');
+        foreach ($tags as $key => $value) {
+            $tmp = $map;
+            unset($tmp['p'.$value['position']]);
+            foreach ($value['sub'] as $k => $v) {
+                $tags[$key]['sub'][$k]['url'] =  U('search', array_merge(array('p'.$value['position']=>$v['id']),$tmp));
+                if($map['p'.$value['position']] == $v['id']){
+                    $tags[$key]['sub'][$k]['checked'] =  'checked';
+                }else{
+                    $tags[$key]['sub'][$k]['checked'] =  '';
                 }
-                unset($search_dict[$key]);
             }
-
-        $this->assign('search_dict',$search_dict);
+        }
+        $this->assign('tags',$tags);
     }
-
-
 
 }
