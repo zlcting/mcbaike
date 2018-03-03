@@ -91,8 +91,9 @@ class IndexController extends Controller {
         $get_arr['p4'] = $info['position_4'];
         $this->getNavUrl($top_class_id,$get_arr);
 
-        $dict = get_dict('entry');//dict字典值
-        $this->assign('dict',$dict);
+        $dict_tags = D('tags')->gettagsdict($top_class_id);//字典
+        $this->assign('dict_tags',$dict_tags);
+
         $this->assign('pic_num',count($pic_list));  
         $this->assign('pic_list',$pic_list);
         $this->assign('pic_cover',current($pic_list));    
@@ -167,9 +168,10 @@ class IndexController extends Controller {
                  $entry_data[$value['e_id']]['thumb_272'] = $value['thumb_272'];
                  $entry_data[$value['e_id']]['thumb_name'] = $value['thumb_name'];
                 }
-         //p($entry_data);exit();    
-        $dict = get_dict('entry');//dict字典值
-        $this->assign('dict',$dict);
+        $dict_tags = D('tags')->gettagsdict($top_class_id);
+        // p($dict_tags);
+        $this->assign('dict_tags',$dict_tags);
+
         $this->assign('entry_data',$entry_data);               
         $this->assign('get_arr',$get_arr);
         $this->assign('class_id',$class_id);

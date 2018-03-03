@@ -38,7 +38,20 @@
         <p><span class="fr"><i>寿命：</i> {$info['life']}</span><i>性格：</i> {$info['character']}</p>
         <p><i>祖籍：</i>{$info['descent']}</p>
         <br>
-        <p>长度：{$dict['len'][$info['len']]}；生存环境温度：{$dict['tem'][$info['tem']]}；酸碱度：{$dict['ph'][$info['ph']]}</p>
+        <p>
+        <if condition="!empty($info['position_1'])">
+        {$dict_tags['1']['name']}:{$dict_tags['1']['sub'][$info['position_1']]['name']}
+        </if>
+          <if condition="!empty($info['position_2'])">
+        {$dict_tags['2']['name']}:{$dict_tags['2']['sub'][$info['position_2']]['name']}
+        </if>
+                <if condition="!empty($info['position_3'])">
+        {$dict_tags['3']['name']}:{$dict_tags['3']['sub'][$info['position_3']]['name']}
+        </if>
+                <if condition="!empty($info['position_4'])">
+        {$dict_tags['4']['name']}:{$dict_tags['4']['sub'][$info['position_4']]['name']}
+        </if>
+        </p>
       </div>
       <div class="fr"><a href="javascript:void(0)" class="addbut"><img src="{$Think.const.IMG}{$pic_cover.link}/{$pic_cover.thumb_name}" width="330"  height="220"></a><br>
         <br>

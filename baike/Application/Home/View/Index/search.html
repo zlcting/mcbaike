@@ -40,53 +40,25 @@
         <img src="__PUBLIC__/images/timg.jpeg" class="fl" width="140" height="120">
         </if>
         <div class="fr"><a href="{:U('detail',array('id'=>$vv[id]))}" target="_self" style="color: #22a3dd">{$vv.name}</a><br>
-        <span class="fl">长度:{$dict['len'][$vv['len']]}</span> <span class="fl">PH值:{$dict['ph'][$vv['ph']]}</span> <span class="fl">温度:{$dict['tem'][$vv['tem']]}</span><br>
-        <span class="fl">祖籍：{$vv.descent}</span><span class="fl">寿命：{$vv.life}</span> </div>
+        <if condition="!empty($vv[position_1])">
+        <span class="fl">{$dict_tags['1']['name']}:{$dict_tags['1']['sub'][$vv['position_1']]['name']}</span>
+        </if>
+        <if condition="!empty($vv[position_2])">
+        <span class="fl">{$dict_tags['2']['name']}:{$dict_tags['2']['sub'][$vv['position_2']]['name']}</span> 
+        </if>
+        <if condition="!empty($vv[position_3])">
+        <span class="fl">{$dict_tags['3']['name']}:{$dict_tags['3']['sub'][$vv['position_3']]['name']}</span> 
+        </if>
+        <br>
+        <span class="fl">祖籍：{$vv.descent}</span>
+        <span class="fl">寿命：{$vv.life}</span> </div>
       </li>
     </foreach>
       
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
+<!--     <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
     <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-      <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-      <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
-    <li><img src="__PUBLIC__/images/ss-pic.jpg" class="fl"><div class="fr">名 字<br>
-    <span class="fl">大小:</span> <span class="fl">PH值:</span> <span class="fl">温度:</span><br>
-    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li>
+    <span class="fl">饲养繁殖：</span><span class="fl">问题：</span> </div></li> -->
+
     </div>
     <ul class="list">数据加载中，请稍后...</ul>
     <div class="more"><a href="javascript:;" onClick="lanren.loadMore();"><img src="__PUBLIC__/images/more.png"></a></div>
