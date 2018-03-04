@@ -22,7 +22,7 @@
         <div class="v_cont">
           <ul>
           	<foreach name="list" item="vo" key="k" >
-            <li index="{$k}"><img src="{$Think.const.IMG}{$vo.link}/{$vo.name}">
+            <li index="{$k}"><a href="#" target="_self"><img src="{$Think.const.IMG}{$vo.link}/{$vo.name}"></a>
               <!-- <div class="bj-tit"></div> -->
             </li>
         	</foreach>
@@ -152,7 +152,12 @@
       </ul>
     </div>
     <!--zcbk e--> 
+    <div class="nav20"></div>
+        <div class="w1136" style="background:white;text-align:center;" >
+        	<a href="/baike/index/search" style="color: #333; font-size: 20px; margin-top: 10px;">更多宠物类型</a>
+        </div>
   </div>
+   
   <!--footer s-->
 	<include file="foot" />
   <!--footer e--> 

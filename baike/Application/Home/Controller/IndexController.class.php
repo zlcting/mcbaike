@@ -211,6 +211,7 @@ class IndexController extends Controller {
         foreach ($tags as $key => $value) {
             $tmp = $map;
             unset($tmp['p'.$value['position']]);
+            $tags[$key]['re_url'] = U('search',$tmp);
             foreach ($value['sub'] as $k => $v) {
                 $tags[$key]['sub'][$k]['url'] =  U('search', array_merge(array('p'.$value['position']=>$v['id']),$tmp));
                 if($map['p'.$value['position']] == $v['id']){

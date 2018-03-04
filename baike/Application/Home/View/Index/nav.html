@@ -5,6 +5,7 @@ a.nodefault{
 } 
 </style>
 <div class="dh w1136">
+          <a href="/baike" >首页</a>
     <foreach name="top" item="vo" key="k" >
           <a href="{:U(search,array('top_class_id'=>$vo[id]))}"  <if condition="$top_class_id eq $vo[id]"> style="background: #0071a4;" </if>>{$vo.name}</a>
     </foreach>  
@@ -27,8 +28,13 @@ a.nodefault{
   <ul class="dh2 w1136">
 
     <foreach name="tags" item="v" key="k" >
-    <li><span class="dh2-tit">{$v.name}</span>
+    <li><span class="dh2-tit">{$v.name} </span>
       <p class="fl">
+          <label style="width: 50px;">
+              <a href="{$v[re_url]}" class="nodefault">           
+                不限
+              </a>
+         </label>
          <foreach name="v[sub]" item="vv" key="kk" >
             <label>
               <a href="{$vv[url]}" class="nodefault">            
@@ -38,6 +44,7 @@ a.nodefault{
               </a>
            </label>
          </foreach>
+
       </p>
     </li>
   </foreach>
