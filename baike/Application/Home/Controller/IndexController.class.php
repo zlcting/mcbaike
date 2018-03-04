@@ -127,8 +127,16 @@ class IndexController extends Controller {
         //列表start
         if(!empty($class_id)){
             $map['class_id'] = $class_id;
+            
         }else{
 
+           $class_list =  M('class')->where(array('p_id'=>$top_class_id,'status'=>1))->select();
+
+           foreach ($class_list as $key => $value) {
+                $class_id[] = $value['id'];
+           }
+
+           $map['class_id'] = array('IN',$class_id);
         }
 
         if(!empty($get_arr['p1'])){
