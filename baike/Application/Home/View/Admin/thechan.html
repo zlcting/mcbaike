@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="__PUBLIC__/hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/hplus/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>标签<small></small></h5>
+                    </div>
+                    <div class="ibox-content">
+
+                           
+                        <form method="post" class="form-horizontal" target="_self" id = "form">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">图片:</label>
+                                <div class="col-sm-2">
+                                  <img src="{$Think.const.IMG}{$pic_info.link}/{$pic_info.thumb_name}" width="330"  height="220">
+                                </div>
+                            </div>
+                             <div class="hr-line-dashed"></div>
+                            <input type="hidden" name="id" value="{$pic_info['id']}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">链接 </label>
+                                <div class="col-sm-7">
+                                    <if condition="!empty($pic_info['thechan'])">
+                                    <input type="text" class="form-control" name="thechan" value="{$pic_info['thechan']}"> 
+                                    <else />
+                                    <input type="text" class="form-control" name="thechan" value="http://"> 
+                                </if>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    <script src="__PUBLIC__/hplus/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/hplus/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="__PUBLIC__/hplus/js/content.min.js?v=1.0.0"></script>
+    <script src="__PUBLIC__/hplus/js/plugins/iCheck/icheck.min.js"></script>
+    <script type="text/javascript" charset="UTF-8"></script>
+</body>
+
+</html>
