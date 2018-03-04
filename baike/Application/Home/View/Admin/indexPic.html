@@ -78,6 +78,11 @@
                                                     <button class="btn btn-info " type="button"><i class="fa fa-list"></i>取消应用</button>
                                                 </a> 
                                             </if>
+                                            <if condition="$vo['status'] neq -1">
+                                                  <a href="picdelet?id={$vo.id}" target="_self">
+                                                    <button class="btn btn-info " type="button"><i class="fa fa-list"></i>删除</button>
+                                                </a>
+                                             </if>     
                                         </td>   
                                     </tr>
                                 </foreach>

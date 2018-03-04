@@ -75,16 +75,6 @@
 
                         </div>
                         </h5>
-<!--                <form action="" method="get" id="form"  target="_self">
-                    <div class="ibox-content">
-                        <div class="">
-                                <label> 词条名称：
-                                    <input type="search" name="name" class="form-control" value="{$map['name']}">
-                                </label>
-                            <a onclick="form_search()" href="javascript:void(0);" class="btn btn-primary ">查找</a>
-                        </div>
-                    </div>
-                    </form> -->
                         <table class="table table-striped table-bordered table-hover">
                             <thead>
                                 <tr>
@@ -117,7 +107,10 @@
                                                 <a href="setEntryPic?feed_pic={$vo.id}&e_id={$e_id}" target="_self">
                                                     <button class="btn btn-info " type="button"><i class="fa fa-list"></i>喂养配图</button>
                                                 </a> 
-                                            </if> 
+                                            </if>
+                                                <a href="picdelet?id={$vo.id}&e_id={$e_id}" target="_self">
+                                                    <button class="btn btn-info " type="button"><i class="fa fa-list"></i>删除</button>
+                                                </a>  
                                         </td>
                                     </tr>
                                 </foreach>

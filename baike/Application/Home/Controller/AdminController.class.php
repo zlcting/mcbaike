@@ -353,7 +353,7 @@ class AdminController extends Controller {
         $entry_id = input('get.e_id');
         $dict = get_dict('qa');
         $qa = D('question');
-        $list = $qa->where(array('entry_id'=>$entry_id))->order('updatetime desc')->select();
+        $list = $qa->where(array('entry_id'=>$entry_id,'status'=>1))->order('updatetime desc')->select();
         
         $this->assign('e_id',$entry_id);
         $this->assign('entry_id',$entry_id);
@@ -401,6 +401,23 @@ class AdminController extends Controller {
          } 
     }
 
+    public function qadelet(){
+        $id = input('get.id');
+        $entry_id = input('get.entry_id');
+        $data['id'] = $id;
+        $data['updatetime'] = time();
+        $data['status'] = -1;
+        //p($data);exit();
+        $qa = M('question');
+        $re = $qa->save($data);
+        if($re){
+                $this->redirect('qaEditor', array('e_id'=>$entry_id));
+        }else{
+                $this->error('保存失败');
+         } 
+
+    }
+
 
     //图片列表
     public function picList(){
@@ -412,7 +429,7 @@ class AdminController extends Controller {
         if(!empty($map['e_id'])){
            $list = $class->where($map)->order('create_time desc')->page($p.','.$limit)->select(); 
         }
-        $entry_info = M('entry')->where(array('id'=>$map['e_id']))->find();
+        $entry_info = M('entry')->where(array('id'=>$map['e_id'],'status'=>1))->find();
         
         //p(M()->getLastSql());
         $count= $class->where($map)->count();
@@ -430,6 +447,24 @@ class AdminController extends Controller {
         $this->assign('entry_info',$entry_info);
         
         $this->display();
+    }
+
+    public function picdelet(){
+        $id = input('get.id');
+        $e_id = input('get.e_id');
+        $data['id'] = $id;
+        $data['status'] = -1;
+        $re = M('pic')->save($data);
+        
+        if($re){
+            if(!empty($e_id)){
+                $this->redirect('picList?e_id='.$e_id, array(), 0, '页面跳转中...');
+            }else{
+                $this->redirect('indexPic', array(), 0, '页面跳转中...');
+            }
+        }else{
+            $this->error('更新失败');
+        }
     }
 
     //设词条-喂养或简介配图
