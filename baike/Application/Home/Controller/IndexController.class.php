@@ -62,8 +62,8 @@ class IndexController extends Controller {
             }
         }
 
-        $question = M('question')->where(array('entry_id'=>$info['id'],'status'=>1))->select();
-        //echo M()->getLastSql();
+        $question = M('question')->where(array('entry_id'=>$info['id'],'status'=>1))->order('qa_order desc')->select();
+        // echo M()->getLastSql();
         //nav 开始
         //1.nav 渲染开始 第一级和第二级导航
         $nav = $this->getNav();

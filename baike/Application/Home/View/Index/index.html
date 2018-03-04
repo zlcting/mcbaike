@@ -22,7 +22,7 @@
         <div class="v_cont">
           <ul>
           	<foreach name="list" item="vo" key="k" >
-            <li index="{$k}"><a href="#" target="_self"><img src="{$Think.const.IMG}{$vo.link}/{$vo.name}"></a>
+            <li index="{$k}"><a <if condition="!empty($vo['thechan'])">href="{$vo.thechan}"<else />href="#"</if>target="_self"><img src="{$Think.const.IMG}{$vo.link}/{$vo.name}"></a>
               <!-- <div class="bj-tit"></div> -->
             </li>
         	</foreach>

@@ -9,7 +9,8 @@ class AdminController extends Controller {
     {  
         $user = $_SESSION['baike'];
         if(empty($user) || $user['group'] !=2){
-            //$this->redirect('index/index', array(), 0, '页面跳转中...');
+            // echo "没有权限:";
+            // $this->redirect('index/index', array(),5, '页面跳转中...');
         }
         $this->assign('user',$user);
     } 
@@ -418,6 +419,29 @@ class AdminController extends Controller {
 
     }
 
+    //问答置顶
+    public function qaup(){
+        $id = input('get.id');
+        $entry_id = input('get.entry_id');
+        $status = input('get.status');
+        $data['id'] = $id;
+        $data['updatetime'] = time();
+
+        if ($status == 'cancel') {
+            $data['qa_order'] = 0;
+        }else{
+            $data['qa_order'] = 100;
+        }
+        //p($data);exit();
+        $qa = M('question');
+        $re = $qa->save($data);
+        if($re){
+                $this->redirect('qaEditor', array('e_id'=>$entry_id));
+        }else{
+                $this->error('保存失败');
+         } 
+
+    }
 
     //图片列表
     public function picList(){
@@ -465,6 +489,32 @@ class AdminController extends Controller {
         }else{
             $this->error('更新失败');
         }
+    }
+
+    //pic外链
+    public function thechan(){
+
+        $post = input('post.');
+        if($post){
+            $data['id'] = $post['id'];
+            $data['thechan'] = $post['thechan'];
+            $re = M('pic')->save($data);
+            if(!empty($re)){
+
+                $this->redirect('indexPic', array(), 0, '页面跳转中...');
+
+            }else{
+
+                $this->error('更新失败');
+            }
+
+        }else{
+            $id = input('get.id');
+            $pic_info = M('pic')->where(array('id'=>$id))->find();
+            $this->assign('pic_info',$pic_info);
+            $this->display(); 
+        }
+
     }
 
     //设词条-喂养或简介配图

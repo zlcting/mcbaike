@@ -78,7 +78,13 @@
                                         <td>{$dict['status'][$vo['status']]}</td>
                                         <td id = "content_{$vo.id}">{$vo.content}</td>
                                         <td><a onclick="bianji({$vo.id})"><i class="fa fa-check text-navy"></i> 编辑</a>
-                                        <a href="qadelet?id={$vo.id}&entry_id={$e_id}" target="_self"><i class="fa fa-check text-navy"></i> 删除</a></td>
+                                        <a href="{:U('qadelet',array('id'=>$vo['id'],'entry_id'=>$e_id))}" target="_self"><i class="fa fa-check text-navy"></i> 删除</a>
+                                        <if condition="$vo['order'] eq 100">
+                                            <a href="{:U('qaup',array('id'=>$vo['id'],'entry_id'=>$e_id,'status'=>'cancel'))}" target="_self"><i class="fa fa-check text-navy"></i> 取消置顶</a>
+                                        <else />
+                                        <a href="{:U('qaup',array('id'=>$vo['id'],'entry_id'=>$e_id))}" target="_self"><i class="fa fa-check text-navy"></i> 置顶</a>
+                                        </if>
+                                        </td>
                                     </tr>
                                 </foreach>
                                 </tbody>
