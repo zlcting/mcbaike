@@ -455,7 +455,7 @@ class AdminController extends Controller {
         $data['id'] = $id;
         $data['status'] = -1;
         $re = M('pic')->save($data);
-        
+
         if($re){
             if(!empty($e_id)){
                 $this->redirect('picList?e_id='.$e_id, array(), 0, '页面跳转中...');
@@ -728,9 +728,26 @@ class AdminController extends Controller {
 
     public function subtag_list(){
         $p_id = input('get.p_id');
-        $tag = M('tags')->where(array('p_id'=>$p_id))->select();
+        $tag = M('tags')->where(array('p_id'=>$p_id,'status'=>1))->select();
+        
+        $this->assign('p_id',$p_id);
         $this->assign('tag',$tag);
         $this->display(); 
+    }
+
+
+    public function subtag_del(){
+        $id = input('get.id');
+        $p_id = input('get.p_id');
+        $data['id'] = $id;
+        $data['status'] = -1;
+        $re = M('tags')->save($data);
+
+        if($re){
+            $this->redirect('subtag_list?p_id='.$p_id, array(), 0, '页面跳转中...');
+         }else{
+            $this->error('保存失败');
+         }
     }
 
 
