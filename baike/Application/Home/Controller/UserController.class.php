@@ -11,8 +11,14 @@ class UserController extends Controller {
 
     public function login(){
 
+      if (strpos($_SERVER['HTTP_REFERER'],'admin')) {
+          $http_referer = "http://www.mcbaike.com/baike/Home/admin/index";
+       }else{
+          $http_referer = "http://www.mcbaike.com/baike/";
+       }
 
-        $this->display();
+      $this->assign('http_referer',$http_referer);
+      $this->display();
 
     }
 
@@ -61,7 +67,15 @@ class UserController extends Controller {
             $_SESSION['baike']['name'] = $user['name'];
             $_SESSION['baike']['email'] = $user['email'];
             $_SESSION['baike']['group'] = $user['group'];
-            $this->success($succ, U('Index/index'));
+            $http_referer = input('post.http_referer');
+            if(!empty($http_referer)){
+              
+              $this->success($succ, $http_referer);
+
+            }else{
+              $this->success($succ, U('Index/index'));
+            }
+            
        }
 
     }

@@ -128,7 +128,7 @@ class IndexController extends Controller {
         if(!empty($class_id)){
             $map['class_id'] = $class_id;
             
-        }else{
+        } else {
 
            $class_list =  M('class')->where(array('p_id'=>$top_class_id,'status'=>1))->select();
 
