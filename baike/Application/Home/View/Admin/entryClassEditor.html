@@ -63,7 +63,7 @@
                             </div>
 
 
-                            <div id="div_top_type" style="display: none;">
+                            <div id="div_top_type"  <if condition="$class_info[level] eq 1">style="display: none;"</if> >
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">一级分类</label>
@@ -76,19 +76,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="div_s_type" style="display: none;">
-                                <div class="hr-line-dashed"></div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">二级分类</label>
-                                    <div class="col-sm-2">
-                                        <select class="form-control m-b" name="p_id" id="s_p_type">
-                                                <foreach name="p_class_list" item="vo" key="k" >
-                                                 <option value="{$vo.id}" <if condition="$vo.id eq $class_info[p_id]">selected="selected"</if>>{$vo.name}</option>
-                                             </foreach>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                            <input type="hidden" name="id" value="{$class_info['id']}">
                             <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
                                     <button class="btn btn-primary" type="button" onclick="form_submit()">保存内容</button>

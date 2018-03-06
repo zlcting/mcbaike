@@ -53,9 +53,18 @@
                     <div class="ibox-content">
                         <form method="post" class="form-horizontal" target="_self" id = "form">
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">分类名称</label>
+                                <label class="col-sm-2 control-label">名称</label>
                                 <div class="col-sm-2">
                                     <input type="text" class="form-control" name="name" id = "name"> 
+                                </div>
+                            </div>
+                                                        <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">英文名</label>
+                                    <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="en_name" id = "en_name" value="{$entry_info['en_name']}"> 
+                                    </div>
                                 </div>
                             </div>
                             <div id="div_top_type">
@@ -94,19 +103,33 @@
                                 </div>
                             </div> -->
 
+
                             <div>
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">性格</label>
                                     <div class="col-sm-2">
-                                        <select class="form-control m-b" name="character">
-                                             <foreach name="dict['character']" item="vo" key="k" >
-                                                 <option value="{$k}">{$vo}</option>
-                                             </foreach>
-                                        </select>
+                                    <input type="text" class="form-control" name="character" id = "character" value=""> 
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">易患病</label>
+                                    <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="e_disease" id = "e_disease" value=""> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">祖籍</label>
+                                    <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="descent" id = "descent" value=""> 
+                                    </div>
+                                </di
                             <div>
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group">
@@ -154,7 +177,7 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">寿命</label>
                                 <div class="col-sm-1">
-                                    <input type="text" class="form-control" name="name" id = "name"> 
+                                    <input type="text" class="form-control" name="life" id = ""> 
                                 </div>年
                             </div>
                             <div class="form-group">

@@ -135,9 +135,6 @@ class AdminController extends Controller {
             $data['status'] = 1;
             $class = M('class');
             $re = $class->save($data);
-            // p(M()->getLastSql());
-            // p($re);
-            // exit;
             if($re){
                 //$this->redirect('entryClass', array(), 0, '页面跳转中...');
                 $this->success('更新成功', 'entryClass');
@@ -163,6 +160,22 @@ class AdminController extends Controller {
             $this->assign('p_class_list',$p_class_list);
         
             $this->display();
+        }
+    }
+
+    public function entryClassdel(){
+        $id = input('get.id');
+        $class = M('class');
+        $class_top = $class->where(array('id'=>$id))->find();
+        if($class_top['level'] == 1){
+            $sub_re = $class->where(array('p_id'=>$id))->save(array('status'=>-1));
+        }
+        $re = $class->where(array('id'=>$id))->save(array('status'=>-1));
+
+        if($re){
+            $this->redirect('entryClass', array(), 0, '页面跳转中...');
+        }else{
+            $this->error('保存失败');
         }
     }
 
@@ -281,6 +294,12 @@ class AdminController extends Controller {
             $data['position_2'] = $post['position_2'];
             $data['position_3'] = $post['position_3'];
             $data['position_4'] = $post['position_4'];
+            $data['life'] = $post['life'];
+            $data['feed'] = $post['feed'];
+                        $data['descent'] = $post['descent'];
+            $data['e_disease'] = $post['e_disease'];
+            $data['introduction'] = $post['introduction'];
+            $data['en_name'] = $post['en_name'];
             $data['class_id'] = !empty($post['class_id'])?$post['class_id']:'';
             $data['create_time'] = time();
             $data['status'] = 1;
@@ -316,6 +335,12 @@ class AdminController extends Controller {
             $data['position_2'] = $post['position_2'];
             $data['position_3'] = $post['position_3'];
             $data['position_4'] = $post['position_4'];
+            $data['en_name'] = $post['en_name'];
+            $data['life'] = $post['life'];
+            $data['feed'] = $post['feed'];
+            $data['descent'] = $post['descent'];
+            $data['e_disease'] = $post['e_disease'];
+            $data['introduction'] = $post['introduction'];
             $data['class_id'] = !empty($post['class_id'])?$post['class_id']:'';
             //$data['create_time'] = time();
             $data['update_time'] = time();
@@ -337,7 +362,7 @@ class AdminController extends Controller {
             $s_class_list = $class->where(array('p_id'=>$class_info['p_id']))->select();
             $dict = get_dict('entry');
             $tags = D('tags')->gettagsinfo($class_info['p_id']);
-            //p($tags[0][sub]);
+            //p($entry_info);
             $this->assign('tags',$tags);
             $this->assign('s_class_list',$s_class_list);
             $this->assign('top_class_id',$class_info['p_id']);
@@ -347,6 +372,15 @@ class AdminController extends Controller {
             $this->assign('entry_info',$entry_info);
             $this->display();
         }
+    }
+
+    public function entry_del(){
+        $id = input('get.id');
+        $data['id'] = $id;
+        $data['status'] = -1;
+        $entry = M('entry');
+        $re = M('entry')->save($data);
+        $this->redirect('entryList');
     }
 
     //问答列表
