@@ -11,7 +11,7 @@ class ClassModel extends Model {
 	public function classtree($effective = 1){
 
 	    $top_map['status'] = 1;
-        $class_list = $this->where($top_map)->select();
+        $class_list = $this->where($top_map)->order('level asc')->order('sort desc')->select();
         $tree = array();
         foreach ($class_list as $key => $value) {
 
@@ -27,6 +27,7 @@ class ClassModel extends Model {
         		unset($class_list[$key]);
         	}
         }
+        //p($tree);exit();
 
         //判断删除不完整的树
         if(!empty($effective)){

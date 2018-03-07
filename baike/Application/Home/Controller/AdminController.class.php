@@ -54,7 +54,8 @@ class AdminController extends Controller {
         $map['status'] = 1;
         $class = M('class');
         //p($map);
-        $list = $class->where($map)->order('create_time desc')->page($p.','.$limit)->select();
+        $list = $class->where($map)->order('level asc')->order('sort desc')->page($p.','.$limit)->select();
+       // p($list);
         //p(M()->getLastSql());
         $count= $class->where($map)->count();
         //p($list);
@@ -80,6 +81,7 @@ class AdminController extends Controller {
         if(!empty($post)){
             $data['name'] = $post['name'];
             $data['level'] = $post['level'];
+            $data['sort'] = !empty($post['sort'])?$post['sort']:0;
             if($data['level'] == 1){
                 $data['top_p_id'] = 0;
                 $data['p_id'] = 0;
@@ -129,12 +131,14 @@ class AdminController extends Controller {
             $data['id'] = $post['id'];
             $data['name'] = $post['name'];
             $data['level'] = $post['level'];
+            $data['sort'] = !empty($post['sort'])?$post['sort']:0;
             $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
-            $data['p_id'] = !empty($post['p_id'])?$post['p_id']:0;
+            $data['p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
             $data['create_time'] = time();
             $data['status'] = 1;
             $class = M('class');
             $re = $class->save($data);
+    
             if($re){
                 //$this->redirect('entryClass', array(), 0, '页面跳转中...');
                 $this->success('更新成功', 'entryClass');
@@ -246,7 +250,7 @@ class AdminController extends Controller {
             $tree = $class->classtree();
             $nav = M('nav')->find();
             $nav = json_decode($nav['nav'],true);
-                        //p($nav);
+            //p($tree);
             $this->assign('nav',$nav);
             $this->assign('tree',$tree);
             $this->display(); 
@@ -296,7 +300,7 @@ class AdminController extends Controller {
             $data['position_4'] = $post['position_4'];
             $data['life'] = $post['life'];
             $data['feed'] = $post['feed'];
-                        $data['descent'] = $post['descent'];
+            $data['descent'] = $post['descent'];
             $data['e_disease'] = $post['e_disease'];
             $data['introduction'] = $post['introduction'];
             $data['en_name'] = $post['en_name'];
