@@ -33,7 +33,7 @@
       	<foreach name="list" item="vo" key="k" >
         <li <if condition="$k eq 0"> class="circle-cur" </if> <if condition="$k eq 6"> style="margin-right:0" </if> ><img src="{$Think.const.IMG}{$vo.link}/{$vo.thumb_name}" height="122" width="153"></li>
     	</foreach>
-<!--     	<li><img src="{$Think.const.IMG}{$vo.link}/{$vo.thumb_name}"></li>
+<!--    <li><img src="{$Think.const.IMG}{$vo.link}/{$vo.thumb_name}"></li>
         <li><img src="__PUBLIC__/images/banner2_l.jpg"></li>
         <li><img src="__PUBLIC__/images/banner3_l.jpg"></li>
         <li><img src="__PUBLIC__/images/banner4_l.jpg"></li>
@@ -135,7 +135,7 @@
 </script> 
     <!--banner e--> 
     <!--zcbk s-->
-    <div class="zcbk w1136">
+    <div class="zcbk w1136" style="width: 1134px;">
       <div class="nav20"></div>
       <div class="nav40"></div>
       <img src="__PUBLIC__/images/sy-zcbk.png">
@@ -146,14 +146,14 @@
       	<foreach name="nav_res" item="vo" key="k" >
         <li <if condition="$vo['id'] eq 4" > style="margin-right:0" </if> ><img src="{$vo.img_url}">
           <div class="nav20"></div>
-          <a href="{:U('index/search',array('class'=>$vo['e_id']))}">{$vo.name}</a>
+          <a href="{:U('index/search',array('top_class_id'=>$vo['e_id']))}">{$vo.name}</a>
         </li>
     	</foreach>
       </ul>
     </div>
     <!--zcbk e--> 
     <div class="nav20"></div>
-        <div class="w1136" style="background:white;text-align:center;" >
+        <div class="w1136" style="background:white;text-align:center;width: 1134px;" >
         	<a href="/baike/index/search" style="color: #333; font-size: 20px; margin-top: 10px;">更多宠物类型</a>
         </div>
   </div>
