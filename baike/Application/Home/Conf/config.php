@@ -111,4 +111,9 @@ return array(
     'view_replace_str'       => [
         '__IMG__'=>  '/public/img/',          
     ],
+    'URL_ROUTER_ON'   => true,
+    //静态路由 
+	'URL_MAP_RULES'=>array(
+	    'api/uc' => 'uc/index',
+	)
 );
