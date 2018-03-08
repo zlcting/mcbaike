@@ -30,6 +30,7 @@ class UserController extends Controller {
        $code =  I('post.code');
 
        $re = check_verify($code); 
+       // $re =1;
         if($re){
             $email_check= filter_var($name, FILTER_VALIDATE_EMAIL);
             if($email_check){
@@ -42,6 +43,7 @@ class UserController extends Controller {
 
             list($uid, $username, $password, $email) = $uc_api -> uc_user_login($name, $pass, $isuid);
             echo $uc_api->uc_user_synlogin($uid);//同步登录论坛
+          
                 if($uid > 0) {
                     $succ =  '登录成功';
                 } elseif($uid == -1) {
@@ -67,13 +69,14 @@ class UserController extends Controller {
             $_SESSION['baike']['name'] = $user['name'];
             $_SESSION['baike']['email'] = $user['email'];
             $_SESSION['baike']['group'] = $user['group'];
+            $_SESSION['baike']['uid'] = $user['uid'];//统一用户登录id
             $http_referer = input('post.http_referer');
             if(!empty($http_referer)){
-              
               $this->success($succ, $http_referer);
-
+              //$this->redirect($http_referer, array(), 0, '页面跳转中...');
             }else{
-              $this->success($succ, U('Index/index'));
+              // $this->success($succ, U('Index/index'));
+              $this->redirect('/', array(), 0, '页面跳转中...');
             }
             
        }
@@ -170,6 +173,11 @@ class UserController extends Controller {
         }else{
             echo 2;
         }
+    }
+
+    public function logout(){
+      unset($_SESSION['baike']);
+      $this->redirect('/', array(), 0, '页面跳转中...');
     }
 
     //生成邮箱验证秘钥串

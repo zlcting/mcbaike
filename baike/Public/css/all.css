@@ -81,7 +81,14 @@ a{
 .dh a:hover{ background:#0071a4;}
 .dh1 { position: relative;height:40px; line-height: 40px; background:#FFF;}
 .dh1 li{ width: 100px; float: left; display: block;}
-.dh1 a{ float: left; margin-left: 25px; display: block; padding: 0px 10px; text-align: center;font-size: 18px; color: #636363;}
+.dh1 a{ float: left; 
+		margin-left: 25px; 
+		display: block; 
+		/*padding: 0px 10px; */
+		padding: 0px 1px; 
+		text-align: center;
+		font-size: 18px; 
+		color: #636363;}
 .dh1 a:hover{ color:#22a3dd;}
 .dh1 .dh-cd{display:none; position: absolute;top: 40px;left: 0px; width: 1136px; height: 52px; line-height: 52px; background: #f3f3f3; box-shadow: 0px 0 5px #f3f3f3,0 0px 5px #f3f3f3,0 1px 6px #d0d0d0,0px 0 5px #f3f3f3;}
 .dh1 li:hover .dh-cd{ display: block;}

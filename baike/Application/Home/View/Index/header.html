@@ -1,8 +1,10 @@
   <div class="logo">
  	<div class="bk-zc fr">
  		<img src="__PUBLIC__/images/icon.png" class="fl"><a href="/forum">论坛进入</a>
+ 		<a href="/baike" >首页</a>
  		<if condition="!empty($user['name'])">
- 			<span><a>{$user['name']}</a></span>
+ 			<span><a href="/forum/home.php?mod=space">{$user['name']}</a></span>
+ 			<span><a href="user/logout" target="_self">退出</a></span>
  		<else />
  		<span><a href="{:U('user/register')}">注册</a>| <a href="{:U('user/login')}">登录</a></span>
  		</if>
