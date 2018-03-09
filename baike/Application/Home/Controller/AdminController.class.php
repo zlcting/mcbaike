@@ -704,15 +704,13 @@ class AdminController extends Controller {
 
         $pic = M('pic');
         $pic_list = $pic->where(array('type'=>2,'e_id'=>0,'status'=>array('in','1,2')))
+                    ->where(array('width'=>array('EGT','272'),'height'=>array('EGT','272')))
                     ->select();
         //拼装一下图片数组
         $pic_id_index = array();
         $pic_choose_arr = array();
         foreach ($pic_list as $key => $value) {
             $pic_id_index[$value['id']] = $value;
-            if($value['width']>='272'&&$value['height']>='272'){
-                $pic_choose_arr[$value['id']] = $value;
-            }
         }
         foreach ($list as $k => $v) {
             if(!empty($v['pic_id'])){
@@ -720,7 +718,7 @@ class AdminController extends Controller {
             }
         }
         $this->assign('list',$list);
-        $this->assign('pic_id_index',$pic_choose_arr);
+        $this->assign('pic_id_index',$pic_id_index);
         $this->assign('entry_class',$entry_class);
         $this->display();
     }

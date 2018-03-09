@@ -117,7 +117,7 @@ class IndexController extends Controller {
         $top = $nav['top'];
         $first = current($top);
         $top_class_id = input('get.top_class_id',$first['id']);
-        $class_id = input('get.class_id');
+        $p_class_id = input('get.class_id');
         $get_arr = input('get.');
         
         $sub = $nav['sub'][$top_class_id];
@@ -177,12 +177,11 @@ class IndexController extends Controller {
                  $entry_data[$value['e_id']]['thumb_name'] = $value['thumb_name'];
                 }
         $dict_tags = D('tags')->gettagsdict($top_class_id);
-        // p($dict_tags);
         $this->assign('dict_tags',$dict_tags);
-
+        //p($p_class_id);
         $this->assign('entry_data',$entry_data);               
         $this->assign('get_arr',$get_arr);
-        $this->assign('class_id',$class_id);
+        $this->assign('class_id',$p_class_id);
         $this->assign('top_class_id',$top_class_id);
         $this->assign('top',$top);
         $this->assign('sub',$sub);

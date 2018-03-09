@@ -12,7 +12,8 @@ a.nodefault{
   <div class="dh1 w1136">
     <ul>
         <foreach name="sub" item="vv" key="kk" >
-                <li ><a style="margin-left: 7px;" href="{:U(search,array('top_class_id'=>$top_class_id,'class_id'=>$vv[id]))}" <if condition="$class_id eq $vv[id]"> style="color: #22a3dd" </if>>{$vv.name}</a>
+                <li ><a  href="{:U(search,array('top_class_id'=>$top_class_id,'class_id'=>$vv[id]))}" 
+                  <if condition="$class_id eq $vv[id]"> style="margin-left: 7px;color: #22a3dd;" <else/> style="margin-left: 7px;" </if>>{$vv.name}</a>
                     <if condition=" !empty($entry_arr[$vv['id']])">
                      <div class="dh-cd">
                        <foreach name="entry_arr[$vv[id]]" item="vvv" key="kkk" >
