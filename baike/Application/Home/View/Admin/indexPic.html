@@ -29,16 +29,14 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>图片列表列表<small> </small>
-<!--                         <a href="{$Think.const.BAIKE_ADMIN_URL}/entryAdd.html" target="_self">
-                            <button class="btn btn-warning " type="button"><span class="bold">上传图片</span>
-                        </button>
-                        </a>  -->
+                        <h5>图片列表列表
                         <p></p>
                         <br/>
+                        <p style="color: red">首页幻灯片的尺寸建议为 1136*460 入口尺寸建议为272*272.</p>
                         <div id="uploader-demo">
                             <!--用来存放item-->
                             <div id="fileList" class="uploader-list"></div>
+
                             <div id="filePicker">选择图片</div>
                         </div>
                         <div id="upload_list">
@@ -52,7 +50,7 @@
                                     <th><!-- <input type="checkbox" name=""/> -->ID</th>
                                     <th>创建时间</th>
                                     <th>修改时间</th>
-                                    
+                                    <th>图片尺寸</th>>
                                     <th>状态</th>
                                     <th>操作</th>                                    
                                 </tr>
@@ -63,6 +61,7 @@
                                         <td><input type="checkbox" name="id[]" value="{$vo.id}">{$vo.id}</td>
                                         <td>{$vo.create_time|date="y-m-d H:i:s",###}</td>
                                         <td>{$vo.update_time|date="y-m-d H:i:s",###}</td>
+                                        <td>{$vo.width}*{$vo.height}</td>
                                         <td>{$dict['status'][$vo['status']]}</td>
                                         <td>
                                             <a href="__PUBLIC__/Uploads/img/{$vo.link}/{$vo.name}" title="图片" data-gallery="">

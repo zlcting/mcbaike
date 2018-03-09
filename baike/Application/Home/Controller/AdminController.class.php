@@ -590,6 +590,7 @@ class AdminController extends Controller {
              $this->ajaxReturn('参数错误');
              exit;
         }
+
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     3145728 ;// 设置附件上传大小
         $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -603,10 +604,14 @@ class AdminController extends Controller {
         //处理图片
         $image = new \Think\Image();
         $path = $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$info['file']['savename'];
+
         $thumb_path =  $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$thumb_name;
         $thumb272_path =  $_SERVER['DOCUMENT_ROOT'].'/baike/Public/Uploads/img/'.$info['file']['savepath'].$thumb_272;
         $image->open($path);
-        $image->thumb( 1136, 460 )->save($path);
+
+        if(!empty($e_id)){//当上传首页图片素材时 则不会裁剪原图
+            $image->thumb( 1136, 460 )->save($path);
+        }
         $image->thumb( 310, 220 )->save($thumb_path);
         $image->open($path);
         $image->thumb( 272, 272 )->save($thumb272_path);
@@ -614,6 +619,9 @@ class AdminController extends Controller {
             $this->ajaxReturn($upload->getError());
 
         } else {// 上传成功
+            $image_size = getimagesize($path);
+            $width = $image_size['0'];
+            $height = $image_size['1'];
 
             $pic = D('pic');
             $data['e_id'] = $e_id;
@@ -622,6 +630,10 @@ class AdminController extends Controller {
             $data['thumb_272'] = $thumb_272;
             $data['link'] = $info['file']['savepath'];
             $data['type'] = $type;
+
+            $data['width'] = $width;
+            $data['height'] = $height;
+
             $data['status'] = 1;
             $data['create_time'] = time();
             $data['update_time'] = time();
@@ -691,11 +703,16 @@ class AdminController extends Controller {
         $list = $index_nav->select();
 
         $pic = M('pic');
-        $pic_list = $pic->where(array('type'=>2,'e_id'=>0,'status'=>array('in','1,2')))->select();
+        $pic_list = $pic->where(array('type'=>2,'e_id'=>0,'status'=>array('in','1,2')))
+                    ->select();
         //拼装一下图片数组
         $pic_id_index = array();
+        $pic_choose_arr = array();
         foreach ($pic_list as $key => $value) {
             $pic_id_index[$value['id']] = $value;
+            if($value['width']>='272'&&$value['height']>='272'){
+                $pic_choose_arr[$value['id']] = $value;
+            }
         }
         foreach ($list as $k => $v) {
             if(!empty($v['pic_id'])){
@@ -703,7 +720,7 @@ class AdminController extends Controller {
             }
         }
         $this->assign('list',$list);
-        $this->assign('pic_id_index',$pic_id_index);
+        $this->assign('pic_id_index',$pic_choose_arr);
         $this->assign('entry_class',$entry_class);
         $this->display();
     }
