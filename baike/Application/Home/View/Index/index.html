@@ -144,7 +144,7 @@
 
       <ul class="zc_zs">
       	<foreach name="nav_res" item="vo" key="k" >
-        <li <if condition="$vo['id'] eq 4" > style="margin-right:0" </if> ><img src="{$vo.img_url}">
+        <li <if condition="$vo['id'] eq 4" > style="margin-right:0" </if> ><img src="{$vo.img_url}" width="272" height="272">
           <div class="nav20"></div>
           <a href="{:U('index/search',array('top_class_id'=>$vo['e_id']))}">{$vo.name}</a>
         </li>
