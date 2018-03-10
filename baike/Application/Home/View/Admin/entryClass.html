@@ -48,8 +48,12 @@
                                     </select> 
                                 </label>
                                 <label> 父级分类：
-                                    <input type="search" name="name" class="form-control" disabled="disabled" value="{$p_name}"> 
-                                    <input type="hidden" name="pid" value="{$map['p_id']}"> 
+                                    <select name="p_id" class="form-control ">
+                                         <option value="0">全部</option>
+                                        <foreach name="p_class_arr" item="vo" key="k" >
+                                            <option value="{$k}" <if condition="$k eq $map['p_id']">selected="selected"</if> >{$vo.name}</option>
+                                        </foreach>
+                                    </select> 
                                 </label>
                                 <label> 分类名称：
                                     <input type="search" name="name" class="form-control" value="{$map['name']}">
@@ -66,7 +70,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>顶级ID</th>
-                                    <th>父ID</th>
+                                    <th>父类</th>
                                     <th>名称</th>
                                     <th>等级</th>
                                     <th>排序权重</th>
@@ -80,7 +84,7 @@
                                     <tr class="gradeA">
                                         <td>{$vo.id}</td>
                                         <td>{$vo.top_p_id}</td>
-                                        <td>{$vo.p_id}</td>
+                                        <td><a href="{$Think.const.BAIKE_ADMIN_URL}/entryClass.html?p_id={$vo[p_id]}" target="_self">{$p_class_arr[$vo[p_id]]['name']}</a></td>
                                         <td>{$vo.name}</td>
                                         <td>{$vo.level}</td>
                                         <td>{$vo.sort}</td>
@@ -91,7 +95,7 @@
                                             <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
                                             </a>
                                             <button class="btn btn-danger" type="button" onclick="del({$vo.id})"><i class="fa fa-list"></i>删除</button>        
-                                             <if condition="$vo.level neq 3">
+                                             <if condition="$vo.level eq 1">
                                                 <a href="{$Think.const.BAIKE_ADMIN_URL}/entryClass.html?p_id={$vo.id}&p_name={$vo.name}" target="_self">
                                                 <button class="btn btn-info " type="button"><i class="fa fa-list"></i>子类</button>
                                             </a> 

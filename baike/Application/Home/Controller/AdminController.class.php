@@ -64,6 +64,12 @@ class AdminController extends Controller {
             $Page->parameter[$key]   =   urlencode($val);
         }
         $show = $Page->Show();
+        $p_class = $class->where(array('level'=>1,'status'=>1))->select();
+        $p_class_arr = array();
+        foreach ($p_class as $key => $value) {
+            $p_class_arr[$value['id']] = $value;
+        }
+        $this->assign('p_class_arr',$p_class_arr);
         $this->assign('map',$map);
         $this->assign('p_name',$p_name);
         $this->assign('dict',$dict);
