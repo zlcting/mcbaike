@@ -194,13 +194,19 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">品种简介</label>
                                 <div class="col-sm-5">
-                                    <textarea name="introduction" id="introduction" class="form-control" cols ="100" rows="5">{$entry_info['introduction']}</textarea>
+                                    <!-- <textarea name="introduction" id="introduction" class="form-control" cols ="100" rows="5">{$entry_info['introduction']}</textarea> -->
+                                    <script id="introduction" name="introduction" type="text/plain">
+                                        {$entry_info['introduction']}
+                                    </script>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">喂养方式</label>
                                 <div class="col-sm-5">
-                                    <textarea name="feed" id="feed" class="form-control" cols ="100" rows="5">{$entry_info['feed']}</textarea>
+                                    <!-- <textarea name="feed" id="feed" class="form-control" cols ="100" rows="5">{$entry_info['feed']}</textarea> -->
+                                    <script id="feed" name="feed" type="text/plain">
+                                        {$entry_info['feed']}
+                                    </script>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -221,6 +227,11 @@
     <script src="__PUBLIC__/hplus/js/plugins/staps/jquery.steps.min.js"></script>
     <script src="__PUBLIC__/hplus/js/plugins/validate/jquery.validate.min.js"></script>
     <script src="__PUBLIC__/hplus/js/plugins/validate/messages_zh.min.js"></script>
+
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
 
     <script type="text/javascript">
             function getDataForAjax() {
@@ -314,6 +325,32 @@
 
             }
     </script>
+    
+    <script type="text/javascript">
+    var ue = UE.getEditor('introduction', {
+
+        toolbars: [
+        ['fullscreen', 'source', 'undo', 'redo'],
+        ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+        ],
+        autoHeightEnabled: true,
+        autoFloatEnabled: true,
+        initialFrameWidth:600,
+        initialFrameHeight:100
+});
+
+        var ue = UE.getEditor('feed', {
+
+        toolbars: [
+        ['fullscreen', 'source', 'undo', 'redo'],
+        ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+        ],
+        autoHeightEnabled: true,
+        autoFloatEnabled: true,
+        initialFrameWidth:600,
+        initialFrameHeight:100
+});
+</script>
 </body>
 
 </html>
