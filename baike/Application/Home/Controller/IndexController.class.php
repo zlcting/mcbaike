@@ -123,10 +123,9 @@ class IndexController extends Controller {
         $sub = $nav['sub'][$top_class_id];
         //p($get_arr);exit();
         $this->getNavUrl($top_class_id,$get_arr);
-
         //列表start
-        if(!empty($class_id)){
-            $map['class_id'] = $class_id;
+        if(!empty($p_class_id)){
+            $map['class_id'] = $p_class_id;
             
         } else {
 
