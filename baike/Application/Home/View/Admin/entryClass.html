@@ -39,14 +39,27 @@
                     <form action="" method="get" id="form"  target="_self">
                     <div class="ibox-content">
                         <div class="">
-                                <label>等级 
+<!--                                 <label>等级 
                                     <select name="level" class="form-control ">
                                          <option value="0">全部</option>
                                         <foreach name="dict['level']" item="vo" key="k" >
                                             <option value="{$k}" <if condition="$k eq $map[level]">selected="selected"</if> >{$vo}</option>
                                         </foreach>
                                     </select> 
+                                </label> -->
+
+                                <label >
+                                    <input type="checkbox" id="level_1" name="level" value="1" 
+                                    <if condition="1 eq $map[level]"> checked="checked" </if> onclick="form_get(1)"/>
+                                    <font size="4" face="arial">一级分类</font>
                                 </label>
+
+                                <label>
+                                    <input type="checkbox" id="level_2" name="level" value="2"
+                                     <if condition="2 eq $map[level]"> checked="checked" </if>  onclick="form_get(2)"/>
+                                    <font size="4" face="arial">二级分类</font>
+                                </label>
+
                                 <label> 父级分类：
                                     <select name="p_id" class="form-control ">
                                          <option value="0">全部</option>
@@ -140,6 +153,17 @@
             if (confirm("如果删除的是顶级分类,那么它的子类也会删除,确定删除么")==true){
                 window.location.href='{$Think.const.BAIKE_ADMIN_URL}entryClassdel?id='+id;
             }
+        }
+        function form_get(v){
+
+            if(v == 1) {
+                 $("#level_2").removeAttr("checked");//取消全选   
+            }else if(v == 2){
+                $("#level_1").removeAttr("checked");//取消全选   
+            }else{
+
+            }
+             $("#form").submit();
         }
 </script>
 
