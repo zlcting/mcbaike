@@ -355,9 +355,11 @@ class AdminController extends Controller {
             //$data['create_time'] = time();
             $data['update_time'] = time();
             $data['status'] = 1;
-            //p($data);exit;
+            p($data);
             $entry = M('entry');
             $re = $entry->save($data);
+            p($re);
+            echo M()->getLastSql();exit();
             $this->redirect('entryList', array('entry_id'=>$data['entry_id']));
         } else {
 
@@ -439,7 +441,7 @@ class AdminController extends Controller {
          // p(M()->getLastSql());
          // exit();
         if($re){
-                $this->redirect('qaEditor', array('entry_id'=>$data['entry_id']));
+                $this->redirect('qaEditor', array('e_id'=>$data['entry_id']));
                 //$this->success('更新成功', 'entryClassLevel');
         }else{
                 $this->error('保存失败');
@@ -656,7 +658,7 @@ class AdminController extends Controller {
 
     public function indexPic(){
         $p = input('get.p',1);
-        $map['status'] = array('in','1,2,-1');
+        $map['status'] = array('in','1,2');
         $map['e_id'] = 0;
         $map['type'] = 2;
         $class = M('pic');
