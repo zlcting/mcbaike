@@ -21,7 +21,7 @@
     <include file="header" />
    </div>
 </div>
-<div class="wrap height-30"> 
+<div class="wrap height-30" id="total_height"> 
   <!--fullSlide s-->
     <include file="slide" />
   <!--fullSlide end-->
@@ -69,7 +69,7 @@
       </ul>
     </div>
   <div class="tabCon w1136_w">
-      <div  class="cur">
+      <div class="cur" id= "tab_height">
     <ul>
       <li class="m_10"> 
       
@@ -270,6 +270,12 @@
 
      })
   
+      $(document).ready(function(){  
+        tab_height = $('#tab_height').height();
+        total_height = $('#total_height').height();
+        $('#total_height').height(total_height+tab_height-500);
+        // 初始化内容
+    });  
 </script>
 </body>
 </html>
