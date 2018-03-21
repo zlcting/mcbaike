@@ -410,7 +410,7 @@ class AdminController extends Controller {
     }
     //问答编辑提交
     public function qaPostUpdate(){
-        $post = input('post.');
+        $post = $_POST;
         $data['id'] = $post['id'];
         $data['title'] = $post['title'];
         $data['entry_id'] = $post['entry_id'];
@@ -422,7 +422,7 @@ class AdminController extends Controller {
          // p(M()->getLastSql());
          // exit();
         if($re){
-                $this->redirect('qaEditor', array('entry_id'=>$data['entry_id']));
+                $this->redirect('qaEditor', array('e_id'=>$data['entry_id']));
         }else{
                 $this->error('保存失败');
          } 
