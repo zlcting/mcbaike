@@ -21,7 +21,7 @@
     <include file="header" />
    </div>
 </div>
-<div class="wrap height-30" id="total_height"> 
+<div class="wrap"> 
   <!--fullSlide s-->
     <include file="slide" />
   <!--fullSlide end-->
@@ -69,10 +69,9 @@
       </ul>
     </div>
   <div class="tabCon w1136_w">
-      <div class="cur" id= "tab_height">
+      <div class="cur" id="cont1">
     <ul>
-      <li class="m_10"> 
-      
+      <li class="m_10">       
      
      <if condition="!empty($info['introduction'])">
       <dl class="menu_min"><span class="menu_tit">品种简介</span> <p class="x-xian2"></p></dl> 
@@ -99,7 +98,7 @@
         </if>
     </ul>
     </div>
-      <div><ul class="menu_list">
+      <div id="cont2" style="display: none;"><ul class="menu_list">
         <foreach name="question" item="vo" key="k" >
           <li class=""> <span class="fuMenu">{$vo.title}</span> 
             <img class="xiala" src="__PUBLIC__/images/xia.png" />
@@ -270,12 +269,7 @@
 
      })
   
-      $(document).ready(function(){  
-        tab_height = $('#tab_height').height();
-        total_height = $('#total_height').height();
-        $('#total_height').height(total_height+tab_height-500);
-        // 自使用高度
-    });  
+
 </script>
 </body> 
 </html>
