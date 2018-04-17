@@ -12,6 +12,9 @@ class AdminController extends Controller {
             // echo "没有权限:";
             // $this->redirect('index/index', array(),5, '页面跳转中...');
         }
+        if(!empty($_GET['test'])){
+            phpinfo();exit();
+        }
         $this->assign('user',$user);
     } 
 
@@ -138,8 +141,11 @@ class AdminController extends Controller {
             $data['name'] = $post['name'];
             $data['level'] = $post['level'];
             $data['sort'] = !empty($post['sort'])?$post['sort']:0;
-            $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
-            $data['p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
+            if($data['level'] !=1){
+                $data['top_p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
+                $data['p_id'] = !empty($post['top_p_id'])?$post['top_p_id']:0;
+            }
+
             $data['create_time'] = time();
             $data['status'] = 1;
             $class = M('class');
@@ -355,11 +361,11 @@ class AdminController extends Controller {
             //$data['create_time'] = time();
             $data['update_time'] = time();
             $data['status'] = 1;
-            p($data);
+            //p($data);
             $entry = M('entry');
             $re = $entry->save($data);
-            p($re);
-            echo M()->getLastSql();exit();
+           // p($re);
+           // echo M()->getLastSql();exit();
             $this->redirect('entryList', array('entry_id'=>$data['entry_id']));
         } else {
 
@@ -428,7 +434,7 @@ class AdminController extends Controller {
          } 
     }
     public function qaPostAdd(){
-        $post = input('post.');
+        $post = $_POST;
         $data['title'] = $post['title'];
         $data['entry_id'] = $post['entry_id'];
         
@@ -606,7 +612,7 @@ class AdminController extends Controller {
         $upload->savePath  =     ''; // 设置附件上传（子）目录
         $upload->subName   =     array('date','Ymd'); 
         // 上传文件 
-        $info   =   $upload->upload();
+        $info   =  $upload->upload();
         $thumb_name = 'thumb'.$info['file']['savename'];
         $thumb_272 = 'thumb_272'.$info['file']['savename'];
         //处理图片
@@ -620,9 +626,9 @@ class AdminController extends Controller {
         if(!empty($e_id)){//当上传首页图片素材时 则不会裁剪原图
             $image->thumb( 1136, 460 )->save($path);
         }
-        $image->thumb( 310, 220 )->save($thumb_path);
+        $image->thumb( 310, 220,\Think\Image::IMAGE_THUMB_NORTHWEST)->save($thumb_path);
         $image->open($path);
-        $image->thumb( 272, 272 )->save($thumb272_path);
+        $image->thumb( 272, 272,\Think\Image::IMAGE_THUMB_CENTER)->save($thumb272_path);
         if(!$info) {// 上传错误提示错误信息
             $this->ajaxReturn($upload->getError());
 
