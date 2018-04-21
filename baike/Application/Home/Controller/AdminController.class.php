@@ -29,11 +29,7 @@ class AdminController extends Controller {
         $this->assign('name',$name);
         $this->display();
     }
-     /**
-        顶级分类列表
-        // $Model = M();
-        // $Model->query('SELECT * FROM baike_user WHERE status = 1');
-     **/
+
     public function entryClass(){
         $dict = get_dict('class');
         $limit = 10;
@@ -152,6 +148,21 @@ class AdminController extends Controller {
             $re = $class->save($data);
     
             if($re){
+                $nav_arr = M('nav')->where(array('id'=>1))->find();
+                if(!empty($nav_arr)){
+                    $nav_arr_de = json_decode($nav_arr['nav'],true);
+                    $tree_id  = array();
+                    foreach ($nav_arr_de as $key => $level1) {
+                        $tree_id[] = $level1['id'];
+                        foreach ($level1['sub'] as $key => $level2) {
+                            $tree_id[] = $level2['id'];
+                        }
+                    }
+                    $class = D('class');
+                    $tree = $class->getTreeByid($tree_id);
+                    $this->nav($tree);
+                }
+
                 //$this->redirect('entryClass', array(), 0, '页面跳转中...');
                 $this->success('更新成功', 'entryClass');
             }else{
@@ -217,40 +228,47 @@ class AdminController extends Controller {
     }
 
 
+    //导航管理 排序
+    private function nav($tree){
+        $id = array();
+        foreach ($tree as $k => $v) {
+            $id[$k] = $k;
+            foreach ($v as $kk => $vv) {
+                $id[$kk] = $kk;
+                foreach ($vv as $value) {
+                    $id[$value] = $value;
+                }
+            }
+        }
+        $class = D('class');
+        $class_list = $class->getClassbyMap(array('id'=>array('IN',$id)));
+        $nav = array();
+        //第一级
+        foreach ($tree as $k => $v) {
+            $nav[$k]['name'] = $class_list[$k]['name'];
+            $nav[$k]['id'] = $class_list[$k]['id'];
+            //第二级
+            foreach ($v as $kk => $vv) {
+                $nav[$k]['sub'][$kk]['name'] = $class_list[$kk]['name'];
+                $nav[$k]['sub'][$kk]['id'] = $class_list[$kk]['id'];
+            }
+        }
+        $nav_json = json_encode($nav);
+        $data['id'] = 1;
+        $data['nav'] = $nav_json;
+        
+
+        $re = M('nav')->save($data);
+        return $re;
+    }
+
     //导航管理
     public function entryClassLevel(){
         $post = input('post.');
         if(!empty($post)){
-            $id = array();
             $tree = $post['tree'];
-            foreach ($tree as $k => $v) {
-                $id[$k] = $k;
-                foreach ($v as $kk => $vv) {
-                    $id[$kk] = $kk;
-                    foreach ($vv as $value) {
-                        $id[$value] = $value;
-                    }
-                }
-            }
-            $class = D('class');
-            $class_list = $class->getClassbyMap(array('id'=>array('IN',$id)));
-            $nav = array();
-            //第一级
-            foreach ($tree as $k => $v) {
-                $nav[$k]['name'] = $class_list[$k]['name'];
-                $nav[$k]['id'] = $class_list[$k]['id'];
-                //第二级
-                foreach ($v as $kk => $vv) {
-                    $nav[$k]['sub'][$kk]['name'] = $class_list[$kk]['name'];
-                    $nav[$k]['sub'][$kk]['id'] = $class_list[$kk]['id'];
-                }
-            }
-            $nav_json = json_encode($nav);
-            $data['id'] = 1;
-            $data['nav'] = $nav_json;
-            $re = M('nav')->save($data);
-
-            if($re){
+            $re = $this->nav($tree);//更新导航
+            if($re == 0 || $re){
                 //$this->redirect('entryClass', array(), 0, '页面跳转中...');
                 $this->success('更新成功', 'entryClassLevel');
             }else{

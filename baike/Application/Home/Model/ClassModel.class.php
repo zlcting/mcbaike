@@ -54,4 +54,33 @@ class ClassModel extends Model {
 	}
 
 
+	//更新分类的时候 获取当前nav的结构 
+	// $id 为导航条分类id
+	public function getTreeByid($id){
+
+		$top_map['status'] = 1;
+		$top_map['id'] = array('IN',$id);
+		if(empty($id)){
+			return false;
+		}
+
+		$class_list = $this->where($top_map)->order('level asc')->order('sort desc')->select();
+        $tree = array();
+
+		foreach ($class_list as $key => $value) {
+        	if($value['level'] == 1){
+        		$tree[$value['id']] = array();
+        		unset($class_list[$key]);
+        	}
+        }
+        foreach ($class_list as $key => $value) {
+        	if($value['level'] == 2){
+        		$tree[$value['p_id']][$value['id']] = $value['id'];
+        		unset($class_list[$key]);
+        	}
+        }
+        return $tree;
+	}   
+
+
 }
